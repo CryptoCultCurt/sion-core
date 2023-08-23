@@ -4,14 +4,14 @@ const BN = require('bn.js');
 const {
     initWallet, getContract, getERC20, getERC20ByAddress, getPrice,
 
-} = require("@overnight-contracts/common/utils/script-utils");
+} = require("@sion-contracts/common/utils/script-utils");
 
-let BalancerFactory = require('@overnight-contracts/pools/abi/ComposableStablePoolFactory.json');
-let Pool = require('@overnight-contracts/pools/abi/ComposableStablePool.json');
+let BalancerFactory = require('@sion-contracts/pools/abi/ComposableStablePoolFactory.json');
+let Pool = require('@sion-contracts/pools/abi/ComposableStablePool.json');
 
-let Vault = require('@overnight-contracts/pools/abi/VaultBalancer.json');
-const {BSC} = require("@overnight-contracts/common/utils/assets");
-const {toE18, toE6, fromE18, fromE6, toAsset, fromAsset} = require("@overnight-contracts/common/utils/decimals");
+let Vault = require('@sion-contracts/pools/abi/VaultBalancer.json');
+const {BSC} = require("@sion-contracts/common/utils/assets");
+const {toE18, toE6, fromE18, fromE6, toAsset, fromAsset} = require("@sion-contracts/common/utils/decimals");
 const {expect} = require("chai");
 
 let Factory = "0x7bc6C0E73EDAa66eF3F6E2f27b0EE8661834c6C9";
@@ -227,8 +227,8 @@ async function main() {
 
         let wallet = await initWallet();
 
-        let usdPlus = await getContract('UsdPlusToken', 'polygon');
-        let wUsdPlus = await getContract('WrappedUsdPlusToken', 'polygon');
+        let usdPlus = await getContract('SionToken', 'polygon');
+        let wUsdPlus = await getContract('WrappedSionToken', 'polygon');
 
         let usdPool = await ethers.getContractAt(Pool, usdPlusLinearPool, wallet);
         let stablePool = await ethers.getContractAt(Pool, poolAddress, wallet);

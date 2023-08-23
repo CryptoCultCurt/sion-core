@@ -2,9 +2,9 @@ const hre = require("hardhat");
 const ethers = hre.ethers;
 const fs = require("fs");
 const BN = require("bn.js");
-const {getContract, getPrice, execTimelock, showM2M} = require("@overnight-contracts/common/utils/script-utils");
+const {getContract, getPrice, execTimelock, showM2M} = require("@sion-contracts/common/utils/script-utils");
 
-let {POLYGON} = require('@overnight-contracts/common/utils/assets');
+let {POLYGON} = require('@sion-contracts/common/utils/assets');
 
 
 async function main() {

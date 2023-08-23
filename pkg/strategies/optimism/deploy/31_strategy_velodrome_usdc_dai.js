@@ -1,6 +1,6 @@
-const {deployProxy} = require("@overnight-contracts/common/utils/deployProxy");
-const {deploySection, settingSection} = require("@overnight-contracts/common/utils/script-utils");
-const {OPTIMISM} = require("@overnight-contracts/common/utils/assets");
+const {deployProxy} = require("@sion-contracts/common/utils/deployProxy");
+const {deploySection, settingSection} = require("@sion-contracts/common/utils/script-utils");
+const {OPTIMISM} = require("@sion-contracts/common/utils/assets");
 
 let gauge = '0xc4ff55a961bc04b880e60219ccbbdd139c6451a4';
 let pair = '0x4F7ebc19844259386DBdDB7b2eB759eeFc6F8353';

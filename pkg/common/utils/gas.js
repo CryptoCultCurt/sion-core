@@ -9,7 +9,7 @@ const fs = require("fs-extra")
  * ```
  * const {logGas} = require("../../utils/gas");
  * ~~~
- * await logGas(usdPlus.mint(account, 1), "UsdPlusToken", "mint");
+ * await logGas(usdPlus.mint(account, 1), "SionToken", "mint");
  * ```
  */
 

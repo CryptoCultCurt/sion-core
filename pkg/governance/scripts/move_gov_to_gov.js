@@ -1,4 +1,4 @@
-const {initWallet, getContract, getPrice, getStrategyMapping} = require("@overnight-contracts/common/utils/script-utils");
+const {initWallet, getContract, getPrice, getStrategyMapping} = require("@sion-contracts/common/utils/script-utils");
 
 /**
  * Что делает скрипт?

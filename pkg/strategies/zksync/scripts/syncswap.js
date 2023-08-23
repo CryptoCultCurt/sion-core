@@ -1,5 +1,5 @@
-const {getContract, getERC20ByAddress, getWalletAddress, getPrice} = require("@overnight-contracts/common/utils/script-utils");
-const {toE6, fromE6} = require("@overnight-contracts/common/utils/decimals");
+const {getContract, getERC20ByAddress, getWalletAddress, getPrice} = require("@sion-contracts/common/utils/script-utils");
+const {toE6, fromE6} = require("@sion-contracts/common/utils/decimals");
 
 async function main() {
 

@@ -1,7 +1,7 @@
-const {getContract} = require("@overnight-contracts/common/utils/script-utils");
-const {createProposal, testProposal} = require("@overnight-contracts/common/utils/governance");
-let {OPTIMISM} = require('@overnight-contracts/common/utils/assets');
-const {Roles} = require("@overnight-contracts/common/utils/roles");
+const {getContract} = require("@sion-contracts/common/utils/script-utils");
+const {createProposal, testProposal} = require("@sion-contracts/common/utils/governance");
+let {OPTIMISM} = require('@sion-contracts/common/utils/assets');
+const {Roles} = require("@sion-contracts/common/utils/roles");
 
 let arrakisRouter = "0x9ce88a56d120300061593eF7AD074A1B710094d5";
 let arrakisRewards = "0x87c7c885365700D157cd0f39a7803320fe86f0f5";

@@ -1,11 +1,11 @@
-const {sharedBeforeEach} = require("@overnight-contracts/common/utils/sharedBeforeEach");
+const {sharedBeforeEach} = require("@sion-contracts/common/utils/sharedBeforeEach");
 const BigNumber = require("bignumber.js");
 const {expect} = require("chai");
-const {greatLess} = require("@overnight-contracts/common/utils/tests");
+const {greatLess} = require("@sion-contracts/common/utils/tests");
 const hre = require("hardhat");
 const {deployments, ethers, getNamedAccounts} = require('hardhat');
-const {getERC20} = require("@overnight-contracts/common/utils/script-utils");
-const {toE6, fromE6} = require("@overnight-contracts/common/utils/decimals");
+const {getERC20} = require("@sion-contracts/common/utils/script-utils");
+const {toE6, fromE6} = require("@sion-contracts/common/utils/decimals");
 
 
 describe(`LeverageSonneStrategy`, function () {

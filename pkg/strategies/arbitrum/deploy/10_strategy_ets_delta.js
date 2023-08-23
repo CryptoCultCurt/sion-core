@@ -1,6 +1,6 @@
-const {deployProxyMulti} = require("@overnight-contracts/common/utils/deployProxy");
-const {deploySection, settingSection} = require("@overnight-contracts/common/utils/script-utils");
-const {ARBITRUM} = require("@overnight-contracts/common/utils/assets");
+const {deployProxyMulti} = require("@sion-contracts/common/utils/deployProxy");
+const {deploySection, settingSection} = require("@sion-contracts/common/utils/script-utils");
+const {ARBITRUM} = require("@sion-contracts/common/utils/assets");
 
 let rebaseToken = '0xbAD6d76F841cfCA539bF2b585d3694640394F2F4';
 let hedgeExchanger = '0xfE4e921C2ba617740E643c8CD2a62317e930F703';

@@ -1,6 +1,6 @@
-const {verify} = require("@overnight-contracts/common/utils/verify-utils");
-const {getContract, showM2M, getImplementation} = require("@overnight-contracts/common/utils/script-utils");
-const {createProposal, testProposal, testStrategy} = require("@overnight-contracts/common/utils/governance");
+const {verify} = require("@sion-contracts/common/utils/verify-utils");
+const {getContract, showM2M, getImplementation} = require("@sion-contracts/common/utils/script-utils");
+const {createProposal, testProposal, testStrategy} = require("@sion-contracts/common/utils/governance");
 const {StrategyKyberSwapUsdcUsdt} = require("../deploy/35_kyberswap_usdc_usdt");
 const {StrategyKyberSwapUsdcDai} = require("../deploy/36_kyberswap_usdc_dai");
 

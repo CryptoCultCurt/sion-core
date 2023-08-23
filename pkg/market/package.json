@@ -1,5 +1,5 @@
 {
-  "name": "@overnight-contracts/market",
+  "name": "@sion-contracts/market",
   "version": "0.0.4",
   "description": "Market contracts",
   "main": "hardhat.config",

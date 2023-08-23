@@ -1,5 +1,5 @@
 {
-  "name": "@overnight-contracts/connectors",
+  "name": "@sion-contracts/connectors",
   "version": "0.0.79",
   "description": "Connectors to protocols",
   "main": "hardhat.config",

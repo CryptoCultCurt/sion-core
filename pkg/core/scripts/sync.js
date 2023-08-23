@@ -1,6 +1,6 @@
-const {getContract, initWallet} = require("@overnight-contracts/common/utils/script-utils");
-const {createProposal} = require("@overnight-contracts/common/utils/governance");
-const {Roles} = require("@overnight-contracts/common/utils/roles");
+const {getContract, initWallet} = require("@sion-contracts/common/utils/script-utils");
+const {createProposal} = require("@sion-contracts/common/utils/governance");
+const {Roles} = require("@sion-contracts/common/utils/roles");
 const fs = require("fs");
 const {ethers} = require("hardhat");
 

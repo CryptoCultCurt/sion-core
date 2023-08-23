@@ -4,13 +4,13 @@ const {deployments, ethers, getNamedAccounts} = require("hardhat");
 const BN = require("bn.js");
 const {constants} = require('@openzeppelin/test-helpers');
 const {ZERO_ADDRESS} = constants;
-const {logGas} = require("@overnight-contracts/common/utils/gas");
+const {logGas} = require("@sion-contracts/common/utils/gas");
 
 const hre = require("hardhat");
-const expectRevert = require("@overnight-contracts/common/utils/expectRevert");
-const {toE6, fromE6} = require("@overnight-contracts/common/utils/decimals");
+const expectRevert = require("@sion-contracts/common/utils/expectRevert");
+const {toE6, fromE6} = require("@sion-contracts/common/utils/decimals");
 
-const {sharedBeforeEach} = require("@overnight-contracts/common/utils/sharedBeforeEach");
+const {sharedBeforeEach} = require("@sion-contracts/common/utils/sharedBeforeEach");
 
 
 describe("Liquidity Index", function () {
@@ -23,11 +23,11 @@ describe("Liquidity Index", function () {
         // need to run inside IDEA via node script running
         await hre.run("compile");
 
-        await deployments.fixture(["UsdPlusToken"]);
+        await deployments.fixture(["SionToken"]);
 
         const {deployer} = await getNamedAccounts();
         account = deployer;
-        usdPlus = await ethers.getContract("UsdPlusToken");
+        usdPlus = await ethers.getContract("SionToken");
         await usdPlus.setExchanger(account);
     });
 
@@ -37,7 +37,7 @@ describe("Liquidity Index", function () {
         let newLiquidityIndex = new BN(10).pow(new BN(27)); // 10^27
         await usdPlus.setLiquidityIndex(newLiquidityIndex.toString());
 
-        await logGas(usdPlus.mint(account, 1), "UsdPlusToken", "mint");
+        await logGas(usdPlus.mint(account, 1), "SionToken", "mint");
 
         let scaledBalance = await usdPlus.scaledBalanceOf(account);
         console.log("ScaledBalance usdPlus: " + scaledBalance);
@@ -414,11 +414,11 @@ describe("Total Mint/Burn/Supply", function () {
         // need to run inside IDEA via node script running
         await hre.run("compile");
 
-        await deployments.fixture(["UsdPlusToken"]);
+        await deployments.fixture(["SionToken"]);
 
         const {deployer} = await getNamedAccounts();
         account = deployer;
-        usdPlus = await ethers.getContract("UsdPlusToken");
+        usdPlus = await ethers.getContract("SionToken");
         await usdPlus.setExchanger(account);
     });
 
@@ -482,11 +482,11 @@ describe("ERC20", function () {
         // need to run inside IDEA via node script running
         await hre.run("compile");
 
-        await deployments.fixture(["UsdPlusToken"]);
+        await deployments.fixture(["SionToken"]);
 
         const accounts = await getNamedAccounts();
         account = accounts.deployer;
-        usdPlus = await ethers.getContract("UsdPlusToken");
+        usdPlus = await ethers.getContract("SionToken");
         await usdPlus.setExchanger(account);
 
         const [owner, tmpUser] = await ethers.getSigners();
@@ -531,7 +531,7 @@ describe("ERC20", function () {
 
             await usdPlus.mint(account, 50);
             await expectRevert(usdPlus.connect(tmpUser).transferFrom(account, tmpUser.address, 50),
-                'UsdPlusToken: transfer amount exceeds allowance',
+                'SionToken: transfer amount exceeds allowance',
             );
         });
 
@@ -667,11 +667,11 @@ describe("Full amounts", function () {
         // need to run inside IDEA via node script running
         await hre.run("compile");
 
-        await deployments.fixture(["TestUsdPlusToken"]);
+        await deployments.fixture(["TestSionToken"]);
 
         const accounts = await getNamedAccounts();
         account = accounts.deployer;
-        usdPlus = await ethers.getContract("TestUsdPlusToken");
+        usdPlus = await ethers.getContract("TestSionToken");
 
         await usdPlus.setExchanger(account);
 

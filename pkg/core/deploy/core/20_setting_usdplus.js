@@ -1,5 +1,5 @@
 const { ethers } = require("hardhat");
-const {getContract, initWallet} = require("@overnight-contracts/common/utils/script-utils");
+const {getContract, initWallet} = require("@sion-contracts/common/utils/script-utils");
 const {Wallet} = require("zksync-web3");
 
 const hre = require('hardhat');
@@ -9,7 +9,7 @@ module.exports = async ({getNamedAccounts, deployments}) => {
 
     const wallet = await initWallet();
 
-    const usdPlus = await ethers.getContract("UsdPlusToken", wallet);
+    const usdPlus = await ethers.getContract("SionToken", wallet);
     const exchange = await ethers.getContract("Exchange", wallet);
 
     console.log('usdPlus.setExchanger: ' + exchange.address)
@@ -18,4 +18,4 @@ module.exports = async ({getNamedAccounts, deployments}) => {
     console.log("usdPlus.setExchanger done");
 };
 
-module.exports.tags = ['setting','SettingUsdPlusToken'];
+module.exports.tags = ['setting','SettingSionToken'];

@@ -2,10 +2,10 @@
 pragma solidity >=0.8.0 <0.9.0;
 
 import "@openzeppelin/contracts/utils/Strings.sol";
-import "@overnight-contracts/core/contracts/Strategy.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Curve.sol";
-import "@overnight-contracts/connectors/contracts/stuff/UniswapV2.sol";
-import "@overnight-contracts/common/contracts/libraries/OvnMath.sol";
+import "@sion-contracts/core/contracts/Strategy.sol";
+import "@sion-contracts/connectors/contracts/stuff/Curve.sol";
+import "@sion-contracts/connectors/contracts/stuff/UniswapV2.sol";
+import "@sion-contracts/common/contracts/libraries/OvnMath.sol";
 
 contract StrategyCurve is Strategy, UniswapV2Exchange {
 

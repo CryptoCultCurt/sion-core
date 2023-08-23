@@ -2,12 +2,12 @@
 
 pragma solidity >=0.8.0 <0.9.0;
 
-import "@overnight-contracts/core/contracts/Strategy.sol";
-import "@overnight-contracts/core/contracts/interfaces/IUsdPlusToken.sol";
-import "@overnight-contracts/core/contracts/interfaces/IExchange.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Chainlink.sol";
-import "@overnight-contracts/connectors/contracts/stuff/UniswapV3.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Curve.sol";
+import "@sion-contracts/core/contracts/Strategy.sol";
+import "@sion-contracts/core/contracts/interfaces/ISion.sol";
+import "@sion-contracts/core/contracts/interfaces/IExchange.sol";
+import "@sion-contracts/connectors/contracts/stuff/Chainlink.sol";
+import "@sion-contracts/connectors/contracts/stuff/UniswapV3.sol";
+import "@sion-contracts/connectors/contracts/stuff/Curve.sol";
 
 
 contract StrategyUsdPlusDai is Strategy {
@@ -30,7 +30,7 @@ contract StrategyUsdPlusDai is Strategy {
 
     IERC20 public daiToken;
     IERC20 public usdcToken;
-    IUsdPlusToken public usdPlus;
+    ISionToken public usdPlus;
     IExchange public exchange;
     IPriceFeed public oracleDai;
     IPriceFeed public oracleUsdc;
@@ -59,7 +59,7 @@ contract StrategyUsdPlusDai is Strategy {
     function setParams(StrategyParams calldata params) external onlyAdmin {
         daiToken = IERC20(params.daiToken);
         usdcToken = IERC20(params.usdcToken);
-        usdPlus = IUsdPlusToken(params.usdPlus);
+        usdPlus = ISionToken(params.usdPlus);
         exchange = IExchange(params.exchange);
         oracleDai = IPriceFeed(params.oracleDai);
         oracleUsdc = IPriceFeed(params.oracleUsdc);

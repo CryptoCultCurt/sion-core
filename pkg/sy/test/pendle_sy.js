@@ -2,13 +2,13 @@ const {expect} = require("chai");
 const {deployments, ethers, getNamedAccounts} = require("hardhat");
 const BN = require("bn.js");
 const hre = require("hardhat");
-const expectRevert = require("@overnight-contracts/common/utils/expectRevert");
-let {ARBITRUM} = require('@overnight-contracts/common/utils/assets');
-const {sharedBeforeEach} = require("@overnight-contracts/common/utils/sharedBeforeEach");
+const expectRevert = require("@sion-contracts/common/utils/expectRevert");
+let {ARBITRUM} = require('@sion-contracts/common/utils/assets');
+const {sharedBeforeEach} = require("@sion-contracts/common/utils/sharedBeforeEach");
 const { ZERO_ADDRESS } = require("@openzeppelin/test-helpers/src/constants");
 
 
-describe("PendleUsdPlusTokenSY", function () {
+describe("PendleSionTokenSY", function () {
 
     let account;
     let usdPlus;
@@ -24,13 +24,13 @@ describe("PendleUsdPlusTokenSY", function () {
 
         await hre.run("compile");
 
-        await deployments.fixture(['BuyonSwap', 'MockUsdPlusToken', 'MockExchange', 'PendleUsdPlusTokenSY']);
+        await deployments.fixture(['BuyonSwap', 'MockSionToken', 'MockExchange', 'PendleSionTokenSY']);
 
         const {deployer} = await getNamedAccounts();
         account = deployer;
 
-        usdPlusSY = await ethers.getContract("PendleUsdPlusTokenSY");
-        usdPlus = await ethers.getContract("MockUsdPlusToken");
+        usdPlusSY = await ethers.getContract("PendleSionTokenSY");
+        usdPlus = await ethers.getContract("MockSionToken");
         usdc = await ethers.getContractAt("IERC20", ARBITRUM.usdc);
         exchange = await ethers.getContract("MockExchange");
         koef = 10;
@@ -66,7 +66,7 @@ describe("PendleUsdPlusTokenSY", function () {
 
         await expectRevert(
             usdPlusSY.callStatic.deposit(account, usdPlus.address, usdPlusBalance, 0),
-            'UsdPlusToken: transfer amount exceeds allowance',
+            'SionToken: transfer amount exceeds allowance',
         );
 
         await usdPlus.approve(usdPlusSY.address, usdPlusBalance);

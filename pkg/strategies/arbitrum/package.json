@@ -1,5 +1,5 @@
 {
-  "name": "@overnight-contracts/strategies-arbitrum",
+  "name": "@sion-contracts/strategies-arbitrum",
   "version": "0.0.1",
   "description": "Strategies ARBITRUM contracts",
   "main": "hardhat.config",

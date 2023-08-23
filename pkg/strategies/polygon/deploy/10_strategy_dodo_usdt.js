@@ -1,6 +1,6 @@
-const {deployProxy} = require("@overnight-contracts/common/utils/deployProxy");
-const {deploySection, settingSection} = require("@overnight-contracts/common/utils/script-utils");
-const { POLYGON} = require("@overnight-contracts/common/utils/assets");
+const {deployProxy} = require("@sion-contracts/common/utils/deployProxy");
+const {deploySection, settingSection} = require("@sion-contracts/common/utils/script-utils");
+const { POLYGON} = require("@sion-contracts/common/utils/assets");
 
 let dodoUsdtLPToken = "0xB0B417A00E1831DeF11b242711C3d251856AADe3";
 let dodoV1UsdcUsdtPool = "0x813FddecCD0401c4Fa73B092b074802440544E52";

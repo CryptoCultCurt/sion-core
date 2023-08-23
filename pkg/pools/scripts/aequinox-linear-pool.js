@@ -1,13 +1,13 @@
 const hre = require("hardhat");
 const ethers = hre.ethers;
 const BN = require('bn.js');
-const {initWallet, getContract, getCoreAsset, getERC20, transferUSDPlus, execTimelock} = require("@overnight-contracts/common/utils/script-utils");
+const {initWallet, getContract, getCoreAsset, getERC20, transferUSDPlus, execTimelock} = require("@sion-contracts/common/utils/script-utils");
 
-let BalancerFactory = require('@overnight-contracts/pools/abi/ERC4626LinearPoolFactory.json');
-let Pool = require('@overnight-contracts/pools/abi/ERC4626LinearPool.json');
-let Vault = require('@overnight-contracts/pools/abi/VaultBalancer.json');
-const {BSC} = require("@overnight-contracts/common/utils/assets");
-const {toE18, toE6, fromE18, fromE6, toAsset, fromAsset} = require("@overnight-contracts/common/utils/decimals");
+let BalancerFactory = require('@sion-contracts/pools/abi/ERC4626LinearPoolFactory.json');
+let Pool = require('@sion-contracts/pools/abi/ERC4626LinearPool.json');
+let Vault = require('@sion-contracts/pools/abi/VaultBalancer.json');
+const {BSC} = require("@sion-contracts/common/utils/assets");
+const {toE18, toE6, fromE18, fromE6, toAsset, fromAsset} = require("@sion-contracts/common/utils/decimals");
 
 let BalancerFactoryAddress = "0x202fE8BA86cA85872577fab79Ba78aD192E79C02";
 // let owner = "0xe497285e466227f4e8648209e34b465daa1f90a0";
@@ -22,14 +22,14 @@ async function main() {
 
     let busd = await getERC20('busd');
 
-    let usdPlus = await getContract('UsdPlusToken', 'bsc');
-    let cUsdPlus = await getContract('UsdPlusToken', 'bsc_usdc');
-    let tUsdPlus = await getContract('UsdPlusToken', 'bsc_usdt');
+    let usdPlus = await getContract('SionToken', 'bsc');
+    let cUsdPlus = await getContract('SionToken', 'bsc_usdc');
+    let tUsdPlus = await getContract('SionToken', 'bsc_usdt');
 
 
-    let wUsdPlus = await getContract('WrappedUsdPlusToken', 'bsc');
-    let wcUsdPlus = await getContract('WrappedUsdPlusToken', 'bsc_usdc');
-    let wtUsdPlus = await getContract('WrappedUsdPlusToken', 'bsc_usdt');
+    let wUsdPlus = await getContract('WrappedSionToken', 'bsc');
+    let wcUsdPlus = await getContract('WrappedSionToken', 'bsc_usdc');
+    let wtUsdPlus = await getContract('WrappedSionToken', 'bsc_usdt');
 
     // await transferUSDPlus(100000, wallet.address);
     // await getcUsdPlus(10000, wallet.address);
@@ -165,7 +165,7 @@ async function main() {
 
 async function getcUsdPlus(amount, to) {
 
-    let usdPlus = await getContract('UsdPlusToken', 'bsc_usdc');
+    let usdPlus = await getContract('SionToken', 'bsc_usdc');
 
     let exchange = await usdPlus.exchange();
 
@@ -178,7 +178,7 @@ async function getcUsdPlus(amount, to) {
 
 async function gettUsdPlus(amount , to){
 
-    let usdPlus = await getContract('UsdPlusToken', 'bsc_usdt');
+    let usdPlus = await getContract('SionToken', 'bsc_usdt');
 
     let exchange = await usdPlus.exchange();
 

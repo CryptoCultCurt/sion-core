@@ -2,12 +2,12 @@
 
 pragma solidity >=0.8.0 <0.9.0;
 
-import "@overnight-contracts/core/contracts/Strategy.sol";
-import "@overnight-contracts/core/contracts/interfaces/IStaker.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Chainlink.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Gmx.sol";
-import "@overnight-contracts/connectors/contracts/stuff/SolidLizard.sol";
-import "@overnight-contracts/connectors/contracts/stuff/UniswapV3.sol";
+import "@sion-contracts/core/contracts/Strategy.sol";
+import "@sion-contracts/core/contracts/interfaces/IStaker.sol";
+import "@sion-contracts/connectors/contracts/stuff/Chainlink.sol";
+import "@sion-contracts/connectors/contracts/stuff/Gmx.sol";
+import "@sion-contracts/connectors/contracts/stuff/SolidLizard.sol";
+import "@sion-contracts/connectors/contracts/stuff/UniswapV3.sol";
 
 contract StrategySolidlizardUsdcDai is Strategy {
 

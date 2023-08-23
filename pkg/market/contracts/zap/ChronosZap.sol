@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "@overnight-contracts/connectors/contracts/stuff/Chronos.sol";
+import "@sion-contracts/connectors/contracts/stuff/Chronos.sol";
 import "./OdosZap.sol";
 
 contract ChronosZap is OdosZap {

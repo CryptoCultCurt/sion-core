@@ -2,16 +2,24 @@
 pragma solidity >=0.8.0 <0.9.0;
 
 import "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
-import "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
-import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
+import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/access/AccessControl.sol";
+import {ITokenManager} from "@axelar-network/interchain-token-service/contracts/interfaces/ITokenManager.sol";
+import {ITokenManagerType} from "@axelar-network/interchain-token-service/contracts/interfaces/ITokenManagerType.sol";
+import {IInterchainToken} from "@axelar-network/interchain-token-service/contracts/interfaces/IInterchainToken.sol";
+import {IInterchainTokenService} from "@axelar-network/interchain-token-service/contracts/interfaces/IInterchainTokenService.sol";
+import {AddressBytesUtils} from "@axelar-network/interchain-token-service/contracts/libraries/AddressBytesUtils.sol";
 import "./libraries/WadRayMath.sol";
 
-contract UsdPlusToken is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC20MetadataUpgradeable, AccessControlUpgradeable, UUPSUpgradeable {
+contract SionToken is ERC20, AccessControl {
     using WadRayMath for uint256;
     using EnumerableSet for EnumerableSet.AddressSet;
+    using AddressBytesUtils for address;
+
+    ITokenManager public tokenManager;
+    IInterchainTokenService public service =
+        IInterchainTokenService(0xF786e21509A9D50a9aFD033B5940A2b7D872C208);
+
 
     uint256 public constant MAX_UINT_VALUE = type(uint256).max;
 
@@ -81,33 +89,22 @@ contract UsdPlusToken is Initializable, ContextUpgradeable, IERC20Upgradeable, I
     }
 
 
-    /// @custom:oz-upgrades-unsafe-allow constructor
-    constructor() initializer {}
+constructor() ERC20("Sion", "SION") {
 
-    function initialize(string calldata name, string calldata symbol, uint8 decimals) initializer public {
-        __Context_init_unchained();
-
-        _name = name;
-        _symbol = symbol;
-
-        __AccessControl_init();
-        __UUPSUpgradeable_init();
-
-        _grantRole(DEFAULT_ADMIN_ROLE, _msgSender());
-
-        // as Ray
+         _grantRole(DEFAULT_ADMIN_ROLE, _msgSender());
+         // as Ray
         liquidityIndex = 10 ** 27;
         // 1 Ray
         liquidityIndexDenominator = 10 ** 27;
 
-        _decimals = decimals;
+        // Register this token (could also be done 1-time smart contract invocation)
+        // Not a good practice beacuse it can't go to non-EVM chains
+        deployTokenManager("");
+
+
     }
 
-    function _authorizeUpgrade(address newImplementation)
-    internal
-    onlyRole(DEFAULT_ADMIN_ROLE)
-    override
-    {}
+
 
 
     /**
@@ -121,6 +118,89 @@ contract UsdPlusToken is Initializable, ContextUpgradeable, IERC20Upgradeable, I
 
 
     // ---  logic
+
+    // cross-chain
+    function deployTokenManager(bytes32 salt) internal {
+        bytes memory params = service.getParamsMintBurn(
+            msg.sender.toBytes(),
+            address(this)
+        );
+        bytes32 tokenId = service.deployCustomTokenManager(
+            salt,
+            ITokenManagerType.TokenManagerType.MINT_BURN,
+            params
+        );
+        tokenManager = ITokenManager(service.getTokenManagerAddress(tokenId));
+        grantRole(EXCHANGER, address(tokenManager));
+    }
+
+    /*
+     * Deploy this token, then register it with the Interchain Token Service
+     * You'll be given a TokenManager which you can set here, allowing the
+     * local send methods to function.
+     */
+    function setTokenManager(address _tokenManager) public onlyAdmin {
+        tokenManager = ITokenManager(_tokenManager);
+    }
+
+     /**
+     * @notice Implementation of the interchainTransfer method
+     * @dev We chose to either pass `metadata` as raw data on a remote contract call, or, if no data is passed, just do a transfer.
+     * A different implementation could have `metadata` that tells this function which function to use or that it is used for anything else as well.
+     * @param destinationChain The destination chain identifier.
+     * @param recipient The bytes representation of the address of the recipient.
+     * @param amount The amount of token to be transfered.
+     * @param metadata Either empty, to just facilitate an interchain transfer, or the data can be passed for an interchain contract call with transfer as per semantics defined by the token service.
+     */
+    function interchainTransfer(
+        string calldata destinationChain,
+        bytes calldata recipient,
+        uint256 amount,
+        bytes calldata metadata
+    ) external payable {
+        address sender = msg.sender;
+
+        // Metadata semantics are defined by the token service and thus should be passed as-is.
+        tokenManager.transmitInterchainTransfer{value: msg.value}(
+            sender,
+            destinationChain,
+            recipient,
+            amount,
+            metadata
+        );
+    }
+
+    /**
+     * @notice Implementation of the interchainTransferFrom method
+     * @dev We chose to either pass `metadata` as raw data on a remote contract call, or, if no data is passed, just do a transfer.
+     * A different implementation could have `metadata` that tells this function which function to use or that it is used for anything else as well.
+     * @param sender the sender of the tokens. They need to have approved `msg.sender` before this is called.
+     * @param destinationChain the string representation of the destination chain.
+     * @param recipient the bytes representation of the address of the recipient.
+     * @param amount the amount of token to be transfered.
+     * @param metadata either empty, to just facilitate a cross-chain transfer, or the data to be passed to a cross-chain contract call and transfer.
+     */
+    function interchainTransferFrom(
+        address sender,
+        string calldata destinationChain,
+        bytes calldata recipient,
+        uint256 amount,
+        bytes calldata metadata
+    ) external payable {
+        uint256 _allowance = allowance(sender, msg.sender);
+
+        if (_allowance != type(uint256).max) {
+            _approve(sender, msg.sender, _allowance - amount);
+        }
+
+        tokenManager.transmitInterchainTransfer{value: msg.value}(
+            sender,
+            destinationChain,
+            recipient,
+            amount,
+            metadata
+        );
+    }
 
 
     function mint(address _sender, uint256 _amount) external onlyExchanger {
@@ -141,7 +221,7 @@ contract UsdPlusToken is Initializable, ContextUpgradeable, IERC20Upgradeable, I
      *
      * - `account` cannot be the zero address.
      */
-    function _mint(address account, uint256 amount) internal {
+    function _mint(address account, uint256 amount) override internal {
         require(account != address(0), "ERC20: mint to the zero address");
 
         _beforeTokenTransfer(address(0), account, amount);
@@ -179,7 +259,7 @@ contract UsdPlusToken is Initializable, ContextUpgradeable, IERC20Upgradeable, I
      * - `account` cannot be the zero address.
      * - `account` must have at least `amount` tokens.
      */
-    function _burn(address account, uint256 amount) internal {
+    function _burn(address account, uint256 amount) override internal {
         require(account != address(0), "ERC20: burn from the zero address");
 
         _beforeTokenTransfer(account, address(0), amount);
@@ -214,7 +294,7 @@ contract UsdPlusToken is Initializable, ContextUpgradeable, IERC20Upgradeable, I
         address sender,
         address recipient,
         uint256 amount
-    ) internal {
+    ) override internal {
         require(sender != address(0), "ERC20: transfer from the zero address");
         require(recipient != address(0), "ERC20: transfer to the zero address");
 
@@ -268,7 +348,7 @@ contract UsdPlusToken is Initializable, ContextUpgradeable, IERC20Upgradeable, I
     /**
     * @dev See {IERC20-allowance}.
      */
-    function _allowance(address owner, address spender) internal view returns (uint256) {
+    function _allowance(address owner, address spender)  internal view returns (uint256) {
         return _allowances[owner][spender];
     }
 
@@ -276,7 +356,7 @@ contract UsdPlusToken is Initializable, ContextUpgradeable, IERC20Upgradeable, I
     /**
      * @dev See {IERC20-approve}.
      */
-    function approve(address spender, uint256 amount) external override returns (bool){
+    function approve(address spender, uint256 amount) public virtual override returns (bool){
         uint256 scaledAmount;
 
         // We reduce the maximum allowable value and setup MAX_UINT_VALUE
@@ -309,7 +389,7 @@ contract UsdPlusToken is Initializable, ContextUpgradeable, IERC20Upgradeable, I
         address owner,
         address spender,
         uint256 amount
-    ) internal virtual {
+    ) override internal virtual {
         require(owner != address(0), "ERC20: approve from the zero address");
         require(spender != address(0), "ERC20: approve to the zero address");
 
@@ -343,7 +423,7 @@ contract UsdPlusToken is Initializable, ContextUpgradeable, IERC20Upgradeable, I
             currentAllowance = _allowance(sender, _msgSender());
         }
 
-        require(currentAllowance >= transferAmount, "UsdPlusToken: transfer amount exceeds allowance");
+        require(currentAllowance >= transferAmount, "SionToken: transfer amount exceeds allowance");
         unchecked {
             _approve(sender, _msgSender(), currentAllowance - transferAmount);
         }
@@ -429,7 +509,7 @@ contract UsdPlusToken is Initializable, ContextUpgradeable, IERC20Upgradeable, I
      *
      * - `spender` cannot be the zero address.
      */
-    function increaseAllowance(address spender, uint256 addedValue) public returns (bool) {
+    function increaseAllowance(address spender, uint256 addedValue) override public returns (bool) {
         // up to ray
         uint256 scaledAmount = addedValue.wadToRay();
         scaledAmount = scaledAmount.rayDiv(liquidityIndex);
@@ -451,7 +531,7 @@ contract UsdPlusToken is Initializable, ContextUpgradeable, IERC20Upgradeable, I
      * - `spender` must have allowance for the caller of at least
      * `subtractedValue`.
      */
-    function decreaseAllowance(address spender, uint256 subtractedValue) public returns (bool) {
+    function decreaseAllowance(address spender, uint256 subtractedValue) override public returns (bool) {
         uint256 scaledAmount;
         if (subtractedValue == allowance(_msgSender(), spender)) {
             // transfer all
@@ -544,7 +624,7 @@ contract UsdPlusToken is Initializable, ContextUpgradeable, IERC20Upgradeable, I
         address from,
         address to,
         uint256 amount
-    ) internal {
+    ) internal override {
 
     }
 
@@ -553,7 +633,7 @@ contract UsdPlusToken is Initializable, ContextUpgradeable, IERC20Upgradeable, I
         address from,
         address to,
         uint256 amount
-    ) internal {
+    ) override internal {
 
         if (from == address(0)) {
             // mint

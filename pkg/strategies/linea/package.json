@@ -1,5 +1,5 @@
 {
-  "name": "@overnight-contracts/strategies-linea",
+  "name": "@sion-contracts/strategies-linea",
   "version": "0.0.1",
   "description": "Strategies LINEA contracts",
   "main": "hardhat.config",

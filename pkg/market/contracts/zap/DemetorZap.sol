@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 import "./OdosZap.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
 
-import "@overnight-contracts/connectors/contracts/stuff/Camelot.sol";
+import "@sion-contracts/connectors/contracts/stuff/Camelot.sol";
 
 contract DemetorZap is OdosZap {
     PositionHelper public positionHelper;

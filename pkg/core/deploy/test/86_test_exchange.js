@@ -1,6 +1,6 @@
 const {ethers} = require("hardhat");
-const {deployProxy, deployProxyMulti} = require("@overnight-contracts/common/utils/deployProxy");
-const {COMMON} = require("@overnight-contracts/common/utils/assets");
+const {deployProxy, deployProxyMulti} = require("@sion-contracts/common/utils/deployProxy");
+const {COMMON} = require("@sion-contracts/common/utils/assets");
 
 
 module.exports = async ({getNamedAccounts, deployments}) => {
@@ -9,9 +9,9 @@ module.exports = async ({getNamedAccounts, deployments}) => {
     const {save} = deployments;
 
     await deployProxy('Exchange', deployments, save);
-    await deployProxy('UsdPlusToken', deployments, save, {args: ["USD+", "USD+", 0]});
+    await deployProxy('SionToken', deployments, save, {args: ["USD+", "USD+", 0]});
 
-    await deployProxyMulti('AssetToken', 'UsdPlusToken', deployments, save, {args: ["MockBUSD", "MockBUSD", 0]});
+    await deployProxyMulti('AssetToken', 'SionToken', deployments, save, {args: ["MockBUSD", "MockBUSD", 0]});
 
     await deploy('MockPortfolioManager', {
         from: deployer,
@@ -26,7 +26,7 @@ module.exports = async ({getNamedAccounts, deployments}) => {
     });
 
 
-    let usdPlus = await ethers.getContract('UsdPlusToken');
+    let usdPlus = await ethers.getContract('SionToken');
     let asset = await ethers.getContract('AssetToken');
     let insurance = await ethers.getContract('MockInsuranceExchange');
     let pm = await ethers.getContract('MockPortfolioManager');

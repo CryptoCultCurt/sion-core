@@ -3,9 +3,9 @@ pragma solidity >=0.8.0 <0.9.0;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-import "@overnight-contracts/connectors/contracts/stuff/AaveV3.sol";
-import "@overnight-contracts/connectors/contracts/stuff/UniswapV3.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Chainlink.sol";
+import "@sion-contracts/connectors/contracts/stuff/AaveV3.sol";
+import "@sion-contracts/connectors/contracts/stuff/UniswapV3.sol";
+import "@sion-contracts/connectors/contracts/stuff/Chainlink.sol";
 
 // Don't use
 library AaveBorrowLibrary {

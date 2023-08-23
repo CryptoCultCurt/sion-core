@@ -6,12 +6,12 @@ const {
     getContract,
     getERC20,
     getERC20ByAddress, execTimelock, getPrice
-} = require("@overnight-contracts/common/utils/script-utils");
+} = require("@sion-contracts/common/utils/script-utils");
 
-let BalancerFactory = require('@overnight-contracts/pools/abi/ERC4626LinearPoolFactory.json');
-let Pool = require('@overnight-contracts/pools/abi/ERC4626LinearPool.json');
-let Vault = require('@overnight-contracts/pools/abi/VaultBalancer.json');
-const {toE18, toE6, fromE18, fromE6, toAsset, fromAsset} = require("@overnight-contracts/common/utils/decimals");
+let BalancerFactory = require('@sion-contracts/pools/abi/ERC4626LinearPoolFactory.json');
+let Pool = require('@sion-contracts/pools/abi/ERC4626LinearPool.json');
+let Vault = require('@sion-contracts/pools/abi/VaultBalancer.json');
+const {toE18, toE6, fromE18, fromE6, toAsset, fromAsset} = require("@sion-contracts/common/utils/decimals");
 const {expect} = require("chai");
 const {BigNumber} = require("ethers");
 
@@ -37,7 +37,7 @@ async function main() {
 
     async function addLiquidityUsdc(){
         let usdc = await getERC20('usdc');
-        let wUsdPlus = await getContract('WrappedUsdPlusToken', 'polygon');
+        let wUsdPlus = await getContract('WrappedSionToken', 'polygon');
         let pool = await createPool('USD+', usdc.address, wUsdPlus.address);
 
         await swap(usdc, pool, toAsset(2), await pool.getPoolId(), toE18(2));
@@ -47,8 +47,8 @@ async function main() {
     async function createAndTestUsdc(){
 
         let usdc = await getERC20('usdc');
-        let usdPlus = await getContract('UsdPlusToken', 'polygon');
-        let wUsdPlus = await getContract('WrappedUsdPlusToken', 'polygon');
+        let usdPlus = await getContract('SionToken', 'polygon');
+        let wUsdPlus = await getContract('WrappedSionToken', 'polygon');
         let usdPool = await createPool('USD+', usdc.address, wUsdPlus.address);
 
         await testPool(usdPool, usdc, usdPlus, wUsdPlus, '1000000000000000000000000000'); // Rate 1:1 USD+<->wUSD+

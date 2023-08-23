@@ -1,6 +1,6 @@
-const {deployProxy} = require("@overnight-contracts/common/utils/deployProxy");
-const {OPTIMISM} = require('@overnight-contracts/common/utils/assets');
-const {deploySection, settingSection} = require("@overnight-contracts/common/utils/script-utils");
+const {deployProxy} = require("@sion-contracts/common/utils/deployProxy");
+const {OPTIMISM} = require('@sion-contracts/common/utils/assets');
+const {deploySection, settingSection} = require("@sion-contracts/common/utils/script-utils");
 
 let poolOpUsdcFee = 500; // 0.05%
 let poolUsdcDaiFee = 100; // 0.01%

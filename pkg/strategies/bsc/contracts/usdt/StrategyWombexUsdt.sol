@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.0 <0.9.0;
 
-import "@overnight-contracts/core/contracts/Strategy.sol";
-import {IWombatAsset} from "@overnight-contracts/connectors/contracts/stuff/Wombat.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Wombex.sol";
-import "@overnight-contracts/connectors/contracts/stuff/PancakeV2.sol";
+import "@sion-contracts/core/contracts/Strategy.sol";
+import {IWombatAsset} from "@sion-contracts/connectors/contracts/stuff/Wombat.sol";
+import "@sion-contracts/connectors/contracts/stuff/Wombex.sol";
+import "@sion-contracts/connectors/contracts/stuff/PancakeV2.sol";
 
 
 contract StrategyWombexUsdt is Strategy {

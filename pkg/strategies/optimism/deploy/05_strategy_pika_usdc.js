@@ -1,6 +1,6 @@
-const {deployProxy} = require("@overnight-contracts/common/utils/deployProxy");
-const {deploySection, settingSection} = require("@overnight-contracts/common/utils/script-utils");
-const {OPTIMISM} = require("@overnight-contracts/common/utils/assets");
+const {deployProxy} = require("@sion-contracts/common/utils/deployProxy");
+const {deploySection, settingSection} = require("@sion-contracts/common/utils/script-utils");
+const {OPTIMISM} = require("@sion-contracts/common/utils/assets");
 
 let poolFee = 500; // 0.05%
 let pika = '0xD5A8f233CBdDb40368D55C3320644Fb36e597002';

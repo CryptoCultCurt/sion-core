@@ -1,15 +1,15 @@
 const {ethers} = require("hardhat");
 
-let {BSC, COMMON} = require('@overnight-contracts/common/utils/assets');
-const {getContract} = require("@overnight-contracts/common/utils/script-utils");
-const {createSkim, createBribe, createSkimTo, createCustom, createSkimToWithFee} = require("@overnight-contracts/common/utils/payoutListener");
-const {Roles} = require("@overnight-contracts/common/utils/roles");
+let {BSC, COMMON} = require('@sion-contracts/common/utils/assets');
+const {getContract} = require("@sion-contracts/common/utils/script-utils");
+const {createSkim, createBribe, createSkimTo, createCustom, createSkimToWithFee} = require("@sion-contracts/common/utils/payoutListener");
+const {Roles} = require("@sion-contracts/common/utils/roles");
 const {ZERO_ADDRESS} = require("@openzeppelin/test-helpers/src/constants");
 
 module.exports = async ({getNamedAccounts, deployments}) => {
 
     const pl = await getContract("ZksyncPayoutListener");
-    let usdPlus = await getContract('UsdPlusToken', 'zksync');
+    let usdPlus = await getContract('SionToken', 'zksync');
 
 //    await (await pl.grantRole(Roles.EXCHANGER, (await getContract('Exchange', 'zksync')).address)).wait();
 

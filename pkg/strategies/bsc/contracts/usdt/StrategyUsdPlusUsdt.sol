@@ -2,11 +2,11 @@
 
 pragma solidity >=0.8.0 <0.9.0;
 
-import "@overnight-contracts/core/contracts/Strategy.sol";
-import "@overnight-contracts/core/contracts/interfaces/IUsdPlusToken.sol";
-import "@overnight-contracts/core/contracts/interfaces/IExchange.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Chainlink.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Wombat.sol";
+import "@sion-contracts/core/contracts/Strategy.sol";
+import "@sion-contracts/core/contracts/interfaces/ISion.sol";
+import "@sion-contracts/core/contracts/interfaces/IExchange.sol";
+import "@sion-contracts/connectors/contracts/stuff/Chainlink.sol";
+import "@sion-contracts/connectors/contracts/stuff/Wombat.sol";
 
 
 contract StrategyUsdPlusUsdt is Strategy {
@@ -29,7 +29,7 @@ contract StrategyUsdPlusUsdt is Strategy {
     IERC20 public usdt;
     IERC20 public usdc;
     
-    IUsdPlusToken public usdPlus;
+    ISionToken public usdPlus;
     IExchange public exchange;
     
     IPriceFeed public oracleUsdt;
@@ -60,7 +60,7 @@ contract StrategyUsdPlusUsdt is Strategy {
         usdt = IERC20(params.usdt);
         usdc = IERC20(params.usdc);
 
-        usdPlus = IUsdPlusToken(params.usdPlus);
+        usdPlus = ISionToken(params.usdPlus);
         exchange = IExchange(params.exchange);
 
         oracleUsdt = IPriceFeed(params.oracleUsdt);

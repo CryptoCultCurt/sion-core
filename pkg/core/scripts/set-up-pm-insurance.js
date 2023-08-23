@@ -1,4 +1,4 @@
-const {toAsset} = require("@overnight-contracts/common/utils/decimals");
+const {toAsset} = require("@sion-contracts/common/utils/decimals");
 
 const {
     getContract,
@@ -8,8 +8,8 @@ const {
     initWallet,
     execTimelock,
     convertWeights, getPrice
-} = require("@overnight-contracts/common/utils/script-utils");
-const {DEFAULT} = require("@overnight-contracts/common/utils/assets");
+} = require("@sion-contracts/common/utils/script-utils");
+const {DEFAULT} = require("@sion-contracts/common/utils/assets");
 
 
 async function main() {

@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 import "./OdosZap.sol";
 
-import "@overnight-contracts/connectors/contracts/stuff/Arbidex.sol";
+import "@sion-contracts/connectors/contracts/stuff/Arbidex.sol";
 
 contract ArbidexZap is OdosZap {
     IArbiDexRouter02 public arbidexRouter;

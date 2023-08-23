@@ -1,5 +1,5 @@
-const {getContract, getPrice} = require("@overnight-contracts/common/utils/script-utils");
-const {createProposal} = require("@overnight-contracts/common/utils/governance");
+const {getContract, getPrice} = require("@sion-contracts/common/utils/script-utils");
+const {createProposal} = require("@sion-contracts/common/utils/governance");
 
 async function main(){
 

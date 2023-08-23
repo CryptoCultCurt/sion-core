@@ -6,8 +6,8 @@ import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol";
-import "@overnight-contracts/common/contracts/libraries/OvnMath.sol";
-import "@overnight-contracts/common/contracts/libraries/WadRayMath.sol";
+import "@sion-contracts/common/contracts/libraries/OvnMath.sol";
+import "@sion-contracts/common/contracts/libraries/WadRayMath.sol";
 import "./interfaces/IPortfolioManager.sol";
 import "./interfaces/IMark2Market.sol";
 

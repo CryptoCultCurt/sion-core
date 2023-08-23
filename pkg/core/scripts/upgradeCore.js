@@ -1,17 +1,17 @@
-const {getContract, initWallet, showM2M} = require("@overnight-contracts/common/utils/script-utils");
+const {getContract, initWallet, showM2M} = require("@sion-contracts/common/utils/script-utils");
 const {
     createProposal,
     execProposal,
     testProposal,
     testUsdPlus,
     testStrategy
-} = require("@overnight-contracts/common/utils/governance");
-const {COMMON, OPTIMISM} = require("@overnight-contracts/common/utils/assets");
+} = require("@sion-contracts/common/utils/governance");
+const {COMMON, OPTIMISM} = require("@sion-contracts/common/utils/assets");
 const {ethers} = require("hardhat");
 
-const STRATEGY_ABI = require("@overnight-contracts/core/artifacts/contracts/Strategy.sol/Strategy.json").abi;
-const {Roles} = require("@overnight-contracts/common/utils/roles");
-const {fromAsset} = require("@overnight-contracts/common/utils/decimals");
+const STRATEGY_ABI = require("@sion-contracts/core/artifacts/contracts/Strategy.sol/Strategy.json").abi;
+const {Roles} = require("@sion-contracts/common/utils/roles");
+const {fromAsset} = require("@sion-contracts/common/utils/decimals");
 const {expect} = require("chai");
 
 async function main() {

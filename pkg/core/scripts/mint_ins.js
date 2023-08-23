@@ -1,6 +1,6 @@
-const {toAsset} = require("@overnight-contracts/common/utils/decimals");
+const {toAsset} = require("@sion-contracts/common/utils/decimals");
 
-const {getContract, showM2M, getCoreAsset, transferETH, initWallet, getPrice} = require("@overnight-contracts/common/utils/script-utils");
+const {getContract, showM2M, getCoreAsset, transferETH, initWallet, getPrice} = require("@sion-contracts/common/utils/script-utils");
 
 
 async function main() {

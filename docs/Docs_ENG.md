@@ -4,7 +4,7 @@ Overnight - DeFi protocol based on USD+ token, stablecoin with daily rewards.
 
 ![Core](UsdPlus_core.png)
 
-### UsdPlusToken (USD+)
+### SionToken (USD+)
 
 Main token of protocol. ERC20. Rebased Stablecoin. Use a liquidity index reflecting the current ratio of the number of issued 
 USD+ tokens to the volume of assets on strategies (`Strategy`), expressed in USDC. Internally, balances are stored in RAY (using `WadRayMath`), 
@@ -25,7 +25,7 @@ Contains three methods available for external invocation without access modifier
   to withdraw from strategies the amount of USDC required for the return takes place. On the level of collateral below the critical threshold 
   give to the client ability to receive a proportional share of assets from the `Vault`.
 - `payout` - allows you to start the calculation and payment of rewards for all USD+ holders. The income is received by strategies, after which 
-  the liquidity index on the `UsdPlusToken` is adjusted in relation to the volume of assets on strategies (`Strategy`).
+  the liquidity index on the `SionToken` is adjusted in relation to the volume of assets on strategies (`Strategy`).
 
 ###PortfolioManager
 

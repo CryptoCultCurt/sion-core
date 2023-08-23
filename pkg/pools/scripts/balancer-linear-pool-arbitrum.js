@@ -6,12 +6,12 @@ const {
     getContract,
     getERC20,
     getERC20ByAddress
-} = require("@overnight-contracts/common/utils/script-utils");
+} = require("@sion-contracts/common/utils/script-utils");
 
-let BalancerFactory = require('@overnight-contracts/pools/abi/ERC4626LinearPoolFactory.json');
-let Pool = require('@overnight-contracts/pools/abi/ERC4626LinearPool.json');
-let Vault = require('@overnight-contracts/pools/abi/VaultBalancer.json');
-const {toE18, toE6, fromE18, fromE6, toAsset, fromAsset} = require("@overnight-contracts/common/utils/decimals");
+let BalancerFactory = require('@sion-contracts/pools/abi/ERC4626LinearPoolFactory.json');
+let Pool = require('@sion-contracts/pools/abi/ERC4626LinearPool.json');
+let Vault = require('@sion-contracts/pools/abi/VaultBalancer.json');
+const {toE18, toE6, fromE18, fromE6, toAsset, fromAsset} = require("@sion-contracts/common/utils/decimals");
 const {expect} = require("chai");
 const {BigNumber} = require("ethers");
 
@@ -39,7 +39,7 @@ async function main() {
 
     async function addLiquidityDai(){
         let dai = await getERC20('dai');
-        let wDai = await getContract('WrappedUsdPlusToken', 'arbitrum_dai');
+        let wDai = await getContract('WrappedSionToken', 'arbitrum_dai');
 
         let pool = await ethers.getContractAt(Pool, "0x117a3d474976274B37B7b94aF5DcAde5c90C6e85", wallet);
 
@@ -49,7 +49,7 @@ async function main() {
 
     async function addLiquidityUsdc(){
         let usdc = await getERC20('usdc');
-        let wUsdPlus = await getContract('WrappedUsdPlusToken', 'arbitrum');
+        let wUsdPlus = await getContract('WrappedSionToken', 'arbitrum');
 
         let pool = await ethers.getContractAt(Pool, "0x284EB68520C8fA83361C1A3a5910aEC7f873C18b", wallet);
 
@@ -60,8 +60,8 @@ async function main() {
     async function createAndTestUsdc(){
 
         let usdc = await getERC20('usdc');
-        let usdPlus = await getContract('UsdPlusToken', 'arbitrum');
-        let wUsdPlus = await getContract('WrappedUsdPlusToken', 'arbitrum');
+        let usdPlus = await getContract('SionToken', 'arbitrum');
+        let wUsdPlus = await getContract('WrappedSionToken', 'arbitrum');
         let usdPool = await createPool('USD+', usdc.address, wUsdPlus.address);
 
         await testPool(usdPool, usdc, usdPlus, wUsdPlus, '1000000000000000000000000000'); // Rate 1:1 USD+<->wUSD+
@@ -71,8 +71,8 @@ async function main() {
     async function createAndTestDai(){
 
         let dai = await getERC20('dai');
-        let daiPlus = await getContract('UsdPlusToken', 'arbitrum_dai');
-        let wDai = await getContract('WrappedUsdPlusToken', 'arbitrum_dai');
+        let daiPlus = await getContract('SionToken', 'arbitrum_dai');
+        let wDai = await getContract('WrappedSionToken', 'arbitrum_dai');
         let daiPool = await createPool('DAI+', dai.address, wDai.address);
 
         await testPool(daiPool, dai, daiPlus, wDai, '1000000000000000000000000000');
@@ -274,11 +274,11 @@ async function showBalances() {
 
     let wallet = await initWallet();
 
-    let usdPlus = await getContract('UsdPlusToken', 'arbitrum');
-    let daiPus = await getContract('UsdPlusToken', 'arbitrum_dai');
+    let usdPlus = await getContract('SionToken', 'arbitrum');
+    let daiPus = await getContract('SionToken', 'arbitrum_dai');
 
-    let wUsdPlus = await getContract('WrappedUsdPlusToken', 'arbitrum');
-    let wDai = await getContract('WrappedUsdPlusToken', 'arbitrum_dai');
+    let wUsdPlus = await getContract('WrappedSionToken', 'arbitrum');
+    let wDai = await getContract('WrappedSionToken', 'arbitrum_dai');
 
     let usdc = await getERC20('usdc');
     let dai = await getERC20('dai');
@@ -318,11 +318,11 @@ async function showBalancesPair(isDai) {
 
     let wallet = await initWallet();
 
-    let usdPlus = await getContract('UsdPlusToken', 'arbitrum');
-    let daiPus = await getContract('UsdPlusToken', 'arbitrum_dai');
+    let usdPlus = await getContract('SionToken', 'arbitrum');
+    let daiPus = await getContract('SionToken', 'arbitrum_dai');
 
-    let wUsdPlus = await getContract('WrappedUsdPlusToken', 'arbitrum');
-    let wDai = await getContract('WrappedUsdPlusToken', 'arbitrum_dai');
+    let wUsdPlus = await getContract('WrappedSionToken', 'arbitrum');
+    let wDai = await getContract('WrappedSionToken', 'arbitrum_dai');
 
     let usdc = await getERC20('usdc');
     let dai = await getERC20('dai');

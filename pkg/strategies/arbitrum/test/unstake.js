@@ -1,10 +1,10 @@
 // const { fromE18, toE18, fromAsset, fromE6, toAsset } = require("./decimals");
-const { toE6, fromE6, fromE18, toAsset, toE18, fromAsset } = require("@overnight-contracts/common/utils/decimals");
+const { toE6, fromE6, fromE18, toAsset, toE18, fromAsset } = require("@sion-contracts/common/utils/decimals");
 
 const { expect } = require("chai");
-const { execTimelock, showM2M, getContract, initWallet, getPrice, impersonateAccount, getWalletAddress, getCoreAsset, convertWeights } = require("@overnight-contracts/common/utils/script-utils");
+const { execTimelock, showM2M, getContract, initWallet, getPrice, impersonateAccount, getWalletAddress, getCoreAsset, convertWeights } = require("@sion-contracts/common/utils/script-utils");
 const hre = require('hardhat');
-const { getTestAssets, createRandomWallet } = require("@overnight-contracts/common/utils/tests");
+const { getTestAssets, createRandomWallet } = require("@sion-contracts/common/utils/tests");
 
 
 

@@ -3,12 +3,12 @@ pragma solidity >=0.8.0 <0.9.0;
 
 import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
-import "@overnight-contracts/core/contracts/Strategy.sol";
-import "@overnight-contracts/connectors/contracts/stuff/UniswapV3.sol";
-import "@overnight-contracts/connectors/contracts/stuff/UniswapV2.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Izumi.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Balancer.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Curve.sol";
+import "@sion-contracts/core/contracts/Strategy.sol";
+import "@sion-contracts/connectors/contracts/stuff/UniswapV3.sol";
+import "@sion-contracts/connectors/contracts/stuff/UniswapV2.sol";
+import "@sion-contracts/connectors/contracts/stuff/Izumi.sol";
+import "@sion-contracts/connectors/contracts/stuff/Balancer.sol";
+import "@sion-contracts/connectors/contracts/stuff/Curve.sol";
 
 contract StrategyIzumi is Strategy, UniswapV2Exchange, IERC721Receiver {
 

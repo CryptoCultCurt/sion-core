@@ -5,16 +5,16 @@ import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
-import "@overnight-contracts/core/contracts/interfaces/IUsdPlusToken.sol";
-import "@overnight-contracts/core/contracts/interfaces/IExchange.sol";
+import "@sion-contracts/core/contracts/interfaces/ISion.sol";
+import "@sion-contracts/core/contracts/interfaces/IExchange.sol";
 import "./interfaces/IMarket.sol";
-import "./interfaces/IWrappedUsdPlusToken.sol";
+import "./interfaces/IWrappedSion.sol";
 
 contract Market is IMarket, Initializable, AccessControlUpgradeable, UUPSUpgradeable {
 
     IERC20 public usdcToken;
-    IUsdPlusToken public usdPlusToken;
-    IWrappedUsdPlusToken public wrappedUsdPlusToken;
+    ISionToken public SionToken;
+    IWrappedSionToken public wrappedSionToken;
 
     IExchange public exchange;
 
@@ -23,8 +23,8 @@ contract Market is IMarket, Initializable, AccessControlUpgradeable, UUPSUpgrade
 
     event MarketUpdatedTokens(
         address usdcToken,
-        address usdPlusToken,
-        address wrappedUsdPlusToken
+        address SionToken,
+        address wrappedSionToken
     );
 
     event MarketUpdatedParams(address exchange);
@@ -73,19 +73,19 @@ contract Market is IMarket, Initializable, AccessControlUpgradeable, UUPSUpgrade
 
     function setTokens(
         address _usdcToken,
-        address _usdPlusToken,
-        address _wrappedUsdPlusToken
+        address _SionToken,
+        address _wrappedSionToken
     ) external onlyAdmin {
 
         require(_usdcToken != address(0), "Zero address not allowed");
-        require(_usdPlusToken != address(0), "Zero address not allowed");
-        require(_wrappedUsdPlusToken != address(0), "Zero address not allowed");
+        require(_SionToken != address(0), "Zero address not allowed");
+        require(_wrappedSionToken != address(0), "Zero address not allowed");
 
         usdcToken = IERC20(_usdcToken);
-        usdPlusToken = IUsdPlusToken(_usdPlusToken);
-        wrappedUsdPlusToken = IWrappedUsdPlusToken(_wrappedUsdPlusToken);
+        SionToken = ISionToken(_SionToken);
+        wrappedSionToken = IWrappedSionToken(_wrappedSionToken);
 
-        emit MarketUpdatedTokens(_usdcToken, _usdPlusToken, _wrappedUsdPlusToken);
+        emit MarketUpdatedTokens(_usdcToken, _SionToken, _wrappedSionToken);
     }
 
     function setParams(
@@ -121,9 +121,9 @@ contract Market is IMarket, Initializable, AccessControlUpgradeable, UUPSUpgrade
 
         if (asset == address(usdcToken)) {
             uint256 buyFeeAmount = (amount * exchange.buyFee()) / exchange.buyFeeDenominator();
-            return wrappedUsdPlusToken.previewDeposit(amount - buyFeeAmount);
-        } else if (asset == address(usdPlusToken)) {
-            return wrappedUsdPlusToken.previewDeposit(amount);
+            return wrappedSionToken.previewDeposit(amount - buyFeeAmount);
+        } else if (asset == address(SionToken)) {
+            return wrappedSionToken.previewDeposit(amount);
         } else {
             revert('Asset not found');
         }
@@ -147,11 +147,11 @@ contract Market is IMarket, Initializable, AccessControlUpgradeable, UUPSUpgrade
         require(amount != 0, "Zero amount not allowed");
 
         if (asset == address(usdcToken)) {
-            uint256 usdPlusAmount = wrappedUsdPlusToken.previewRedeem(amount);
+            uint256 usdPlusAmount = wrappedSionToken.previewRedeem(amount);
             uint256 redeemFeeAmount = (usdPlusAmount * exchange.redeemFee()) / exchange.redeemFeeDenominator();
             return usdPlusAmount - redeemFeeAmount;
-        } else if (asset == address(usdPlusToken)) {
-            return wrappedUsdPlusToken.previewRedeem(amount);
+        } else if (asset == address(SionToken)) {
+            return wrappedSionToken.previewRedeem(amount);
         } else {
             revert('Asset not found');
         }
@@ -184,14 +184,14 @@ contract Market is IMarket, Initializable, AccessControlUpgradeable, UUPSUpgrade
             usdcToken.approve(address(exchange), amount);
             uint256 usdPlusAmount = exchange.buy(asset, amount);
 
-            usdPlusToken.approve(address(wrappedUsdPlusToken), usdPlusAmount);
-            wrappedUsdPlusAmount = wrappedUsdPlusToken.deposit(usdPlusAmount, receiver);
+            SionToken.approve(address(wrappedSionToken), usdPlusAmount);
+            wrappedUsdPlusAmount = wrappedSionToken.deposit(usdPlusAmount, receiver);
 
-        } else if (asset == address(usdPlusToken)) {
-            usdPlusToken.transferFrom(msg.sender, address(this), amount);
+        } else if (asset == address(SionToken)) {
+            SionToken.transferFrom(msg.sender, address(this), amount);
 
-            usdPlusToken.approve(address(wrappedUsdPlusToken), amount);
-            wrappedUsdPlusAmount = wrappedUsdPlusToken.deposit(amount, receiver);
+            SionToken.approve(address(wrappedSionToken), amount);
+            wrappedUsdPlusAmount = wrappedSionToken.deposit(amount, receiver);
 
         } else {
             revert('Asset not found');
@@ -224,21 +224,21 @@ contract Market is IMarket, Initializable, AccessControlUpgradeable, UUPSUpgrade
 
         uint256 unwrappedUsdPlusAmount;
         if (asset == address(usdcToken)) {
-            wrappedUsdPlusToken.transferFrom(msg.sender, address(this), amount);
+            wrappedSionToken.transferFrom(msg.sender, address(this), amount);
 
-            wrappedUsdPlusToken.approve(address(wrappedUsdPlusToken), amount);
-            uint256 usdPlusAmount = wrappedUsdPlusToken.redeem(amount, address(this), address(this));
+            wrappedSionToken.approve(address(wrappedSionToken), amount);
+            uint256 usdPlusAmount = wrappedSionToken.redeem(amount, address(this), address(this));
 
-            usdPlusToken.approve(address(exchange), usdPlusAmount);
+            SionToken.approve(address(exchange), usdPlusAmount);
             unwrappedUsdPlusAmount = exchange.redeem(asset, usdPlusAmount);
 
             usdcToken.transfer(receiver, unwrappedUsdPlusAmount);
 
-        } else if (asset == address(usdPlusToken)) {
-            wrappedUsdPlusToken.transferFrom(msg.sender, address(this), amount);
+        } else if (asset == address(SionToken)) {
+            wrappedSionToken.transferFrom(msg.sender, address(this), amount);
 
-            wrappedUsdPlusToken.approve(address(wrappedUsdPlusToken), amount);
-            unwrappedUsdPlusAmount = wrappedUsdPlusToken.redeem(amount, receiver, address(this));
+            wrappedSionToken.approve(address(wrappedSionToken), amount);
+            unwrappedUsdPlusAmount = wrappedSionToken.redeem(amount, receiver, address(this));
 
         } else {
             revert('Asset not found');

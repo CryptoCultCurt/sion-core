@@ -1,6 +1,6 @@
 const {ethers} = require("hardhat");
 
-let {FANTOM} = require('@overnight-contracts/common/utils/assets');
+let {FANTOM} = require('@sion-contracts/common/utils/assets');
 
 module.exports = async () => {
     const strategy = await ethers.getContract("StrategyAave");

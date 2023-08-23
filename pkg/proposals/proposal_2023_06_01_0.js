@@ -1,15 +1,15 @@
-const { getContract, execTimelock, initWallet, showM2M} = require("@overnight-contracts/common/utils/script-utils");
-const { createProposal, testProposal } = require("@overnight-contracts/common/utils/governance");
-const { strategyWombatDaiParams } = require("@overnight-contracts/strategies-arbitrum/deploy/dai/03_strategy_wombat_dai.js");
-const { strategyMagpieDaiParams } = require("@overnight-contracts/strategies-arbitrum/deploy/dai/04_strategy_magpie_dai.js");
-const { strategyWombatOvnDaiPlusParams } = require("@overnight-contracts/strategies-arbitrum/deploy/dai/05_wombat_ovn_daiplus.js");
-const { strategyMagpieOvnDaiPlusParams } = require("@overnight-contracts/strategies-arbitrum/deploy/dai/06_magpie_ovn_daiplus.js");
-const { strategyWombatUsdcParams } = require("@overnight-contracts/strategies-arbitrum/deploy/15_strategy_wombat_usdc.js");
-const { strategyWombatUsdtParams } = require("@overnight-contracts/strategies-arbitrum/deploy/17_strategy_wombat_usdt.js");
-const { strategyMagpieUsdcParams } = require("@overnight-contracts/strategies-arbitrum/deploy/18_strategy_magpie_usdc.js");
-const { strategyWombatOvnUsdpParams } = require("@overnight-contracts/strategies-arbitrum/deploy/21_wombat_ovn_usdp.js");
-const { strategyMagpieOvnUsdpParams } = require("@overnight-contracts/strategies-arbitrum/deploy/24_magpie_ovn_usdp.js");
-const {Roles} = require("@overnight-contracts/common/utils/roles");
+const { getContract, execTimelock, initWallet, showM2M} = require("@sion-contracts/common/utils/script-utils");
+const { createProposal, testProposal } = require("@sion-contracts/common/utils/governance");
+const { strategyWombatDaiParams } = require("@sion-contracts/strategies-arbitrum/deploy/dai/03_strategy_wombat_dai.js");
+const { strategyMagpieDaiParams } = require("@sion-contracts/strategies-arbitrum/deploy/dai/04_strategy_magpie_dai.js");
+const { strategyWombatOvnDaiPlusParams } = require("@sion-contracts/strategies-arbitrum/deploy/dai/05_wombat_ovn_daiplus.js");
+const { strategyMagpieOvnDaiPlusParams } = require("@sion-contracts/strategies-arbitrum/deploy/dai/06_magpie_ovn_daiplus.js");
+const { strategyWombatUsdcParams } = require("@sion-contracts/strategies-arbitrum/deploy/15_strategy_wombat_usdc.js");
+const { strategyWombatUsdtParams } = require("@sion-contracts/strategies-arbitrum/deploy/17_strategy_wombat_usdt.js");
+const { strategyMagpieUsdcParams } = require("@sion-contracts/strategies-arbitrum/deploy/18_strategy_magpie_usdc.js");
+const { strategyWombatOvnUsdpParams } = require("@sion-contracts/strategies-arbitrum/deploy/21_wombat_ovn_usdp.js");
+const { strategyMagpieOvnUsdpParams } = require("@sion-contracts/strategies-arbitrum/deploy/24_magpie_ovn_usdp.js");
+const {Roles} = require("@sion-contracts/common/utils/roles");
 
 
 async function main() {

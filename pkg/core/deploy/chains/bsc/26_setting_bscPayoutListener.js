@@ -1,23 +1,23 @@
 const {ethers} = require("hardhat");
 
-let {BSC, COMMON} = require('@overnight-contracts/common/utils/assets');
-const {getContract} = require("@overnight-contracts/common/utils/script-utils");
+let {BSC, COMMON} = require('@sion-contracts/common/utils/assets');
+const {getContract} = require("@sion-contracts/common/utils/script-utils");
 const {
     createSkim,
     createBribe,
     createSkimTo,
     createSync,
     createBribeWithFee
-} = require("@overnight-contracts/common/utils/payoutListener");
-const {Roles} = require("@overnight-contracts/common/utils/roles");
+} = require("@sion-contracts/common/utils/payoutListener");
+const {Roles} = require("@sion-contracts/common/utils/roles");
 
 module.exports = async ({getNamedAccounts, deployments}) => {
 
 
     const pl = await ethers.getContract("BscPayoutListener");
 
-    let usdPlus = await getContract('UsdPlusToken', 'bsc');
-    let usdtPlus = await getContract('UsdPlusToken', 'bsc_usdt');
+    let usdPlus = await getContract('SionToken', 'bsc');
+    let usdtPlus = await getContract('SionToken', 'bsc_usdt');
     let etsAlpha = '0x5B852898CD47d2Be1d77D30377b3642290f5Ec75';
 
     let items = [];

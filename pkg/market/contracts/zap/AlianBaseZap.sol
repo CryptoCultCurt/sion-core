@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 import "./OdosZap.sol";
 
-import "@overnight-contracts/connectors/contracts/stuff/AlienBase.sol";
+import "@sion-contracts/connectors/contracts/stuff/AlienBase.sol";
 
 contract AlienBaseZap is OdosZap {
     IAlienBaseRouter01 public alienBaseRouter;

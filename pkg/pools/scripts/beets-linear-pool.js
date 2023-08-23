@@ -8,13 +8,13 @@ const {
     getERC20,
     transferUSDPlus,
     execTimelock, getERC20ByAddress
-} = require("@overnight-contracts/common/utils/script-utils");
+} = require("@sion-contracts/common/utils/script-utils");
 
-let BalancerFactory = require('@overnight-contracts/pools/abi/ERC4626LinearPoolFactory.json');
-let Pool = require('@overnight-contracts/pools/abi/ERC4626LinearPool.json');
-let Vault = require('@overnight-contracts/pools/abi/VaultBalancer.json');
-const {BSC} = require("@overnight-contracts/common/utils/assets");
-const {toE18, toE6, fromE18, fromE6, toAsset, fromAsset} = require("@overnight-contracts/common/utils/decimals");
+let BalancerFactory = require('@sion-contracts/pools/abi/ERC4626LinearPoolFactory.json');
+let Pool = require('@sion-contracts/pools/abi/ERC4626LinearPool.json');
+let Vault = require('@sion-contracts/pools/abi/VaultBalancer.json');
+const {BSC} = require("@sion-contracts/common/utils/assets");
+const {toE18, toE6, fromE18, fromE6, toAsset, fromAsset} = require("@sion-contracts/common/utils/decimals");
 
 let ERC4626LinearPoolAddress = "0x4C4287b07d293E361281bCeEe8715c8CDeB64E34";
 let VaultAddress = "0xBA12222222228d8Ba445958a75a0704d566BF2C8";
@@ -33,11 +33,11 @@ async function main() {
     let usdc = await getERC20('usdc');
     let dai = await getERC20('dai');
 
-    let usdPlus = await getContract('UsdPlusToken', 'optimism');
-    let daiPus = await getContract('UsdPlusToken', 'optimism_dai');
+    let usdPlus = await getContract('SionToken', 'optimism');
+    let daiPus = await getContract('SionToken', 'optimism_dai');
 
-    let wUsdPlus = await getContract('WrappedUsdPlusToken', 'optimism');
-    let wDai = await getContract('WrappedUsdPlusToken', 'optimism_dai');
+    let wUsdPlus = await getContract('WrappedSionToken', 'optimism');
+    let wDai = await getContract('WrappedSionToken', 'optimism_dai');
 
 
     // 0x88D07558470484c03d3bb44c3ECc36CAfCF43253
@@ -235,11 +235,11 @@ async function showBalances(){
 
     let wallet =await initWallet();
 
-    let usdPlus = await getContract('UsdPlusToken', 'optimism');
-    let daiPus = await getContract('UsdPlusToken', 'optimism_dai');
+    let usdPlus = await getContract('SionToken', 'optimism');
+    let daiPus = await getContract('SionToken', 'optimism_dai');
 
-    let wUsdPlus = await getContract('WrappedUsdPlusToken', 'optimism');
-    let wDai = await getContract('WrappedUsdPlusToken', 'optimism_dai');
+    let wUsdPlus = await getContract('WrappedSionToken', 'optimism');
+    let wDai = await getContract('WrappedSionToken', 'optimism_dai');
 
     let usdc = await getERC20('usdc');
     let dai = await getERC20('dai');

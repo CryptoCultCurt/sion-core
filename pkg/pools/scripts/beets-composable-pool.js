@@ -4,14 +4,14 @@ const BN = require('bn.js');
 const {
     initWallet, getContract, getERC20,
 
-} = require("@overnight-contracts/common/utils/script-utils");
+} = require("@sion-contracts/common/utils/script-utils");
 
-let BalancerFactory = require('@overnight-contracts/pools/abi/ComposableStablePoolFactory.json');
-let Pool = require('@overnight-contracts/pools/abi/ComposableStablePool.json');
+let BalancerFactory = require('@sion-contracts/pools/abi/ComposableStablePoolFactory.json');
+let Pool = require('@sion-contracts/pools/abi/ComposableStablePool.json');
 
-let Vault = require('@overnight-contracts/pools/abi/VaultBalancer.json');
-const {BSC} = require("@overnight-contracts/common/utils/assets");
-const {toE18, toE6, fromE18, fromE6, toAsset, fromAsset} = require("@overnight-contracts/common/utils/decimals");
+let Vault = require('@sion-contracts/pools/abi/VaultBalancer.json');
+const {BSC} = require("@sion-contracts/common/utils/assets");
+const {toE18, toE6, fromE18, fromE6, toAsset, fromAsset} = require("@sion-contracts/common/utils/decimals");
 
 let Factory = "0xf145caFB67081895EE80eB7c04A30Cf87f07b745";
 let VaultAddress = "0xBA12222222228d8Ba445958a75a0704d566BF2C8";
@@ -205,11 +205,11 @@ async function showBalances(){
 
     let wallet =await initWallet();
 
-    let usdPlus = await getContract('UsdPlusToken', 'optimism');
-    let daiPus = await getContract('UsdPlusToken', 'optimism_dai');
+    let usdPlus = await getContract('SionToken', 'optimism');
+    let daiPus = await getContract('SionToken', 'optimism_dai');
 
-    let wUsdPlus = await getContract('WrappedUsdPlusToken', 'optimism');
-    let wDai = await getContract('WrappedUsdPlusToken', 'optimism_dai');
+    let wUsdPlus = await getContract('WrappedSionToken', 'optimism');
+    let wDai = await getContract('WrappedSionToken', 'optimism_dai');
 
     let usdPool = await ethers.getContractAt(Pool, '0x88D07558470484c03d3bb44c3ECc36CAfCF43253', wallet);
     let daiPool = await ethers.getContractAt(Pool, '0xb5ad7d6d6F92a77F47f98C28C84893FBccc94809', wallet);

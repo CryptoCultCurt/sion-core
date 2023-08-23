@@ -1,6 +1,6 @@
-const {deployProxy} = require("@overnight-contracts/common/utils/deployProxy");
-const {deploySection, settingSection} = require("@overnight-contracts/common/utils/script-utils");
-const {OPTIMISM, COMMON} = require("@overnight-contracts/common/utils/assets");
+const {deployProxy} = require("@sion-contracts/common/utils/deployProxy");
+const {deploySection, settingSection} = require("@sion-contracts/common/utils/script-utils");
+const {OPTIMISM, COMMON} = require("@sion-contracts/common/utils/assets");
 
 let bentoBox = '0xc35DADB65012eC5796536bD9864eD8773aBc74C4';
 let tridentRouter = '0xE52180815c81D7711B83412e53259bed6a3aB70a';

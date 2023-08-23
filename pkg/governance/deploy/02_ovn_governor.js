@@ -1,9 +1,9 @@
 const { ethers, upgrades} = require("hardhat");
-const { deployProxy } = require('@overnight-contracts/common/utils/deployProxy');
-const {isZkSync} = require("@overnight-contracts/common/utils/network");
+const { deployProxy } = require('@sion-contracts/common/utils/deployProxy');
+const {isZkSync} = require("@sion-contracts/common/utils/network");
 const {Deployer} = require("@matterlabs/hardhat-zksync-deploy");
 const hre = require("hardhat");
-const {initWallet} = require("@overnight-contracts/common/utils/script-utils");
+const {initWallet} = require("@sion-contracts/common/utils/script-utils");
 
 module.exports = async ({getNamedAccounts, deployments}) => {
     const {deploy, save} = deployments;

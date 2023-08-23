@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.0 <0.9.0;
 
-import "@overnight-contracts/core/contracts/Strategy.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Wombat.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Wombex.sol";
-import "@overnight-contracts/connectors/contracts/stuff/UniswapV3.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Camelot.sol";
-import "@overnight-contracts/common/contracts/libraries/OvnMath.sol";
+import "@sion-contracts/core/contracts/Strategy.sol";
+import "@sion-contracts/connectors/contracts/stuff/Wombat.sol";
+import "@sion-contracts/connectors/contracts/stuff/Wombex.sol";
+import "@sion-contracts/connectors/contracts/stuff/UniswapV3.sol";
+import "@sion-contracts/connectors/contracts/stuff/Camelot.sol";
+import "@sion-contracts/common/contracts/libraries/OvnMath.sol";
 
 contract StrategyWombatUsdc is Strategy {
 

@@ -1,9 +1,9 @@
 const hre = require("hardhat");
 const fs = require("fs");
 const ethers = hre.ethers;
-const {POLYGON} = require("@overnight-contracts/common/utils/assets");
-const {toE6} = require("@overnight-contracts/common/utils/decimals");
-const {getContract, execTimelock, getERC20} = require("@overnight-contracts/common/utils/script-utils");
+const {POLYGON} = require("@sion-contracts/common/utils/assets");
+const {toE6} = require("@sion-contracts/common/utils/decimals");
+const {getContract, execTimelock, getERC20} = require("@sion-contracts/common/utils/script-utils");
 
 //let strategyEtsAlfa = JSON.parse(fs.readFileSync('./deployments/localhost/StrategyEtsAlfa.json'));
 //let HedgeExchangerAlfa = JSON.parse(fs.readFileSync("./deployments/localhost/HedgeExchangerAlfa.json"));

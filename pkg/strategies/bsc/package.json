@@ -1,5 +1,5 @@
 {
-  "name": "@overnight-contracts/strategies-bsc",
+  "name": "@sion-contracts/strategies-bsc",
   "version": "0.0.1",
   "description": "Strategies BSC contracts",
   "main": "hardhat.config",

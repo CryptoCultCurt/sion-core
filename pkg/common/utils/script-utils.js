@@ -1,10 +1,10 @@
-const {fromE18, fromE6, toE18, toE6, fromE8} = require("@overnight-contracts/common/utils/decimals");
+const {fromE18, fromE6, toE18, toE6, fromE8} = require("@sion-contracts/common/utils/decimals");
 const axios = require('axios');
 const hre = require("hardhat");
 const path = require('path'),
     fs = require('fs');
 const {DEFAULT, ARBITRUM, BASE, BSC, OPTIMISM, POLYGON, LINEA} = require("./assets");
-const {evmCheckpoint, evmRestore} = require("@overnight-contracts/common/utils/sharedBeforeEach");
+const {evmCheckpoint, evmRestore} = require("@sion-contracts/common/utils/sharedBeforeEach");
 const BN = require('bn.js');
 const {fromAsset, toAsset } = require("./decimals");
 const {Wallet, Provider} = require("zksync-web3");
@@ -362,7 +362,7 @@ async function showM2M(stand = process.env.STAND, blocknumber) {
     if (stand.includes('_ins')){
         usdPlus = await getContract('InsuranceToken', stand);
     }else {
-        usdPlus = await getContract('UsdPlusToken', stand);
+        usdPlus = await getContract('SionToken', stand);
     }
     let pm = await getContract('PortfolioManager', stand);
 
@@ -602,7 +602,7 @@ async function changeWeightsAndBalance(weights){
 
     let timelock = await getContract('OvnTimelockController' );
     let pm = await getContract('PortfolioManager' );
-    let usdPlus = await getContract('UsdPlusToken' );
+    let usdPlus = await getContract('SionToken' );
     let usdc = await getERC20('usdc' );
     let exchange = await getContract('Exchange');
 
@@ -723,7 +723,7 @@ async function transferETH(amount, to) {
 
 async function transferUSDPlus(amount, to){
 
-    let usdPlus = await getContract('UsdPlusToken');
+    let usdPlus = await getContract('SionToken');
 
     await execTimelock(async (timelock)=>{
         let exchange = await usdPlus.exchange();

@@ -1,5 +1,5 @@
-const {strategyTest} = require('@overnight-contracts/common/utils/strategy-test');
-const {impersonatingEtsGrantRole, impersonatingStaker} = require("@overnight-contracts/common/utils/tests");
+const {strategyTest} = require('@sion-contracts/common/utils/strategy-test');
+const {impersonatingEtsGrantRole, impersonatingStaker} = require("@sion-contracts/common/utils/tests");
 
 async function runStrategyLogic(strategyName, strategyAddress) {
 

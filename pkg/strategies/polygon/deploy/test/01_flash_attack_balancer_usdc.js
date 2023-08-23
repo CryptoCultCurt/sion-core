@@ -1,4 +1,4 @@
-const {POLYGON} = require('@overnight-contracts/common/utils/assets');
+const {POLYGON} = require('@sion-contracts/common/utils/assets');
 const { ethers } = require("hardhat");
 
 let bbamUsdc = "0xF93579002DBE8046c43FEfE86ec78b1112247BB8";

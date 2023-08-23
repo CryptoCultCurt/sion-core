@@ -183,104 +183,104 @@
             "offset": 0,
             "slot": "251",
             "type": "t_mapping(t_address,t_uint256)",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:18"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:18"
           },
           {
             "label": "_allowances",
             "offset": 0,
             "slot": "252",
             "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:20"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:20"
           },
           {
             "label": "_totalSupply",
             "offset": 0,
             "slot": "253",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:22"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:22"
           },
           {
             "label": "_name",
             "offset": 0,
             "slot": "254",
             "type": "t_string_storage",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:24"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:24"
           },
           {
             "label": "_symbol",
             "offset": 0,
             "slot": "255",
             "type": "t_string_storage",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:25"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:25"
           },
           {
             "label": "_totalMint",
             "offset": 0,
             "slot": "256",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:32"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:32"
           },
           {
             "label": "_totalBurn",
             "offset": 0,
             "slot": "257",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:33"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:33"
           },
           {
             "label": "liquidityIndexChangeTime",
             "offset": 0,
             "slot": "258",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:35"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:35"
           },
           {
             "label": "liquidityIndex",
             "offset": 0,
             "slot": "259",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:36"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:36"
           },
           {
             "label": "liquidityIndexDenominator",
             "offset": 0,
             "slot": "260",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:37"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:37"
           },
           {
             "label": "_owners",
             "offset": 0,
             "slot": "261",
             "type": "t_struct(AddressSet)4329_storage",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:39"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:39"
           },
           {
             "label": "__gap",
             "offset": 0,
             "slot": "263",
             "type": "t_array(t_uint256)50_storage",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:41"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:41"
           },
           {
             "label": "exchange",
             "offset": 0,
             "slot": "313",
             "type": "t_address",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:43"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:43"
           }
         ],
         "types": {
@@ -481,7 +481,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "301",
-            "type": "t_contract(UsdPlusToken)9066",
+            "type": "t_contract(SionToken)9066",
             "contract": "Exchange",
             "src": "contracts/Exchange.sol:25"
           },
@@ -635,8 +635,8 @@
             "label": "contract IPortfolioManager",
             "numberOfBytes": "20"
           },
-          "t_contract(UsdPlusToken)9066": {
-            "label": "contract UsdPlusToken",
+          "t_contract(SionToken)9066": {
+            "label": "contract SionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -1134,7 +1134,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "301",
-            "type": "t_contract(UsdPlusToken)5111",
+            "type": "t_contract(SionToken)5111",
             "contract": "Exchange",
             "src": "contracts/Exchange.sol:25"
           },
@@ -1288,8 +1288,8 @@
             "label": "contract IPortfolioManager",
             "numberOfBytes": "20"
           },
-          "t_contract(UsdPlusToken)5111": {
-            "label": "contract UsdPlusToken",
+          "t_contract(SionToken)5111": {
+            "label": "contract SionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -1404,104 +1404,104 @@
             "offset": 0,
             "slot": "251",
             "type": "t_mapping(t_address,t_uint256)",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:18"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:18"
           },
           {
             "label": "_allowances",
             "offset": 0,
             "slot": "252",
             "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:20"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:20"
           },
           {
             "label": "_totalSupply",
             "offset": 0,
             "slot": "253",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:22"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:22"
           },
           {
             "label": "_name",
             "offset": 0,
             "slot": "254",
             "type": "t_string_storage",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:24"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:24"
           },
           {
             "label": "_symbol",
             "offset": 0,
             "slot": "255",
             "type": "t_string_storage",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:25"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:25"
           },
           {
             "label": "_totalMint",
             "offset": 0,
             "slot": "256",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:32"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:32"
           },
           {
             "label": "_totalBurn",
             "offset": 0,
             "slot": "257",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:33"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:33"
           },
           {
             "label": "liquidityIndexChangeTime",
             "offset": 0,
             "slot": "258",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:35"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:35"
           },
           {
             "label": "liquidityIndex",
             "offset": 0,
             "slot": "259",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:36"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:36"
           },
           {
             "label": "liquidityIndexDenominator",
             "offset": 0,
             "slot": "260",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:37"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:37"
           },
           {
             "label": "_owners",
             "offset": 0,
             "slot": "261",
             "type": "t_struct(AddressSet)4493_storage",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:39"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:39"
           },
           {
             "label": "__gap",
             "offset": 0,
             "slot": "263",
             "type": "t_array(t_uint256)50_storage",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:41"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:41"
           },
           {
             "label": "exchange",
             "offset": 0,
             "slot": "313",
             "type": "t_address",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:43"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:43"
           }
         ],
         "types": {
@@ -1702,7 +1702,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "301",
-            "type": "t_contract(UsdPlusToken)9234",
+            "type": "t_contract(SionToken)9234",
             "contract": "Exchange",
             "src": "contracts/Exchange.sol:25"
           },
@@ -1856,8 +1856,8 @@
             "label": "contract IPortfolioManager",
             "numberOfBytes": "20"
           },
-          "t_contract(UsdPlusToken)9234": {
-            "label": "contract UsdPlusToken",
+          "t_contract(SionToken)9234": {
+            "label": "contract SionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -2512,7 +2512,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "301",
-            "type": "t_contract(UsdPlusToken)9429",
+            "type": "t_contract(SionToken)9429",
             "contract": "Exchange",
             "src": "contracts/Exchange.sol:25"
           },
@@ -2666,8 +2666,8 @@
             "label": "contract IPortfolioManager",
             "numberOfBytes": "20"
           },
-          "t_contract(UsdPlusToken)9429": {
-            "label": "contract UsdPlusToken",
+          "t_contract(SionToken)9429": {
+            "label": "contract SionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -2782,104 +2782,104 @@
             "offset": 0,
             "slot": "251",
             "type": "t_mapping(t_address,t_uint256)",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:18"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:18"
           },
           {
             "label": "_allowances",
             "offset": 0,
             "slot": "252",
             "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:20"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:20"
           },
           {
             "label": "_totalSupply",
             "offset": 0,
             "slot": "253",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:22"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:22"
           },
           {
             "label": "_name",
             "offset": 0,
             "slot": "254",
             "type": "t_string_storage",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:24"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:24"
           },
           {
             "label": "_symbol",
             "offset": 0,
             "slot": "255",
             "type": "t_string_storage",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:25"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:25"
           },
           {
             "label": "_totalMint",
             "offset": 0,
             "slot": "256",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:32"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:32"
           },
           {
             "label": "_totalBurn",
             "offset": 0,
             "slot": "257",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:33"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:33"
           },
           {
             "label": "liquidityIndexChangeTime",
             "offset": 0,
             "slot": "258",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:35"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:35"
           },
           {
             "label": "liquidityIndex",
             "offset": 0,
             "slot": "259",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:36"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:36"
           },
           {
             "label": "liquidityIndexDenominator",
             "offset": 0,
             "slot": "260",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:37"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:37"
           },
           {
             "label": "_owners",
             "offset": 0,
             "slot": "261",
             "type": "t_struct(AddressSet)4493_storage",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:39"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:39"
           },
           {
             "label": "__gap",
             "offset": 0,
             "slot": "263",
             "type": "t_array(t_uint256)50_storage",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:41"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:41"
           },
           {
             "label": "exchange",
             "offset": 0,
             "slot": "313",
             "type": "t_address",
-            "contract": "UsdPlusToken",
-            "src": "contracts/UsdPlusToken.sol:43"
+            "contract": "SionToken",
+            "src": "contracts/Sion.sol:43"
           }
         ],
         "types": {
@@ -3080,7 +3080,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "301",
-            "type": "t_contract(UsdPlusToken)5227",
+            "type": "t_contract(SionToken)5227",
             "contract": "Exchange",
             "src": "contracts/Exchange.sol:25"
           },
@@ -3234,8 +3234,8 @@
             "label": "contract IPortfolioManager",
             "numberOfBytes": "20"
           },
-          "t_contract(UsdPlusToken)5227": {
-            "label": "contract UsdPlusToken",
+          "t_contract(SionToken)5227": {
+            "label": "contract SionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -3605,7 +3605,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "301",
-            "type": "t_contract(UsdPlusToken)11927",
+            "type": "t_contract(SionToken)11927",
             "contract": "Exchange",
             "src": "contracts/Exchange.sol:25"
           },
@@ -3767,8 +3767,8 @@
             "label": "contract IPortfolioManager",
             "numberOfBytes": "20"
           },
-          "t_contract(UsdPlusToken)11927": {
-            "label": "contract UsdPlusToken",
+          "t_contract(SionToken)11927": {
+            "label": "contract SionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -4829,7 +4829,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "301",
-            "type": "t_contract(UsdPlusToken)6550",
+            "type": "t_contract(SionToken)6550",
             "contract": "Exchange",
             "src": "contracts/Exchange.sol:32"
           },
@@ -5039,8 +5039,8 @@
             "label": "contract IPortfolioManager",
             "numberOfBytes": "20"
           },
-          "t_contract(UsdPlusToken)6550": {
-            "label": "contract UsdPlusToken",
+          "t_contract(SionToken)6550": {
+            "label": "contract SionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -5298,112 +5298,112 @@
             "offset": 0,
             "slot": "251",
             "type": "t_mapping(t_address,t_uint256)",
-            "contract": "UsdPlusToken",
-            "src": "contracts\\UsdPlusToken.sol:21"
+            "contract": "SionToken",
+            "src": "contracts\\Sion.sol:21"
           },
           {
             "label": "_allowances",
             "offset": 0,
             "slot": "252",
             "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
-            "contract": "UsdPlusToken",
-            "src": "contracts\\UsdPlusToken.sol:23"
+            "contract": "SionToken",
+            "src": "contracts\\Sion.sol:23"
           },
           {
             "label": "_totalSupply",
             "offset": 0,
             "slot": "253",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts\\UsdPlusToken.sol:25"
+            "contract": "SionToken",
+            "src": "contracts\\Sion.sol:25"
           },
           {
             "label": "_name",
             "offset": 0,
             "slot": "254",
             "type": "t_string_storage",
-            "contract": "UsdPlusToken",
-            "src": "contracts\\UsdPlusToken.sol:27"
+            "contract": "SionToken",
+            "src": "contracts\\Sion.sol:27"
           },
           {
             "label": "_symbol",
             "offset": 0,
             "slot": "255",
             "type": "t_string_storage",
-            "contract": "UsdPlusToken",
-            "src": "contracts\\UsdPlusToken.sol:28"
+            "contract": "SionToken",
+            "src": "contracts\\Sion.sol:28"
           },
           {
             "label": "_totalMint",
             "offset": 0,
             "slot": "256",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts\\UsdPlusToken.sol:34"
+            "contract": "SionToken",
+            "src": "contracts\\Sion.sol:34"
           },
           {
             "label": "_totalBurn",
             "offset": 0,
             "slot": "257",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts\\UsdPlusToken.sol:35"
+            "contract": "SionToken",
+            "src": "contracts\\Sion.sol:35"
           },
           {
             "label": "liquidityIndexChangeTime",
             "offset": 0,
             "slot": "258",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts\\UsdPlusToken.sol:37"
+            "contract": "SionToken",
+            "src": "contracts\\Sion.sol:37"
           },
           {
             "label": "liquidityIndex",
             "offset": 0,
             "slot": "259",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts\\UsdPlusToken.sol:38"
+            "contract": "SionToken",
+            "src": "contracts\\Sion.sol:38"
           },
           {
             "label": "liquidityIndexDenominator",
             "offset": 0,
             "slot": "260",
             "type": "t_uint256",
-            "contract": "UsdPlusToken",
-            "src": "contracts\\UsdPlusToken.sol:39"
+            "contract": "SionToken",
+            "src": "contracts\\Sion.sol:39"
           },
           {
             "label": "_owners",
             "offset": 0,
             "slot": "261",
             "type": "t_struct(AddressSet)4892_storage",
-            "contract": "UsdPlusToken",
-            "src": "contracts\\UsdPlusToken.sol:41"
+            "contract": "SionToken",
+            "src": "contracts\\Sion.sol:41"
           },
           {
             "label": "__gap",
             "offset": 0,
             "slot": "263",
             "type": "t_array(t_uint256)50_storage",
-            "contract": "UsdPlusToken",
-            "src": "contracts\\UsdPlusToken.sol:43"
+            "contract": "SionToken",
+            "src": "contracts\\Sion.sol:43"
           },
           {
             "label": "exchange",
             "offset": 0,
             "slot": "313",
             "type": "t_address",
-            "contract": "UsdPlusToken",
-            "src": "contracts\\UsdPlusToken.sol:45"
+            "contract": "SionToken",
+            "src": "contracts\\Sion.sol:45"
           },
           {
             "label": "_decimals",
             "offset": 20,
             "slot": "313",
             "type": "t_uint8",
-            "contract": "UsdPlusToken",
-            "src": "contracts\\UsdPlusToken.sol:46"
+            "contract": "SionToken",
+            "src": "contracts\\Sion.sol:46"
           }
         ],
         "types": {
@@ -5605,7 +5605,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "301",
-            "type": "t_contract(UsdPlusToken)16754",
+            "type": "t_contract(SionToken)16754",
             "contract": "Exchange",
             "src": "contracts\\Exchange.sol:32"
           },
@@ -5815,8 +5815,8 @@
             "label": "contract IPortfolioManager",
             "numberOfBytes": "20"
           },
-          "t_contract(UsdPlusToken)16754": {
-            "label": "contract UsdPlusToken",
+          "t_contract(SionToken)16754": {
+            "label": "contract SionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {

@@ -2,8 +2,8 @@ const {expect} = require("chai");
 const {deployments, ethers, getNamedAccounts} = require("hardhat");
 const BN = require("bn.js");
 const hre = require("hardhat");
-let {POLYGON} = require('@overnight-contracts/common/utils/assets');
-const {sharedBeforeEach} = require("@overnight-contracts/common/utils/sharedBeforeEach");
+let {POLYGON} = require('@sion-contracts/common/utils/assets');
+const {sharedBeforeEach} = require("@sion-contracts/common/utils/sharedBeforeEach");
 
 
 describe("Market", function () {
@@ -27,8 +27,8 @@ describe("Market", function () {
         account = signers[0];
         userAccount = signers[1];
 
-        usdPlus = await ethers.getContract("MockUsdPlusToken");
-        wrappedUsdPlus = await ethers.getContract("WrappedUsdPlusToken");
+        usdPlus = await ethers.getContract("MockSionToken");
+        wrappedUsdPlus = await ethers.getContract("WrappedSionToken");
         usdc = await ethers.getContractAt("IERC20", POLYGON.usdc);
         market = await ethers.getContract("Market");
         exchange = await ethers.getContract("MockExchange");

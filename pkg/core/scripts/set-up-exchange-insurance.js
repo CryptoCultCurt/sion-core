@@ -1,7 +1,7 @@
-const {toAsset} = require("@overnight-contracts/common/utils/decimals");
+const {toAsset} = require("@sion-contracts/common/utils/decimals");
 
-const {getContract, showM2M, getCoreAsset, transferETH, initWallet, execTimelock} = require("@overnight-contracts/common/utils/script-utils");
-const {DEFAULT, COMMON} = require("@overnight-contracts/common/utils/assets");
+const {getContract, showM2M, getCoreAsset, transferETH, initWallet, execTimelock} = require("@sion-contracts/common/utils/script-utils");
+const {DEFAULT, COMMON} = require("@sion-contracts/common/utils/assets");
 
 
 async function main() {

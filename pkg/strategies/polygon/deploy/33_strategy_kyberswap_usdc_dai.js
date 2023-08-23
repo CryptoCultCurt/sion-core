@@ -1,6 +1,6 @@
-const {deployProxy} = require("@overnight-contracts/common/utils/deployProxy");
-const {POLYGON} = require('@overnight-contracts/common/utils/assets');
-const {deploySection, settingSection} = require("@overnight-contracts/common/utils/script-utils");
+const {deployProxy} = require("@sion-contracts/common/utils/deployProxy");
+const {POLYGON} = require('@sion-contracts/common/utils/assets');
+const {deploySection, settingSection} = require("@sion-contracts/common/utils/script-utils");
 
 let kncToken = '0x1C954E8fe737F99f68Fa1CCda3e51ebDB291948C';
 let basePositionManager = '0x2B1c7b41f6A8F2b2bc45C3233a5d5FB3cD6dC9A8';

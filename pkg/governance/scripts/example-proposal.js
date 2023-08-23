@@ -7,10 +7,10 @@ const {
     initWallet,
     convertWeights,
     getERC20
-} = require("@overnight-contracts/common/utils/script-utils");
-const {createProposal, testProposal} = require("@overnight-contracts/common/utils/governance");
-const {BSC} = require("@overnight-contracts/common/utils/assets");
-const {toE18, fromE18} = require("@overnight-contracts/common/utils/decimals");
+} = require("@sion-contracts/common/utils/script-utils");
+const {createProposal, testProposal} = require("@sion-contracts/common/utils/governance");
+const {BSC} = require("@sion-contracts/common/utils/assets");
+const {toE18, fromE18} = require("@sion-contracts/common/utils/decimals");
 
 let wom = '0xAD6742A35fB341A9Cc6ad674738Dd8da98b94Fb1';
 let wmx = '0xa75d9ca2a0a1D547409D82e1B06618EC284A2CeD';

@@ -1,4 +1,4 @@
-const {getContract, showM2M} = require("@overnight-contracts/common/utils/script-utils");
+const {getContract, showM2M} = require("@sion-contracts/common/utils/script-utils");
 
 async function main() {
 

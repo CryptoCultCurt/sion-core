@@ -1,6 +1,6 @@
-const {deployProxy, deployProxyMulti} = require("@overnight-contracts/common/utils/deployProxy");
-const {POLYGON, ARBITRUM} = require('@overnight-contracts/common/utils/assets');
-const {deploySection, settingSection} = require("@overnight-contracts/common/utils/script-utils");
+const {deployProxy, deployProxyMulti} = require("@sion-contracts/common/utils/deployProxy");
+const {POLYGON, ARBITRUM} = require('@sion-contracts/common/utils/assets');
+const {deploySection, settingSection} = require("@sion-contracts/common/utils/script-utils");
 
 module.exports = async ({getNamedAccounts, deployments}) => {
     const {save, deploy} = deployments;

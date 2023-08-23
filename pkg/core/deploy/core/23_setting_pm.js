@@ -1,8 +1,8 @@
 const {ethers} = require("hardhat");
 
-let {DEFAULT, BSC, OPTIMISM, ARBITRUM, BASE, LINEA} = require('@overnight-contracts/common/utils/assets');
+let {DEFAULT, BSC, OPTIMISM, ARBITRUM, BASE, LINEA} = require('@sion-contracts/common/utils/assets');
 const hre = require("hardhat");
-const {initWallet} = require("@overnight-contracts/common/utils/script-utils");
+const {initWallet} = require("@sion-contracts/common/utils/script-utils");
 
 module.exports = async () => {
 

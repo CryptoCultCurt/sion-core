@@ -2,11 +2,11 @@
 pragma solidity >=0.8.0 <0.9.0;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "../interfaces/IUsdPlusToken.sol";
+import "../interfaces/ISion.sol";
 
 contract MockExchange {
 
-    IUsdPlusToken public usdPlus;
+    ISionToken public usdPlus;
     IERC20 public usdc;
 
     uint256 public buyFee;
@@ -17,7 +17,7 @@ contract MockExchange {
 
 
     constructor(address _usdPlus, address _usdc) {
-        usdPlus = IUsdPlusToken(_usdPlus);
+        usdPlus = ISionToken(_usdPlus);
         usdc = IERC20(_usdc);
 
         buyFee = 40;

@@ -8,13 +8,13 @@ const {
     execTimelock,
     getContract,
     getChainId
-} = require("@overnight-contracts/common/utils/script-utils");
-const { resetHardhat, greatLess, resetHardhatToLastBlock } = require("@overnight-contracts/common/utils/tests");
+} = require("@sion-contracts/common/utils/script-utils");
+const { resetHardhat, greatLess, resetHardhatToLastBlock } = require("@sion-contracts/common/utils/tests");
 const BN = require("bn.js");
 const hre = require("hardhat");
-let { DEFAULT } = require('@overnight-contracts/common/utils/assets');
-const { sharedBeforeEach } = require("@overnight-contracts/common/utils/sharedBeforeEach");
-const { toE6, fromE6, fromE18, toAsset, toE18 } = require("@overnight-contracts/common/utils/decimals");
+let { DEFAULT } = require('@sion-contracts/common/utils/assets');
+const { sharedBeforeEach } = require("@sion-contracts/common/utils/sharedBeforeEach");
+const { toE6, fromE6, fromE18, toAsset, toE18 } = require("@sion-contracts/common/utils/decimals");
 const axios = require("axios");
 const { default: BigNumber } = require("bignumber.js");
 
@@ -479,8 +479,8 @@ async function setUp() {
     const signers = await ethers.getSigners();
     const account = signers[0];
 
-    let usdPlus = await getContract('UsdPlusToken', process.env.STAND);
-    let daiPlus = await getContract('UsdPlusToken', process.env.STAND + '_dai');
+    let usdPlus = await getContract('SionToken', process.env.STAND);
+    let daiPlus = await getContract('SionToken', process.env.STAND + '_dai');
 
     let usdc;
     if (process.env.STAND === 'base') {

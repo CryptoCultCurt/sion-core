@@ -1,6 +1,6 @@
-const {deployProxy} = require("@overnight-contracts/common/utils/deployProxy");
-const {deploySection, settingSection} = require("@overnight-contracts/common/utils/script-utils");
-const {POLYGON} = require("@overnight-contracts/common/utils/assets");
+const {deployProxy} = require("@sion-contracts/common/utils/deployProxy");
+const {deploySection, settingSection} = require("@sion-contracts/common/utils/script-utils");
+const {POLYGON} = require("@sion-contracts/common/utils/assets");
 
 let meshToken = '0x82362Ec182Db3Cf7829014Bc61E9BE8a2E82868a';
 let meshSwapUsdcUsdt = '0x274EBd0A589445d2759E379277984c19dbF83cFD';

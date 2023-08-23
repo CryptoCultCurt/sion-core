@@ -1,4 +1,4 @@
-const {toAsset, toE6} = require("@overnight-contracts/common/utils/decimals");
+const {toAsset, toE6} = require("@sion-contracts/common/utils/decimals");
 
 const {
     getContract,
@@ -8,9 +8,9 @@ const {
     initWallet,
     execTimelock,
     convertWeights, getPrice, getStrategy
-} = require("@overnight-contracts/common/utils/script-utils");
-const {DEFAULT} = require("@overnight-contracts/common/utils/assets");
-const {createProposal, execProposal} = require("@overnight-contracts/common/utils/governance");
+} = require("@sion-contracts/common/utils/script-utils");
+const {DEFAULT} = require("@sion-contracts/common/utils/assets");
+const {createProposal, execProposal} = require("@sion-contracts/common/utils/governance");
 
 
 async function main() {
@@ -111,7 +111,7 @@ async function main() {
 
     let m2m = await getContract('Mark2Market');
     let exchange = await getContract('Exchange', 'localhost');
-    let usdPlusToken = await getContract('UsdPlusToken');
+    let SionToken = await getContract('SionToken');
 
     addresses.push(m2m.address);
     values.push(0);
@@ -176,7 +176,7 @@ async function main() {
 
     await showM2M();
 
-    await (await usdPlusToken.approve(exchange.address, toE6(1))).wait();
+    await (await SionToken.approve(exchange.address, toE6(1))).wait();
     console.log('UsdPlus approve done');
     await (await exchange.redeem(asset.address, toE6(1))).wait();
     console.log('Exchange.redeem done');

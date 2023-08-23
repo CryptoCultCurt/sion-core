@@ -3,20 +3,20 @@ pragma solidity 0.8.17;
 
 import "@pendle/core-v2/contracts/core/StandardizedYield/SYBase.sol";
 import "@pendle/core-v2/contracts/core/libraries/Errors.sol";
-import "@overnight-contracts/common/contracts/libraries/WadRayMath.sol";
-import "./interfaces/IUsdPlusToken.sol";
+import "@sion-contracts/common/contracts/libraries/WadRayMath.sol";
+import "./interfaces/ISion.sol";
 
-contract PendleUsdPlusTokenSY is SYBase {
+contract PendleSionTokenSY is SYBase {
     using WadRayMath for uint256;
 
-    address public immutable usdPlusToken;
+    address public immutable SionToken;
 
     constructor(
         string memory _name,
         string memory _symbol,
-        address _usdPlusToken
-    ) SYBase(_name, _symbol, _usdPlusToken) {
-        usdPlusToken = _usdPlusToken;
+        address _SionToken
+    ) SYBase(_name, _symbol, _SionToken) {
+        SionToken = _SionToken;
     }
 
     function _deposit(
@@ -24,7 +24,7 @@ contract PendleUsdPlusTokenSY is SYBase {
         uint256 amountDeposited
     ) internal virtual override returns (uint256 amountSharesOut) {
 
-        if (tokenIn == usdPlusToken) {
+        if (tokenIn == SionToken) {
             amountSharesOut = amountDeposited.rayDivDown(exchangeRate());
         } else {
             revert Errors.SYInvalidTokenIn(tokenIn);
@@ -37,7 +37,7 @@ contract PendleUsdPlusTokenSY is SYBase {
         uint256 amountSharesToRedeem
     ) internal virtual override returns (uint256 amountTokenOut) {
 
-        if (tokenOut == usdPlusToken) {
+        if (tokenOut == SionToken) {
             amountTokenOut = amountSharesToRedeem.rayMulDown(exchangeRate());
         } else {
             revert Errors.SYInvalidTokenOut(tokenOut);
@@ -46,7 +46,7 @@ contract PendleUsdPlusTokenSY is SYBase {
     }
 
     function exchangeRate() public view virtual override returns (uint256) {
-        return IUsdPlusToken(usdPlusToken).liquidityIndex();
+        return ISionToken(SionToken).liquidityIndex();
     }
 
     // /*///////////////////////////////////////////////////////////////
@@ -58,7 +58,7 @@ contract PendleUsdPlusTokenSY is SYBase {
         uint256 amountTokenToDeposit
     ) internal view override returns (uint256 amountSharesOut) {
 
-        if (tokenIn == usdPlusToken) {
+        if (tokenIn == SionToken) {
             amountSharesOut = amountTokenToDeposit.rayDivDown(exchangeRate());
         } else {
             revert Errors.SYInvalidTokenIn(tokenIn);
@@ -71,7 +71,7 @@ contract PendleUsdPlusTokenSY is SYBase {
         uint256 amountSharesToRedeem
     ) internal view override returns (uint256 amountTokenOut) {
 
-        if (tokenOut == usdPlusToken) {
+        if (tokenOut == SionToken) {
             amountTokenOut = amountSharesToRedeem.rayMulDown(exchangeRate());
         } else {
             revert Errors.SYInvalidTokenOut(tokenOut);
@@ -81,20 +81,20 @@ contract PendleUsdPlusTokenSY is SYBase {
 
     function getTokensIn() public view virtual override returns (address[] memory res) {
         res = new address[](1);
-        res[0] = usdPlusToken;
+        res[0] = SionToken;
     }
 
     function getTokensOut() public view virtual override returns (address[] memory res) {
         res = new address[](1);
-        res[0] = usdPlusToken;
+        res[0] = SionToken;
     }
 
     function isValidTokenIn(address token) public view virtual override returns (bool) {
-        return token == usdPlusToken;
+        return token == SionToken;
     }
 
     function isValidTokenOut(address token) public view virtual override returns (bool) {
-        return token == usdPlusToken;
+        return token == SionToken;
     }
 
     function assetInfo()
@@ -102,6 +102,6 @@ contract PendleUsdPlusTokenSY is SYBase {
     view
     returns (AssetType assetType, address assetAddress, uint8 assetDecimals)
     {
-        return (AssetType.TOKEN, usdPlusToken, IERC20Metadata(usdPlusToken).decimals());
+        return (AssetType.TOKEN, SionToken, IERC20Metadata(SionToken).decimals());
     }
 }

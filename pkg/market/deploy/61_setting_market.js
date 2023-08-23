@@ -1,15 +1,15 @@
-const {getContract} = require("@overnight-contracts/common/utils/script-utils");
+const {getContract} = require("@sion-contracts/common/utils/script-utils");
 const { ethers } = require("hardhat");
 
 module.exports = async ({getNamedAccounts, deployments}) => {
 
     const market = await ethers.getContract("Market");
     const exchange = await getContract("Exchange");
-    const usdPlusToken = await getContract("UsdPlusToken");
-    const wrappedUsdPlusToken = await ethers.getContract("WrappedUsdPlusToken");
+    const SionToken = await getContract("SionToken");
+    const wrappedSionToken = await ethers.getContract("WrappedSionToken");
 
     let asset = await exchange.usdc();
-    await (await market.setTokens(asset, usdPlusToken.address, wrappedUsdPlusToken.address)).wait();
+    await (await market.setTokens(asset, SionToken.address, wrappedSionToken.address)).wait();
     await (await market.setParams(exchange.address)).wait();
 
     console.log("Market settings done");

@@ -1,7 +1,7 @@
 const {ethers} = require("hardhat");
 
-let {FANTOM} = require('@overnight-contracts/common/utils/assets');
-let {core} = require('@overnight-contracts/common/utils/core');
+let {FANTOM} = require('@sion-contracts/common/utils/assets');
+let {core} = require('@sion-contracts/common/utils/core');
 
 let pidSpookySwapMaiUsdc = 42;
 let poolIdMaiUsdc = "0x2c580c6f08044d6dfaca8976a66c8fadddbd9901000000000000000000000038";

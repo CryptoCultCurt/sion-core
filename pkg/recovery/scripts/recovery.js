@@ -1,20 +1,20 @@
-const { verify } = require("@overnight-contracts/common/utils/verify-utils");
-const { getContract, initWallet, getERC20ByAddress, impersonateAccount, isContract } = require("@overnight-contracts/common/utils/script-utils");
-const { Roles } = require("@overnight-contracts/common/utils/roles");
+const { verify } = require("@sion-contracts/common/utils/verify-utils");
+const { getContract, initWallet, getERC20ByAddress, impersonateAccount, isContract } = require("@sion-contracts/common/utils/script-utils");
+const { Roles } = require("@sion-contracts/common/utils/roles");
 
-const Pool = require('@overnight-contracts/pools/abi/ComposableStablePool.json');
-const LinearPool = require('@overnight-contracts/pools/abi/ERC4626LinearPool.json')
-const Vault = require('@overnight-contracts/pools/abi/VaultBalancer.json');
-const BeetsGaugePool = require('@overnight-contracts/pools/abi/BeetsGaugeStablePool.json');
-const UsdPlusToken = require('@overnight-contracts/core/deployments/optimism/UsdPlusToken.json')
-const WrappedUsdPlusToken = require('@overnight-contracts/market/deployments/optimism/WrappedUsdPlusToken.json')
-const WrappedDaiPlusToken = require('@overnight-contracts/market/deployments/optimism_dai/WrappedUsdPlusToken.json')
-const VeloGaugePool = require('@overnight-contracts/pools/abi/VelodromeGauge.json');
-const VeloPair = require('@overnight-contracts/pools/abi/VelodromePair.json');
+const Pool = require('@sion-contracts/pools/abi/ComposableStablePool.json');
+const LinearPool = require('@sion-contracts/pools/abi/ERC4626LinearPool.json')
+const Vault = require('@sion-contracts/pools/abi/VaultBalancer.json');
+const BeetsGaugePool = require('@sion-contracts/pools/abi/BeetsGaugeStablePool.json');
+const SionToken = require('@sion-contracts/core/deployments/optimism/SionToken.json')
+const WrappedSionToken = require('@sion-contracts/market/deployments/optimism/WrappedSionToken.json')
+const WrappedDaiPlusToken = require('@sion-contracts/market/deployments/optimism_dai/WrappedSionToken.json')
+const VeloGaugePool = require('@sion-contracts/pools/abi/VelodromeGauge.json');
+const VeloPair = require('@sion-contracts/pools/abi/VelodromePair.json');
 const wrappedHolders = require("./wrappedHolders.json")
 const beetsAddresses = require("./beetsAddresses.json")
-const beefyVault = require("@overnight-contracts/pools/abi/BeefyVault.json")
-const reaperVault = require("@overnight-contracts/pools/abi/ReaperVault.json")
+const beefyVault = require("@sion-contracts/pools/abi/BeefyVault.json")
+const reaperVault = require("@sion-contracts/pools/abi/ReaperVault.json")
 const velodrome1 = require('./velodrome_0x67124355cCE2Ad7A8eA283E990612eBe12730175_0xd2d95775d35a6d492ced7c7e26817aacb7d264f2.json')
 const velodrome2 = require('./velodrome_0x8a9Cd3dce710e90177B4332C108E159a15736A0F_0x1032950b49fc23316655e5d0cc066bcd85b28ec7.json')
 const velodrome3 = require('./velodrome_0xa99817d2d286C894F8f3888096A5616d06F20d46_0x05d74f34ff651e80b0a1a4bd96d8867626ac2ddd.json')
@@ -24,7 +24,7 @@ const mooVelodrome3 = require('./moo_velodrome_USD+-USDC_0xE7a656307324404493673
 const reaperVelodrome = require('./reaperVelodrome_sAMM-USD+-USDC_0x01EAFb9d744a652e71f554cd8946bFbCd38f5b96_0xDC233910a2f71D2734A8Cad1Ca2d936df805bb62.json')
 const fs = require('fs');
 const { ethers } = require("hardhat");
-const { fromE18, fromE6 } = require("@overnight-contracts/common/utils/decimals");
+const { fromE18, fromE6 } = require("@sion-contracts/common/utils/decimals");
 
 async function main() {
 
@@ -72,7 +72,7 @@ async function main() {
     // const usdpAddress = "0x73cb180bf0521828d8849bc8CF2B920918e23032"
     // const usdPlus = await ethers.getContract("UsdPlus");
 
-    // const usdpToken = await ethers.getContractAt(UsdPlusToken.abi, "0x73cb180bf0521828d8849bc8CF2B920918e23032");
+    // const usdpToken = await ethers.getContractAt(SionToken.abi, "0x73cb180bf0521828d8849bc8CF2B920918e23032");
     // const res = await getHoldersWithBalancesNonZero(usdpToken, 80668149)
     // await checkForContracts()
     // await getBalancesMooVelodrome()
@@ -199,7 +199,7 @@ async function convertBptToLinearPoolsBeets(amountBpt, blockNumber) {
     const wDaiAmount = amountLinearPoolDaiPlus.mul(poolTokensDaiPlus[1][0]).div(daitotalActualSupply);
     const DaiAmount = amountLinearPoolDaiPlus.mul(poolTokensDaiPlus[1][2]).div(daitotalActualSupply);
 
-    const wUsdwrappedContract = await ethers.getContractAt(WrappedUsdPlusToken.abi, "0xA348700745D249c3b49D2c2AcAC9A5AE8155F826");
+    const wUsdwrappedContract = await ethers.getContractAt(WrappedSionToken.abi, "0xA348700745D249c3b49D2c2AcAC9A5AE8155F826");
     const wDaiwrappedContract = await ethers.getContractAt(WrappedDaiPlusToken.abi, "0x0b8f31480249cc717081928b8af733f45f6915bb");
     const usdAmount = await convertWrapped(wUsdAmount, blockNumber, wUsdwrappedContract)
     const daiAmount = await convertWrapped(wDaiAmount, blockNumber, wDaiwrappedContract)
@@ -258,7 +258,7 @@ async function getBptBalance(wallet, blockNumber) {
 
 async function convertWrapped(wrappedAmount, blockNumber, contract) {
 
-    // wrappedUsdPlus = await ethers.getContract("WrappedUsdPlusToken");
+    // wrappedUsdPlus = await ethers.getContract("WrappedSionToken");
 
     const unwrappedAmount = await contract.convertToAssets(wrappedAmount, { blockTag: blockNumber });
     return unwrappedAmount;

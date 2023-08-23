@@ -1,9 +1,10 @@
 pragma solidity >=0.8.0 <0.9.0;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "../UsdPlusToken.sol";
+import "../Sion.sol";
 
-contract TestUsdPlusToken is UsdPlusToken {
+
+contract TestSionToken is SionToken {
 
     function mintTest(address to, uint256 amount) external {
         _mint(to, amount);

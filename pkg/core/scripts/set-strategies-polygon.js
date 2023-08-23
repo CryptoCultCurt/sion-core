@@ -1,5 +1,5 @@
-const {getContract, getPrice, execTimelock, initWallet, convertWeights, showM2M} = require("@overnight-contracts/common/utils/script-utils");
-const {POLYGON} = require("@overnight-contracts/common/utils/assets");
+const {getContract, getPrice, execTimelock, initWallet, convertWeights, showM2M} = require("@sion-contracts/common/utils/script-utils");
+const {POLYGON} = require("@sion-contracts/common/utils/assets");
 
 async function main() {
 

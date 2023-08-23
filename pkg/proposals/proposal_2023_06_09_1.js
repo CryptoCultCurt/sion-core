@@ -1,8 +1,8 @@
-const { getContract, execTimelock, showM2M} = require("@overnight-contracts/common/utils/script-utils");
-const { createProposal, testProposal, testStrategy} = require("@overnight-contracts/common/utils/governance");
-const {strategyPendleDaiGDaiParams} = require("@overnight-contracts/strategies-arbitrum/deploy/dai/10_pendle_dai_gdai");
-const {strategyPendleDaiUsdtParams} = require("@overnight-contracts/strategies-arbitrum/deploy/dai/09_pendle_dai_usdt");
-const {strategyPendleUsdcUsdtParams} = require("@overnight-contracts/strategies-arbitrum/deploy/30_pendle_usdc_usdt");
+const { getContract, execTimelock, showM2M} = require("@sion-contracts/common/utils/script-utils");
+const { createProposal, testProposal, testStrategy} = require("@sion-contracts/common/utils/governance");
+const {strategyPendleDaiGDaiParams} = require("@sion-contracts/strategies-arbitrum/deploy/dai/10_pendle_dai_gdai");
+const {strategyPendleDaiUsdtParams} = require("@sion-contracts/strategies-arbitrum/deploy/dai/09_pendle_dai_usdt");
+const {strategyPendleUsdcUsdtParams} = require("@sion-contracts/strategies-arbitrum/deploy/30_pendle_usdc_usdt");
 
 async function main() {
 

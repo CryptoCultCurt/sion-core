@@ -6,9 +6,9 @@ const {
     execTimelock,
     showM2M,
     getCoreAsset, showRewardsFromPayout, transferAsset
-} = require("@overnight-contracts/common/utils/script-utils");
-const {fromE6, fromAsset, toE6} = require("@overnight-contracts/common/utils/decimals");
-const {COMMON, ARBITRUM} = require("@overnight-contracts/common/utils/assets");
+} = require("@sion-contracts/common/utils/script-utils");
+const {fromE6, fromAsset, toE6} = require("@sion-contracts/common/utils/decimals");
+const {COMMON, ARBITRUM} = require("@sion-contracts/common/utils/assets");
 
 async function main() {
 
@@ -16,7 +16,7 @@ async function main() {
     let pm = await getContract('PortfolioManager');
     await (await exchange.setPayoutTimes(1637193600, 24 * 60 * 60, 15 * 60)).wait();
 
-    let usdPlus = await getContract('UsdPlusToken');
+    let usdPlus = await getContract('SionToken');
 
 
     while (true) {

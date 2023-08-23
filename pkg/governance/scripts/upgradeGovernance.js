@@ -1,6 +1,6 @@
 const hre = require("hardhat");
 const fs = require("fs");
-const {initWallet, getContract, getPrice} = require("@overnight-contracts/common/utils/script-utils");
+const {initWallet, getContract, getPrice} = require("@sion-contracts/common/utils/script-utils");
 const ethers = hre.ethers;
 
 

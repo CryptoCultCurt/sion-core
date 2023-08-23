@@ -1,6 +1,6 @@
-const {getContract, showM2M, execTimelock, getERC20ByAddress, initWallet} = require("@overnight-contracts/common/utils/script-utils");
-const {testProposal, createProposal} = require("@overnight-contracts/common/utils/governance");
-const {fromE18} = require("@overnight-contracts/common/utils/decimals");
+const {getContract, showM2M, execTimelock, getERC20ByAddress, initWallet} = require("@sion-contracts/common/utils/script-utils");
+const {testProposal, createProposal} = require("@sion-contracts/common/utils/governance");
+const {fromE18} = require("@sion-contracts/common/utils/decimals");
 
 async function main() {
 

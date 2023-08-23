@@ -1,4 +1,4 @@
-const {verify} = require("@overnight-contracts/common/utils/verify-utils");
+const {verify} = require("@sion-contracts/common/utils/verify-utils");
 const {
     getContract,
     initWallet,
@@ -7,12 +7,12 @@ const {
     getERC20,
     transferUSDPlus,
     transferETH
-} = require("@overnight-contracts/common/utils/script-utils");
-const {Roles} = require("@overnight-contracts/common/utils/roles");
+} = require("@sion-contracts/common/utils/script-utils");
+const {Roles} = require("@sion-contracts/common/utils/roles");
 const hre = require("hardhat");
 const {ethers} = require("hardhat");
 const fs = require("fs");
-const {fromE6} = require("@overnight-contracts/common/utils/decimals");
+const {fromE6} = require("@sion-contracts/common/utils/decimals");
 
 async function main() {
 
@@ -21,7 +21,7 @@ async function main() {
     console.log('Wallet: ' + wallet.address);
 
     const airdrop = await getContract('Airdrop');
-    const airdropToken = await getContract('UsdPlusToken', 'optimism');
+    const airdropToken = await getContract('SionToken', 'optimism');
 
     const amount = await airdropToken.balanceOf(wallet.address);
     await (await airdropToken.approve(airdrop.address, amount)).wait();

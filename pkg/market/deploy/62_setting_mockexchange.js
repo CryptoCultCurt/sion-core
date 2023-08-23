@@ -1,9 +1,9 @@
 const { ethers } = require("hardhat");
 
 module.exports = async ({getNamedAccounts, deployments}) => {
-    const mockUsdPlusToken = await ethers.getContract("MockUsdPlusToken");
+    const mockSionToken = await ethers.getContract("MockSionToken");
     const mockExchange = await ethers.getContract("MockExchange");
-    mockUsdPlusToken.setExchanger(mockExchange.address);
+    mockSionToken.setExchanger(mockExchange.address);
 
     console.log("MockExchange settings done");
 };

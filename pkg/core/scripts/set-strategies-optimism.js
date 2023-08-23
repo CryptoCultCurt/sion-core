@@ -4,8 +4,8 @@ const {
     execTimelock,
     convertWeights,
     showM2M
-} = require("@overnight-contracts/common/utils/script-utils");
-const {createProposal} = require("@overnight-contracts/common/utils/governance");
+} = require("@sion-contracts/common/utils/script-utils");
+const {createProposal} = require("@sion-contracts/common/utils/governance");
 const {ethers} = require("hardhat");
 
 async function main() {

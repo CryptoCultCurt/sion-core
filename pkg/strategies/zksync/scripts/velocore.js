@@ -1,7 +1,7 @@
-const {getContract, getERC20, getWalletAddress} = require("@overnight-contracts/common/utils/script-utils");
+const {getContract, getERC20, getWalletAddress} = require("@sion-contracts/common/utils/script-utils");
 const {strategyVelocoreUsdcUsdPlus} = require("../deploy/02_strategy_velocore_usdc_usdp");
-const {toE6, fromE6} = require("@overnight-contracts/common/utils/decimals");
-const {Roles} = require("@overnight-contracts/common/utils/roles");
+const {toE6, fromE6} = require("@sion-contracts/common/utils/decimals");
+const {Roles} = require("@sion-contracts/common/utils/roles");
 
 async function main() {
 

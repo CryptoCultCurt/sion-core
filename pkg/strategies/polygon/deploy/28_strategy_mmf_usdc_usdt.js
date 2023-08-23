@@ -1,6 +1,6 @@
-const {deployProxy} = require("@overnight-contracts/common/utils/deployProxy");
-const {POLYGON} = require('@overnight-contracts/common/utils/assets');
-const {deploySection, settingSection} = require("@overnight-contracts/common/utils/script-utils");
+const {deployProxy} = require("@sion-contracts/common/utils/deployProxy");
+const {POLYGON} = require('@sion-contracts/common/utils/assets');
+const {deploySection, settingSection} = require("@sion-contracts/common/utils/script-utils");
 
 let mmfToken = '0x22a31bD4cB694433B6de19e0aCC2899E553e9481';
 let meerkatRouter02 = '0x51aBA405De2b25E5506DeA32A6697F450cEB1a17';

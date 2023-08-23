@@ -1,5 +1,5 @@
 const { ethers } = require("hardhat");
-const {initWallet} = require("@overnight-contracts/common/utils/script-utils");
+const {initWallet} = require("@sion-contracts/common/utils/script-utils");
 
 module.exports = async ({getNamedAccounts, deployments}) => {
     const {deploy} = deployments;

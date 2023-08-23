@@ -2,7 +2,7 @@ require('hardhat-deploy');
 require('@openzeppelin/hardhat-upgrades');
 require("@nomiclabs/hardhat-etherscan");
 require("hardhat-gas-reporter")
-require('@overnight-contracts/common/utils/hardhat-ovn');
+require('@sion-contracts/common/utils/hardhat-ovn');
 require("@matterlabs/hardhat-zksync-deploy");
 require("@matterlabs/hardhat-zksync-solc");
 require("@matterlabs/hardhat-zksync-verify");

@@ -1,10 +1,10 @@
 const {expect} = require("chai");
 const {deployments, ethers, getNamedAccounts} = require('hardhat');
-const {toE6, fromE6, toE18, fromE18} = require("@overnight-contracts/common/utils/decimals");
+const {toE6, fromE6, toE18, fromE18} = require("@sion-contracts/common/utils/decimals");
 const hre = require("hardhat");
-const {resetHardhat, createRandomWallet} = require("@overnight-contracts/common/utils/tests");
-const expectRevert = require("@overnight-contracts/common/utils/expectRevert");
-const {sharedBeforeEach} = require("@overnight-contracts/common/utils/sharedBeforeEach")
+const {resetHardhat, createRandomWallet} = require("@sion-contracts/common/utils/tests");
+const expectRevert = require("@sion-contracts/common/utils/expectRevert");
+const {sharedBeforeEach} = require("@sion-contracts/common/utils/sharedBeforeEach")
 const chai = require("chai");
 chai.use(require('chai-bignumber')());
 describe("Exchange", function () {
@@ -69,7 +69,7 @@ describe("Exchange", function () {
                 exchange = await ethers.getContract("Exchange");
                 await exchange.grantRole(await exchange.PORTFOLIO_AGENT_ROLE(), account);
 
-                usdPlus = await ethers.getContract("UsdPlusToken");
+                usdPlus = await ethers.getContract("SionToken");
                 pm = await ethers.getContract('MockPortfolioManager');
                 insurance = await ethers.getContract('MockInsuranceExchange');
                 asset = await ethers.getContract('AssetToken');

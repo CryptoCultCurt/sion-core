@@ -1,5 +1,5 @@
-const {AVALANCHE} = require('@overnight-contracts/common/utils/assets');
-const {strategyTest} = require('@overnight-contracts/common/utils/strategy-test');
+const {AVALANCHE} = require('@sion-contracts/common/utils/assets');
+const {strategyTest} = require('@sion-contracts/common/utils/strategy-test');
 
 let id = process.env.TEST_STRATEGY;
 

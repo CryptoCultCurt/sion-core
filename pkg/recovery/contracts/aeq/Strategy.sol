@@ -5,10 +5,10 @@ import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol"
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
-import "@overnight-contracts/common/contracts/libraries/OvnMath.sol";
+import "@sion-contracts/common/contracts/libraries/OvnMath.sol";
 
-import "@overnight-contracts/core/contracts/interfaces/IStrategy.sol";
-import "@overnight-contracts/core/contracts/interfaces/IControlRole.sol";
+import "@sion-contracts/core/contracts/interfaces/IStrategy.sol";
+import "@sion-contracts/core/contracts/interfaces/IControlRole.sol";
 
 abstract contract Strategy is IStrategy, Initializable, AccessControlUpgradeable, UUPSUpgradeable {
     bytes32 public constant PORTFOLIO_MANAGER = keccak256("PORTFOLIO_MANAGER");

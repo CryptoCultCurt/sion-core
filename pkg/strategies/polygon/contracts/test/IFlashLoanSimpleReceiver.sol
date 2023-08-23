@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0
 pragma solidity ^0.8.0;
 
-import "@overnight-contracts/connectors/contracts/stuff/AaveV3.sol";
+import "@sion-contracts/connectors/contracts/stuff/AaveV3.sol";
 
 /**
  * @title IFlashLoanSimpleReceiver

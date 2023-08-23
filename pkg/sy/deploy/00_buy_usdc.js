@@ -1,6 +1,6 @@
 const { ethers } = require("hardhat");
 
-let { ARBITRUM } = require('@overnight-contracts/common/utils/assets');
+let { ARBITRUM } = require('@sion-contracts/common/utils/assets');
 
 module.exports = async ({ getNamedAccounts, deployments }) => {
     const { deploy } = deployments;

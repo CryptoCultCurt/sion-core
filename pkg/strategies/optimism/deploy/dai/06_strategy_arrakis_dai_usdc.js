@@ -1,6 +1,6 @@
-const { deployProxy } = require("@overnight-contracts/common/utils/deployProxy");
-const { deploySection, settingSection } = require("@overnight-contracts/common/utils/script-utils");
-const { OPTIMISM } = require("@overnight-contracts/common/utils/assets");
+const { deployProxy } = require("@sion-contracts/common/utils/deployProxy");
+const { deploySection, settingSection } = require("@sion-contracts/common/utils/script-utils");
+const { OPTIMISM } = require("@sion-contracts/common/utils/assets");
 
 let arrakisRouter = "0x9ce88a56d120300061593ef7ad074a1b710094d5";
 let arrakisRewards = "0x499B7CBd0f84318feE1edDeD7B5458f6F4500AB3";

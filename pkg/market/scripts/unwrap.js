@@ -1,12 +1,12 @@
-const { verify } = require("@overnight-contracts/common/utils/verify-utils");
-const {getContract, getWalletAddress} = require("@overnight-contracts/common/utils/script-utils");
-const {fromAsset, toAsset} = require("@overnight-contracts/common/utils/decimals");
+const { verify } = require("@sion-contracts/common/utils/verify-utils");
+const {getContract, getWalletAddress} = require("@sion-contracts/common/utils/script-utils");
+const {fromAsset, toAsset} = require("@sion-contracts/common/utils/decimals");
 
 async function main() {
 
     let market = await getContract('Market');
-    let usdPlus = await getContract('UsdPlusToken');
-    let wUsdPlus = await getContract('WrappedUsdPlusToken');
+    let usdPlus = await getContract('SionToken');
+    let wUsdPlus = await getContract('WrappedSionToken');
 
     let address = await getWalletAddress();
 

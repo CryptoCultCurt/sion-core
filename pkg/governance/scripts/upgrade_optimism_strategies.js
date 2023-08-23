@@ -1,6 +1,6 @@
-const {getContract, showM2M} = require("@overnight-contracts/common/utils/script-utils");
-const {createProposal, execProposal, testProposal, testUsdPlus, testStrategy} = require("@overnight-contracts/common/utils/governance");
-const {OPTIMISM} = require("@overnight-contracts/common/utils/assets");
+const {getContract, showM2M} = require("@sion-contracts/common/utils/script-utils");
+const {createProposal, execProposal, testProposal, testUsdPlus, testStrategy} = require("@sion-contracts/common/utils/governance");
+const {OPTIMISM} = require("@sion-contracts/common/utils/assets");
 
 async function main() {
 

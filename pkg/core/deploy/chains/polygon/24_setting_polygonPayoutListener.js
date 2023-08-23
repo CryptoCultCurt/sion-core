@@ -1,13 +1,13 @@
 const {ethers} = require("hardhat");
-const {getContract, getPrice} = require("@overnight-contracts/common/utils/script-utils");
-const {createSkim, createSkimTo, createSkimToWithFee, createBribe, createBribeWithFee, createSync, createCustom} = require("@overnight-contracts/common/utils/payoutListener");
-const {Roles} = require("@overnight-contracts/common/utils/roles");
-const {COMMON} = require("@overnight-contracts/common/utils/assets");
+const {getContract, getPrice} = require("@sion-contracts/common/utils/script-utils");
+const {createSkim, createSkimTo, createSkimToWithFee, createBribe, createBribeWithFee, createSync, createCustom} = require("@sion-contracts/common/utils/payoutListener");
+const {Roles} = require("@sion-contracts/common/utils/roles");
+const {COMMON} = require("@sion-contracts/common/utils/assets");
 
 module.exports = async () => {
 
     let pl = await getContract('PolygonPayoutListener', 'polygon');
-    let usdPlus = await getContract('UsdPlusToken', 'polygon');
+    let usdPlus = await getContract('SionToken', 'polygon');
 
     let price = await getPrice();
 

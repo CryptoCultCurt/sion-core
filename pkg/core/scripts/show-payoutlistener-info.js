@@ -1,8 +1,8 @@
-const {getContract, getPrice} = require("@overnight-contracts/common/utils/script-utils");
-const {createProposal} = require("@overnight-contracts/common/utils/governance");
+const {getContract, getPrice} = require("@sion-contracts/common/utils/script-utils");
+const {createProposal} = require("@sion-contracts/common/utils/governance");
 const {ethers} = require("hardhat");
-const {fromE6, fromAsset} = require("@overnight-contracts/common/utils/decimals");
-const {showPoolOperations} = require("@overnight-contracts/common/utils/payoutListener");
+const {fromE6, fromAsset} = require("@sion-contracts/common/utils/decimals");
+const {showPoolOperations} = require("@sion-contracts/common/utils/payoutListener");
 
 /**
  *  Parse transactions logs and calculating skim amount for every pool

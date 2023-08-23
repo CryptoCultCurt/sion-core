@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "@overnight-contracts/connectors/contracts/stuff/UniswapV3.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Balancer.sol";
+import "@sion-contracts/connectors/contracts/stuff/UniswapV3.sol";
+import "@sion-contracts/connectors/contracts/stuff/Balancer.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 library AuraRewardUsdcUsdtDaiLibrary {

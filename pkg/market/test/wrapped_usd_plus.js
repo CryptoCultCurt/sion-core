@@ -4,12 +4,12 @@ const BN = require("bn.js");
 const {constants} = require('@openzeppelin/test-helpers');
 const {ZERO_ADDRESS} = constants;
 const hre = require("hardhat");
-const expectRevert = require("@overnight-contracts/common/utils/expectRevert");
-let {POLYGON} = require('@overnight-contracts/common/utils/assets');
-const {sharedBeforeEach} = require("@overnight-contracts/common/utils/sharedBeforeEach");
+const expectRevert = require("@sion-contracts/common/utils/expectRevert");
+let {POLYGON} = require('@sion-contracts/common/utils/assets');
+const {sharedBeforeEach} = require("@sion-contracts/common/utils/sharedBeforeEach");
 
 
-describe("WrappedUsdPlusToken", function () {
+describe("WrappedSionToken", function () {
 
     let account;
     let usdPlus;
@@ -27,8 +27,8 @@ describe("WrappedUsdPlusToken", function () {
         const {deployer} = await getNamedAccounts();
         account = deployer;
 
-        usdPlus = await ethers.getContract("MockUsdPlusToken");
-        wrappedUsdPlus = await ethers.getContract("WrappedUsdPlusToken");
+        usdPlus = await ethers.getContract("MockSionToken");
+        wrappedUsdPlus = await ethers.getContract("WrappedSionToken");
         usdc = await ethers.getContractAt("IERC20", POLYGON.usdc);
         exchange = await ethers.getContract("MockExchange");
     });

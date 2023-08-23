@@ -288,7 +288,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -296,7 +296,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "busdToken",
@@ -457,7 +457,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -465,7 +465,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "busdToken",
@@ -678,7 +678,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -686,7 +686,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "busdToken",
@@ -895,7 +895,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -903,7 +903,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "usdcToken",
@@ -1064,7 +1064,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -1072,7 +1072,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "usdcToken",
@@ -1289,7 +1289,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -1297,7 +1297,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "usdtToken",
@@ -1458,7 +1458,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -1466,7 +1466,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "usdtToken",
@@ -1683,7 +1683,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -1691,7 +1691,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "busdToken",
@@ -1964,7 +1964,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -1972,7 +1972,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "busdToken",
@@ -2245,7 +2245,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -2253,7 +2253,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "busdToken",
@@ -2566,7 +2566,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -2574,7 +2574,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "busdToken",
@@ -2887,7 +2887,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -2895,7 +2895,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "busdToken",
@@ -3208,7 +3208,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -3216,7 +3216,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "busdToken",
@@ -3489,7 +3489,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -3497,7 +3497,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "busdToken",
@@ -3786,7 +3786,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -3794,7 +3794,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "busdToken",
@@ -4067,7 +4067,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -4075,7 +4075,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "busdToken",
@@ -4348,7 +4348,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -4356,7 +4356,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "busdToken",
@@ -4645,7 +4645,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -4653,7 +4653,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "busdToken",
@@ -4966,7 +4966,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -4974,7 +4974,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "busdToken",
@@ -5259,7 +5259,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -5267,7 +5267,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "busdToken",
@@ -5504,7 +5504,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -5512,7 +5512,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "busdToken",
@@ -5778,7 +5778,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -5786,7 +5786,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "busdToken",
@@ -6083,7 +6083,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -6091,7 +6091,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "busdToken",
@@ -6389,7 +6389,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -6397,7 +6397,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "busdToken",
@@ -6694,7 +6694,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:16"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -6702,7 +6702,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:148"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:148"
           },
           {
             "label": "busd",
@@ -6935,7 +6935,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:16"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -6943,7 +6943,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:148"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:148"
           },
           {
             "label": "busd",
@@ -7232,7 +7232,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:16"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -7240,7 +7240,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:148"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:148"
           },
           {
             "label": "busd",
@@ -7530,7 +7530,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:16"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:16"
           },
           {
             "label": "__gap",
@@ -7538,7 +7538,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:148"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:148"
           },
           {
             "label": "busdToken",
@@ -7835,7 +7835,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:17"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:17"
           },
           {
             "label": "__gap",
@@ -7843,7 +7843,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:153"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:153"
           },
           {
             "label": "busd",
@@ -8076,7 +8076,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:17"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:17"
           },
           {
             "label": "__gap",
@@ -8084,7 +8084,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:153"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:153"
           },
           {
             "label": "busd",
@@ -8373,7 +8373,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:17"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:17"
           },
           {
             "label": "__gap",
@@ -8381,7 +8381,7 @@
             "slot": "252",
             "type": "t_array(t_uint256)49_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:153"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:153"
           },
           {
             "label": "busd",
@@ -8671,7 +8671,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -8679,7 +8679,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -8687,7 +8687,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "__gap",
@@ -8695,7 +8695,7 @@
             "slot": "254",
             "type": "t_array(t_uint256)47_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:172"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:172"
           },
           {
             "label": "busdToken",
@@ -8861,7 +8861,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -8869,7 +8869,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -8877,7 +8877,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "__gap",
@@ -8885,7 +8885,7 @@
             "slot": "254",
             "type": "t_array(t_uint256)47_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:172"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:172"
           },
           {
             "label": "busd",
@@ -9123,7 +9123,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -9131,7 +9131,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -9139,7 +9139,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "__gap",
@@ -9147,7 +9147,7 @@
             "slot": "254",
             "type": "t_array(t_uint256)47_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:172"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:172"
           },
           {
             "label": "busd",
@@ -9441,7 +9441,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -9449,7 +9449,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -9457,7 +9457,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "__gap",
@@ -9465,7 +9465,7 @@
             "slot": "254",
             "type": "t_array(t_uint256)47_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:172"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:172"
           },
           {
             "label": "busd",
@@ -9759,7 +9759,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -9767,7 +9767,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -9775,7 +9775,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "__gap",
@@ -9783,7 +9783,7 @@
             "slot": "254",
             "type": "t_array(t_uint256)47_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:172"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:172"
           },
           {
             "label": "busdToken",
@@ -9949,7 +9949,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -9957,7 +9957,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -9965,7 +9965,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "__gap",
@@ -9973,7 +9973,7 @@
             "slot": "254",
             "type": "t_array(t_uint256)47_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:172"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:172"
           },
           {
             "label": "busd",
@@ -10211,7 +10211,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -10219,7 +10219,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -10227,7 +10227,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "__gap",
@@ -10235,7 +10235,7 @@
             "slot": "254",
             "type": "t_array(t_uint256)47_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:172"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:172"
           },
           {
             "label": "busd",
@@ -10529,7 +10529,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -10537,7 +10537,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -10545,7 +10545,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "__gap",
@@ -10553,7 +10553,7 @@
             "slot": "254",
             "type": "t_array(t_uint256)47_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:172"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:172"
           },
           {
             "label": "busd",
@@ -10847,7 +10847,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -10855,7 +10855,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -10863,7 +10863,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "__gap",
@@ -10871,7 +10871,7 @@
             "slot": "254",
             "type": "t_array(t_uint256)47_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:172"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:172"
           },
           {
             "label": "busd",
@@ -11137,7 +11137,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:18"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -11145,7 +11145,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:20"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -11153,7 +11153,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:21"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:21"
           },
           {
             "label": "__gap",
@@ -11161,7 +11161,7 @@
             "slot": "254",
             "type": "t_array(t_uint256)47_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:172"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:172"
           },
           {
             "label": "asset",
@@ -11335,7 +11335,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:18"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -11343,7 +11343,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:20"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -11351,7 +11351,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:21"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:21"
           },
           {
             "label": "__gap",
@@ -11359,7 +11359,7 @@
             "slot": "254",
             "type": "t_array(t_uint256)47_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:172"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:172"
           },
           {
             "label": "busd",
@@ -11625,7 +11625,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -11633,7 +11633,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -11641,7 +11641,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -11649,7 +11649,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:22"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -11657,7 +11657,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:178"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:178"
           },
           {
             "label": "busdToken",
@@ -11863,7 +11863,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -11871,7 +11871,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -11879,7 +11879,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -11887,7 +11887,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:22"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -11895,7 +11895,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:178"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:178"
           },
           {
             "label": "busd",
@@ -12197,7 +12197,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:18"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -12205,7 +12205,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:20"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -12213,7 +12213,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:21"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -12221,7 +12221,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:22"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -12229,7 +12229,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:167"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:167"
           },
           {
             "label": "usdc",
@@ -12435,7 +12435,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -12443,7 +12443,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -12451,7 +12451,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -12459,7 +12459,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:22"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -12467,7 +12467,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:167"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:167"
           },
           {
             "label": "asset",
@@ -12705,7 +12705,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:18"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -12713,7 +12713,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:20"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -12721,7 +12721,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:21"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -12729,7 +12729,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:22"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -12737,7 +12737,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:167"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:167"
           },
           {
             "label": "busd",
@@ -13027,7 +13027,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:18"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -13035,7 +13035,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:20"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -13043,7 +13043,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:21"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -13051,7 +13051,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:22"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -13059,7 +13059,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:167"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:167"
           },
           {
             "label": "busd",
@@ -13349,7 +13349,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:18"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -13357,7 +13357,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:20"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -13365,7 +13365,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:21"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -13373,7 +13373,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:22"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -13381,7 +13381,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:167"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:167"
           },
           {
             "label": "busd",
@@ -13683,7 +13683,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -13691,7 +13691,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -13699,7 +13699,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -13707,7 +13707,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:22"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -13715,7 +13715,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:167"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:167"
           },
           {
             "label": "busd",
@@ -14005,7 +14005,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -14013,7 +14013,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -14021,7 +14021,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -14029,7 +14029,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:22"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -14037,7 +14037,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:167"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:167"
           },
           {
             "label": "busd",
@@ -14327,7 +14327,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -14335,7 +14335,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -14343,7 +14343,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -14351,7 +14351,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:22"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -14359,7 +14359,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:167"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:167"
           },
           {
             "label": "busdToken",
@@ -14629,7 +14629,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:18"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -14637,7 +14637,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:20"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -14645,7 +14645,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:21"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -14653,7 +14653,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:22"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -14661,7 +14661,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:167"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:167"
           },
           {
             "label": "asset",
@@ -14923,7 +14923,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:18"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -14931,7 +14931,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:20"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -14939,7 +14939,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:21"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -14947,7 +14947,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:22"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -14955,7 +14955,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:167"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:167"
           },
           {
             "label": "usdt",
@@ -15161,7 +15161,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -15169,7 +15169,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -15177,7 +15177,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -15185,7 +15185,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:22"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -15193,7 +15193,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:167"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:167"
           },
           {
             "label": "asset",
@@ -15367,7 +15367,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:18"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -15375,7 +15375,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:20"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -15383,7 +15383,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:21"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -15391,7 +15391,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:22"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -15399,7 +15399,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:167"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:167"
           },
           {
             "label": "usdt",
@@ -15421,7 +15421,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "303",
-            "type": "t_contract(IUsdPlusToken)14287",
+            "type": "t_contract(ISionToken)14287",
             "contract": "StrategyUsdPlusUsdt",
             "src": "contracts\\usdt\\StrategyUsdPlusUsdt.sol:32"
           },
@@ -15519,8 +15519,8 @@
             "label": "contract IPriceFeed",
             "numberOfBytes": "20"
           },
-          "t_contract(IUsdPlusToken)14287": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)14287": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
           "t_contract(IWombatRouter)12518": {
@@ -15641,7 +15641,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -15649,7 +15649,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -15657,7 +15657,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -15665,7 +15665,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:22"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -15673,7 +15673,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:167"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:167"
           },
           {
             "label": "usdt",
@@ -15915,7 +15915,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:18"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -15923,7 +15923,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:20"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -15931,7 +15931,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:21"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -15939,7 +15939,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:22"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -15947,7 +15947,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:167"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:167"
           },
           {
             "label": "busd",
@@ -16248,7 +16248,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:18"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -16256,7 +16256,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:20"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -16264,7 +16264,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:21"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -16272,7 +16272,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:22"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -16280,7 +16280,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:167"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:167"
           },
           {
             "label": "usdt",
@@ -16302,7 +16302,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "303",
-            "type": "t_contract(IUsdPlusToken)4791",
+            "type": "t_contract(ISionToken)4791",
             "contract": "StrategyUsdPlusUsdt",
             "src": "contracts\\usdt\\StrategyUsdPlusUsdt.sol:32"
           },
@@ -16400,8 +16400,8 @@
             "label": "contract IPriceFeed",
             "numberOfBytes": "20"
           },
-          "t_contract(IUsdPlusToken)4791": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)4791": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
           "t_contract(IWombatRouter)3560": {
@@ -16522,7 +16522,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -16530,7 +16530,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -16538,7 +16538,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -16546,7 +16546,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:22"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -16554,7 +16554,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:167"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:167"
           },
           {
             "label": "usdt",
@@ -16788,7 +16788,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -16796,7 +16796,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -16804,7 +16804,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -16812,7 +16812,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:22"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -16820,7 +16820,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:167"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:167"
           },
           {
             "label": "usdc",
@@ -17062,7 +17062,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -17070,7 +17070,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -17078,7 +17078,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -17086,7 +17086,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:22"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -17094,7 +17094,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:167"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:167"
           },
           {
             "label": "usdc",
@@ -17372,7 +17372,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -17380,7 +17380,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -17388,7 +17388,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -17396,7 +17396,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:22"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -17404,7 +17404,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:167"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:167"
           },
           {
             "label": "busd",
@@ -17694,7 +17694,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -17702,7 +17702,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -17710,7 +17710,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -17718,7 +17718,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:22"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -17726,7 +17726,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:167"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:167"
           },
           {
             "label": "busd",
@@ -18016,7 +18016,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -18024,7 +18024,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -18032,7 +18032,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -18040,7 +18040,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:22"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -18048,7 +18048,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:167"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:167"
           },
           {
             "label": "usdt",
@@ -18290,7 +18290,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -18298,7 +18298,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -18306,7 +18306,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -18314,7 +18314,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:22"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -18322,7 +18322,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:167"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:167"
           },
           {
             "label": "usdc",
@@ -18580,7 +18580,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:18"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -18588,7 +18588,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:20"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -18596,7 +18596,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:21"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -18604,7 +18604,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:22"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -18612,7 +18612,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:167"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:167"
           },
           {
             "label": "usdt",
@@ -18870,7 +18870,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -18878,7 +18878,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -18886,7 +18886,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -18894,7 +18894,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:22"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -18902,7 +18902,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:167"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:167"
           },
           {
             "label": "usdc",
@@ -19172,7 +19172,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:18"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -19180,7 +19180,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:20"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -19188,7 +19188,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:21"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -19196,7 +19196,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:22"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -19204,7 +19204,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts/core/contracts/Strategy.sol:167"
+            "src": "@sion-contracts/core/contracts/Strategy.sol:167"
           },
           {
             "label": "usdt",
@@ -19474,7 +19474,7 @@
             "slot": "251",
             "type": "t_address",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:18"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:18"
           },
           {
             "label": "swapSlippageBP",
@@ -19482,7 +19482,7 @@
             "slot": "252",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:20"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:20"
           },
           {
             "label": "navSlippageBP",
@@ -19490,7 +19490,7 @@
             "slot": "253",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:21"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:21"
           },
           {
             "label": "stakeSlippageBP",
@@ -19498,7 +19498,7 @@
             "slot": "254",
             "type": "t_uint256",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:22"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:22"
           },
           {
             "label": "__gap",
@@ -19506,7 +19506,7 @@
             "slot": "255",
             "type": "t_array(t_uint256)46_storage",
             "contract": "Strategy",
-            "src": "@overnight-contracts\\core\\contracts\\Strategy.sol:167"
+            "src": "@sion-contracts\\core\\contracts\\Strategy.sol:167"
           },
           {
             "label": "usdc",
@@ -19528,7 +19528,7 @@
             "label": "usdtPlus",
             "offset": 0,
             "slot": "303",
-            "type": "t_contract(IUsdPlusToken)6655",
+            "type": "t_contract(ISionToken)6655",
             "contract": "StrategyUsdcUsdtPlus",
             "src": "contracts\\StrategyUsdcUsdtPlus.sol:30"
           },
@@ -19618,8 +19618,8 @@
             "label": "contract IPriceFeed",
             "numberOfBytes": "20"
           },
-          "t_contract(IUsdPlusToken)6655": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)6655": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {

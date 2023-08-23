@@ -5,9 +5,9 @@ const {
     initWallet,
     convertWeights,
     showM2M
-} = require("@overnight-contracts/common/utils/script-utils");
-const {createProposal} = require("@overnight-contracts/common/utils/governance");
-const {POLYGON} = require("@overnight-contracts/common/utils/assets");
+} = require("@sion-contracts/common/utils/script-utils");
+const {createProposal} = require("@sion-contracts/common/utils/governance");
+const {POLYGON} = require("@sion-contracts/common/utils/assets");
 
 async function main() {
 

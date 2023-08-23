@@ -1,5 +1,5 @@
 {
-  "name": "@overnight-contracts/leverage",
+  "name": "@sion-contracts/leverage",
   "version": "0.0.1",
   "description": "Strategy leverage contracts",
   "main": "hardhat.config",

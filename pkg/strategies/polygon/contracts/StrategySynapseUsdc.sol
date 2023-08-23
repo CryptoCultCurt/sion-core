@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.0 <0.9.0;
 
-import "@overnight-contracts/core/contracts/Strategy.sol";
-import "@overnight-contracts/connectors/contracts/stuff/UniswapV2.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Synapse.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Dystopia.sol";
-import "@overnight-contracts/common/contracts/libraries/OvnMath.sol";
+import "@sion-contracts/core/contracts/Strategy.sol";
+import "@sion-contracts/connectors/contracts/stuff/UniswapV2.sol";
+import "@sion-contracts/connectors/contracts/stuff/Synapse.sol";
+import "@sion-contracts/connectors/contracts/stuff/Dystopia.sol";
+import "@sion-contracts/common/contracts/libraries/OvnMath.sol";
 
 contract StrategySynapseUsdc is Strategy, UniswapV2Exchange {
     using OvnMath for uint256;
@@ -18,12 +18,12 @@ contract StrategySynapseUsdc is Strategy, UniswapV2Exchange {
     IMiniChefV2 public miniChefV2;
     uint256 public pid;
 
-    IERC20 public usdPlusToken;
+    IERC20 public SionToken;
     IDystopiaRouter public dystopiaRouter;
 
     // --- events
 
-    event StrategyUpdatedTokens(address usdcToken, address nUsdLPToken, address synToken, address usdPlusToken);
+    event StrategyUpdatedTokens(address usdcToken, address nUsdLPToken, address synToken, address SionToken);
 
     event StrategyUpdatedParams(address swap, address miniChefV2, address sushiSwapRouter, uint256 pid, address dystopiaRouter);
 
@@ -44,20 +44,20 @@ contract StrategySynapseUsdc is Strategy, UniswapV2Exchange {
         address _usdcToken,
         address _nUsdLPToken,
         address _synToken,
-        address _usdPlusToken
+        address _SionToken
     ) external onlyAdmin {
 
         require(_usdcToken != address(0), "Zero address not allowed");
         require(_nUsdLPToken != address(0), "Zero address not allowed");
         require(_synToken != address(0), "Zero address not allowed");
-        require(_usdPlusToken != address(0), "Zero address not allowed");
+        require(_SionToken != address(0), "Zero address not allowed");
 
         usdcToken = IERC20(_usdcToken);
         nUsdLPToken = IERC20(_nUsdLPToken);
         synToken = IERC20(_synToken);
-        usdPlusToken = IERC20(_usdPlusToken);
+        SionToken = IERC20(_SionToken);
 
-        emit StrategyUpdatedTokens(_usdcToken, _nUsdLPToken, _synToken, _usdPlusToken);
+        emit StrategyUpdatedTokens(_usdcToken, _nUsdLPToken, _synToken, _SionToken);
     }
 
     function setParams(
@@ -198,7 +198,7 @@ contract StrategySynapseUsdc is Strategy, UniswapV2Exchange {
         if (synBalance > 0) {
             uint256 synUsdc = _swapExactTokensForTokens(
                 address(synToken),
-                address(usdPlusToken),
+                address(SionToken),
                 address(usdcToken),
                 false,
                 true,

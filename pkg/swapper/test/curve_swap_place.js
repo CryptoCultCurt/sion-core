@@ -5,9 +5,9 @@ const {constants} = require('@openzeppelin/test-helpers');
 const {ZERO_ADDRESS} = constants;
 
 const hre = require("hardhat");
-const expectRevert = require("@overnight-contracts/common/utils/expectRevert");
-let {POLYGON} = require('@overnight-contracts/common/utils/assets');
-const {sharedBeforeEach} = require("@overnight-contracts/common/utils/sharedBeforeEach");
+const expectRevert = require("@sion-contracts/common/utils/expectRevert");
+let {POLYGON} = require('@sion-contracts/common/utils/assets');
+const {sharedBeforeEach} = require("@sion-contracts/common/utils/sharedBeforeEach");
 
 
 describe("CurveSwapPlace", function () {

@@ -1,8 +1,8 @@
-const {deployProxy} = require("@overnight-contracts/common/utils/deployProxy");
+const {deployProxy} = require("@sion-contracts/common/utils/deployProxy");
 const hre = require("hardhat");
 const {ethers} = require("hardhat");
-const {POLYGON, BSC} = require("@overnight-contracts/common/utils/assets");
-const {deploySection, settingSection} = require("@overnight-contracts/common/utils/script-utils");
+const {POLYGON, BSC} = require("@sion-contracts/common/utils/assets");
+const {deploySection, settingSection} = require("@sion-contracts/common/utils/script-utils");
 
 let dystToken = '0x39aB6574c289c3Ae4d88500eEc792AB5B947A5Eb';
 let dystPair = '0xA498a892AD0D3F70AA449798023AA1F4A0888268'; //sAMM-USDC/TUSD

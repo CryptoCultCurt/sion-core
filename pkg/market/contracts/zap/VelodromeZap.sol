@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 import "./OdosZap.sol";
 
-import "@overnight-contracts/connectors/contracts/stuff/VelodromeV2.sol";
+import "@sion-contracts/connectors/contracts/stuff/VelodromeV2.sol";
 
 contract VelodromeZap is OdosZap {
     IRouter public velodromeRouter;

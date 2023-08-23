@@ -4,11 +4,11 @@ const BigNumber = require('bignumber.js');
 const {expect} = require("chai");
 const chai = require("chai");
 chai.use(require('chai-bignumber')());
-const {resetHardhat, greatLess} = require("@overnight-contracts/common/utils/tests");
-const {toE6, toE18, fromAsset} = require("@overnight-contracts/common/utils/decimals");
-const {sharedBeforeEach} = require("@overnight-contracts/common/utils/sharedBeforeEach");
-const {transferAsset, getERC20, transferETH, initWallet} = require("@overnight-contracts/common/utils/script-utils");
-const {POLYGON} = require('@overnight-contracts/common/utils/assets');
+const {resetHardhat, greatLess} = require("@sion-contracts/common/utils/tests");
+const {toE6, toE18, fromAsset} = require("@sion-contracts/common/utils/decimals");
+const {sharedBeforeEach} = require("@sion-contracts/common/utils/sharedBeforeEach");
+const {transferAsset, getERC20, transferETH, initWallet} = require("@sion-contracts/common/utils/script-utils");
+const {POLYGON} = require('@sion-contracts/common/utils/assets');
 
 
 describe("FlashAttackStrategy", function () {

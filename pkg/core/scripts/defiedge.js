@@ -1,7 +1,7 @@
 const {ethers, upgrades} = require("hardhat");
 const hre = require("hardhat");
-const {getContract, transferETH, getPrice, getERC20} = require("@overnight-contracts/common/utils/script-utils");
-const {toE18, toE6} = require("@overnight-contracts/common/utils/decimals");
+const {getContract, transferETH, getPrice, getERC20} = require("@sion-contracts/common/utils/script-utils");
+const {toE18, toE6} = require("@sion-contracts/common/utils/decimals");
 const BigNumber = require('bignumber.js');
 
 const DefiEdgeTwapStrategy = require("./abi/DefiEdgeTwapStrategy.json");
@@ -21,34 +21,34 @@ async function main() {
 
     // uncomment for USD+
     let strategy = await ethers.getContractAt(DefiEdgeTwapStrategy, "0xD1C33D0AF58eB7403f7c01b21307713Aa18b29d3");
-    let usdPlusToken = await getContract('UsdPlusToken', 'optimism');
+    let SionToken = await getContract('SionToken', 'optimism');
     let asset = await getERC20('usdc');
     let amount = toE6(1);
 
     // uncomment for DAI+
 //    let strategy = await ethers.getContractAt(DefiEdgeTwapStrategy, "0x014b7eedbb373866f2fafd76643fdf143ef39960");
-//    let usdPlusToken = await getContract('UsdPlusToken', 'optimism_dai');
+//    let SionToken = await getContract('SionToken', 'optimism_dai');
 //    let asset = await getERC20('dai');
 //    let amount = toE18(1);
 
     let price = await getPrice();
 
-    await (await usdPlusToken.transfer(ownerAddress, amount, price)).wait();
-    await (await usdPlusToken.connect(owner).approve(strategy.address, amount, price)).wait();
+    await (await SionToken.transfer(ownerAddress, amount, price)).wait();
+    await (await SionToken.connect(owner).approve(strategy.address, amount, price)).wait();
     console.log('UsdPlus approve done');
 
     await (await asset.transfer(ownerAddress, amount, price)).wait();
     await (await asset.connect(owner).approve(strategy.address, amount, price)).wait();
     console.log('Asset approve done');
 
-    let usdPlusTokenBalance = await usdPlusToken.balanceOf(strategy.address);
-    console.log('usdPlusTokenBalance strategy before mint: ' + usdPlusTokenBalance);
+    let SionTokenBalance = await SionToken.balanceOf(strategy.address);
+    console.log('SionTokenBalance strategy before mint: ' + SionTokenBalance);
 
     let assetBalance = await asset.balanceOf(strategy.address);
     console.log('assetBalance strategy before mint: ' + assetBalance);
 
-    usdPlusTokenBalance = await usdPlusToken.balanceOf(ownerAddress);
-    console.log('usdPlusTokenBalance owner before mint: ' + usdPlusTokenBalance);
+    SionTokenBalance = await SionToken.balanceOf(ownerAddress);
+    console.log('SionTokenBalance owner before mint: ' + SionTokenBalance);
 
     assetBalance = await asset.balanceOf(ownerAddress);
     console.log('assetBalance owner before mint: ' + assetBalance);
@@ -56,14 +56,14 @@ async function main() {
     await strategy.connect(owner).mint(amount, amount, 0, 0, 0, price);
     console.log('Mint done');
 
-    usdPlusTokenBalance = await usdPlusToken.balanceOf(strategy.address);
-    console.log('usdPlusTokenBalance strategy after mint: ' + usdPlusTokenBalance);
+    SionTokenBalance = await SionToken.balanceOf(strategy.address);
+    console.log('SionTokenBalance strategy after mint: ' + SionTokenBalance);
 
     assetBalance = await asset.balanceOf(strategy.address);
     console.log('assetBalance strategy after mint: ' + assetBalance);
 
-    usdPlusTokenBalance = await usdPlusToken.balanceOf(ownerAddress);
-    console.log('usdPlusTokenBalance owner after mint: ' + usdPlusTokenBalance);
+    SionTokenBalance = await SionToken.balanceOf(ownerAddress);
+    console.log('SionTokenBalance owner after mint: ' + SionTokenBalance);
 
     assetBalance = await asset.balanceOf(ownerAddress);
     console.log('assetBalance owner after mint: ' + assetBalance);
@@ -82,8 +82,8 @@ async function main() {
     );
     console.log('Rebalance done');
 
-    usdPlusTokenBalance = await usdPlusToken.balanceOf(strategy.address);
-    console.log('usdPlusTokenBalance strategy after rebalance: ' + usdPlusTokenBalance);
+    SionTokenBalance = await SionToken.balanceOf(strategy.address);
+    console.log('SionTokenBalance strategy after rebalance: ' + SionTokenBalance);
 
     assetBalance = await asset.balanceOf(strategy.address);
     console.log('assetBalance strategy after rebalance: ' + assetBalance);

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.0 <0.9.0;
 
-import "@overnight-contracts/core/contracts/Strategy.sol";
-import "@overnight-contracts/core/contracts/interfaces/IHedgeExchanger.sol";
+import "@sion-contracts/core/contracts/Strategy.sol";
+import "@sion-contracts/core/contracts/interfaces/IHedgeExchanger.sol";
 
 
 contract StrategyEts is Strategy {

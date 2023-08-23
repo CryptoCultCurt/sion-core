@@ -1,6 +1,6 @@
 const { ethers } = require("hardhat");
 
-let {POLYGON} = require('@overnight-contracts/common/utils/assets');
+let {POLYGON} = require('@sion-contracts/common/utils/assets');
 
 module.exports = async ({getNamedAccounts, deployments}) => {
     const {deploy} = deployments;
@@ -8,10 +8,10 @@ module.exports = async ({getNamedAccounts, deployments}) => {
 
     const market = await ethers.getContract("Market");
     const mockExchange = await ethers.getContract("MockExchange");
-    const mockUsdPlusToken = await ethers.getContract("MockUsdPlusToken");
-    const wrappedUsdPlusToken = await ethers.getContract("WrappedUsdPlusToken");
+    const mockSionToken = await ethers.getContract("MockSionToken");
+    const wrappedSionToken = await ethers.getContract("WrappedSionToken");
 
-    await (await market.setTokens(POLYGON.usdc, mockUsdPlusToken.address, wrappedUsdPlusToken.address)).wait();
+    await (await market.setTokens(POLYGON.usdc, mockSionToken.address, wrappedSionToken.address)).wait();
     await (await market.setParams(mockExchange.address)).wait();
 
     console.log("MockMarket settings done");

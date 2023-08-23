@@ -1,6 +1,6 @@
-const {deployProxy} = require("@overnight-contracts/common/utils/deployProxy");
-const {deploySection, settingSection} = require("@overnight-contracts/common/utils/script-utils");
-const {BSC} = require("@overnight-contracts/common/utils/assets");
+const {deployProxy} = require("@sion-contracts/common/utils/deployProxy");
+const {deploySection, settingSection} = require("@sion-contracts/common/utils/script-utils");
+const {BSC} = require("@sion-contracts/common/utils/assets");
 
 let usdPlus = '0xe80772Eaf6e2E18B651F160Bc9158b2A5caFCA65';
 let exchange = '0x5A8EEe279096052588DfCc4e8b466180490DB821';

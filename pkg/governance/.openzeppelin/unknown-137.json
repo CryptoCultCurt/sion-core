@@ -1978,7 +1978,7 @@
           {
             "contract": "Exchange",
             "label": "usdPlus",
-            "type": "t_contract(UsdPlusToken)16669",
+            "type": "t_contract(SionToken)16669",
             "src": "contracts/Exchange.sol:23"
           },
           {
@@ -2055,8 +2055,8 @@
           }
         ],
         "types": {
-          "t_contract(UsdPlusToken)16669": {
-            "label": "contract UsdPlusToken"
+          "t_contract(SionToken)16669": {
+            "label": "contract SionToken"
           },
           "t_contract(IERC20)9027": {
             "label": "contract IERC20"
@@ -2175,7 +2175,7 @@
           {
             "contract": "Exchange",
             "label": "usdPlus",
-            "type": "t_contract(UsdPlusToken)16669",
+            "type": "t_contract(SionToken)16669",
             "src": "contracts/Exchange.sol:23"
           },
           {
@@ -2252,8 +2252,8 @@
           }
         ],
         "types": {
-          "t_contract(UsdPlusToken)16669": {
-            "label": "contract UsdPlusToken"
+          "t_contract(SionToken)16669": {
+            "label": "contract SionToken"
           },
           "t_contract(IERC20)9027": {
             "label": "contract IERC20"
@@ -2358,76 +2358,76 @@
             "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:81"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_balances",
             "type": "t_mapping(t_address,t_uint256)",
-            "src": "contracts/UsdPlusToken.sol:19"
+            "src": "contracts/Sion.sol:19"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_allowances",
             "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
-            "src": "contracts/UsdPlusToken.sol:21"
+            "src": "contracts/Sion.sol:21"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_totalSupply",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:23"
+            "src": "contracts/Sion.sol:23"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_name",
             "type": "t_string_storage",
-            "src": "contracts/UsdPlusToken.sol:25"
+            "src": "contracts/Sion.sol:25"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_symbol",
             "type": "t_string_storage",
-            "src": "contracts/UsdPlusToken.sol:26"
+            "src": "contracts/Sion.sol:26"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_totalMint",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:33"
+            "src": "contracts/Sion.sol:33"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_totalBurn",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:34"
+            "src": "contracts/Sion.sol:34"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "liquidityIndexChangeTime",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:36"
+            "src": "contracts/Sion.sol:36"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "liquidityIndex",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:37"
+            "src": "contracts/Sion.sol:37"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "liquidityIndexDenominator",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:38"
+            "src": "contracts/Sion.sol:38"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_owners",
             "type": "t_struct(AddressSet)12086_storage",
-            "src": "contracts/UsdPlusToken.sol:40"
+            "src": "contracts/Sion.sol:40"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "__gap",
             "type": "t_array(t_uint256)50_storage",
-            "src": "contracts/UsdPlusToken.sol:500"
+            "src": "contracts/Sion.sol:500"
           }
         ],
         "types": {
@@ -3593,76 +3593,76 @@
             "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:81"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_balances",
             "type": "t_mapping(t_address,t_uint256)",
-            "src": "contracts/UsdPlusToken.sol:18"
+            "src": "contracts/Sion.sol:18"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_allowances",
             "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
-            "src": "contracts/UsdPlusToken.sol:20"
+            "src": "contracts/Sion.sol:20"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_totalSupply",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:22"
+            "src": "contracts/Sion.sol:22"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_name",
             "type": "t_string_storage",
-            "src": "contracts/UsdPlusToken.sol:24"
+            "src": "contracts/Sion.sol:24"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_symbol",
             "type": "t_string_storage",
-            "src": "contracts/UsdPlusToken.sol:25"
+            "src": "contracts/Sion.sol:25"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_totalMint",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:32"
+            "src": "contracts/Sion.sol:32"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_totalBurn",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:33"
+            "src": "contracts/Sion.sol:33"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "liquidityIndexChangeTime",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:35"
+            "src": "contracts/Sion.sol:35"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "liquidityIndex",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:36"
+            "src": "contracts/Sion.sol:36"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "liquidityIndexDenominator",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:37"
+            "src": "contracts/Sion.sol:37"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_owners",
             "type": "t_struct(AddressSet)12086_storage",
-            "src": "contracts/UsdPlusToken.sol:39"
+            "src": "contracts/Sion.sol:39"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "__gap",
             "type": "t_array(t_uint256)50_storage",
-            "src": "contracts/UsdPlusToken.sol:499"
+            "src": "contracts/Sion.sol:499"
           }
         ],
         "types": {
@@ -3811,7 +3811,7 @@
           {
             "contract": "Exchange",
             "label": "usdPlus",
-            "type": "t_contract(UsdPlusToken)16669",
+            "type": "t_contract(SionToken)16669",
             "src": "contracts/Exchange.sol:23"
           },
           {
@@ -3888,8 +3888,8 @@
           }
         ],
         "types": {
-          "t_contract(UsdPlusToken)16669": {
-            "label": "contract UsdPlusToken"
+          "t_contract(SionToken)16669": {
+            "label": "contract SionToken"
           },
           "t_contract(IERC20)9027": {
             "label": "contract IERC20"
@@ -5154,7 +5154,7 @@
           {
             "contract": "Exchange",
             "label": "usdPlus",
-            "type": "t_contract(UsdPlusToken)16703",
+            "type": "t_contract(SionToken)16703",
             "src": "contracts/Exchange.sol:23"
           },
           {
@@ -5231,8 +5231,8 @@
           }
         ],
         "types": {
-          "t_contract(UsdPlusToken)16703": {
-            "label": "contract UsdPlusToken"
+          "t_contract(SionToken)16703": {
+            "label": "contract SionToken"
           },
           "t_contract(IERC20)9027": {
             "label": "contract IERC20"
@@ -5577,7 +5577,7 @@
           {
             "contract": "Exchange",
             "label": "usdPlus",
-            "type": "t_contract(UsdPlusToken)15519",
+            "type": "t_contract(SionToken)15519",
             "src": "contracts/Exchange.sol:21"
           },
           {
@@ -5654,8 +5654,8 @@
           }
         ],
         "types": {
-          "t_contract(UsdPlusToken)15519": {
-            "label": "contract UsdPlusToken"
+          "t_contract(SionToken)15519": {
+            "label": "contract SionToken"
           },
           "t_contract(IERC20)8922": {
             "label": "contract IERC20"
@@ -6304,7 +6304,7 @@
           {
             "contract": "Exchange",
             "label": "usdPlus",
-            "type": "t_contract(UsdPlusToken)15468",
+            "type": "t_contract(SionToken)15468",
             "src": "contracts/Exchange.sol:21"
           },
           {
@@ -6369,8 +6369,8 @@
           }
         ],
         "types": {
-          "t_contract(UsdPlusToken)15468": {
-            "label": "contract UsdPlusToken"
+          "t_contract(SionToken)15468": {
+            "label": "contract SionToken"
           },
           "t_contract(IERC20)8922": {
             "label": "contract IERC20"
@@ -7836,7 +7836,7 @@
           {
             "contract": "Exchange",
             "label": "usdPlus",
-            "type": "t_contract(UsdPlusToken)16002",
+            "type": "t_contract(SionToken)16002",
             "src": "contracts/Exchange.sol:21"
           },
           {
@@ -7901,8 +7901,8 @@
           }
         ],
         "types": {
-          "t_contract(UsdPlusToken)16002": {
-            "label": "contract UsdPlusToken"
+          "t_contract(SionToken)16002": {
+            "label": "contract SionToken"
           },
           "t_contract(IERC20)8922": {
             "label": "contract IERC20"
@@ -8007,82 +8007,82 @@
             "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:81"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_balances",
             "type": "t_mapping(t_address,t_uint256)",
-            "src": "contracts/UsdPlusToken.sol:18"
+            "src": "contracts/Sion.sol:18"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_allowances",
             "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
-            "src": "contracts/UsdPlusToken.sol:20"
+            "src": "contracts/Sion.sol:20"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_totalSupply",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:22"
+            "src": "contracts/Sion.sol:22"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_name",
             "type": "t_string_storage",
-            "src": "contracts/UsdPlusToken.sol:24"
+            "src": "contracts/Sion.sol:24"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_symbol",
             "type": "t_string_storage",
-            "src": "contracts/UsdPlusToken.sol:25"
+            "src": "contracts/Sion.sol:25"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_totalMint",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:32"
+            "src": "contracts/Sion.sol:32"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_totalBurn",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:33"
+            "src": "contracts/Sion.sol:33"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "liquidityIndexChangeTime",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:35"
+            "src": "contracts/Sion.sol:35"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "liquidityIndex",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:36"
+            "src": "contracts/Sion.sol:36"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "liquidityIndexDenominator",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:37"
+            "src": "contracts/Sion.sol:37"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_owners",
             "type": "t_struct(AddressSet)12933_storage",
-            "src": "contracts/UsdPlusToken.sol:39"
+            "src": "contracts/Sion.sol:39"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "__gap",
             "type": "t_array(t_uint256)50_storage",
-            "src": "contracts/UsdPlusToken.sol:41"
+            "src": "contracts/Sion.sol:41"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "exchange",
             "type": "t_address",
-            "src": "contracts/UsdPlusToken.sol:43"
+            "src": "contracts/Sion.sol:43"
           }
         ],
         "types": {
@@ -16638,82 +16638,82 @@
             "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:81"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_balances",
             "type": "t_mapping(t_address,t_uint256)",
-            "src": "contracts/UsdPlusToken.sol:18"
+            "src": "contracts/Sion.sol:18"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_allowances",
             "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
-            "src": "contracts/UsdPlusToken.sol:20"
+            "src": "contracts/Sion.sol:20"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_totalSupply",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:22"
+            "src": "contracts/Sion.sol:22"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_name",
             "type": "t_string_storage",
-            "src": "contracts/UsdPlusToken.sol:24"
+            "src": "contracts/Sion.sol:24"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_symbol",
             "type": "t_string_storage",
-            "src": "contracts/UsdPlusToken.sol:25"
+            "src": "contracts/Sion.sol:25"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_totalMint",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:32"
+            "src": "contracts/Sion.sol:32"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_totalBurn",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:33"
+            "src": "contracts/Sion.sol:33"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "liquidityIndexChangeTime",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:35"
+            "src": "contracts/Sion.sol:35"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "liquidityIndex",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:36"
+            "src": "contracts/Sion.sol:36"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "liquidityIndexDenominator",
             "type": "t_uint256",
-            "src": "contracts/UsdPlusToken.sol:37"
+            "src": "contracts/Sion.sol:37"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "_owners",
             "type": "t_struct(AddressSet)12339_storage",
-            "src": "contracts/UsdPlusToken.sol:39"
+            "src": "contracts/Sion.sol:39"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "__gap",
             "type": "t_array(t_uint256)50_storage",
-            "src": "contracts/UsdPlusToken.sol:41"
+            "src": "contracts/Sion.sol:41"
           },
           {
-            "contract": "UsdPlusToken",
+            "contract": "SionToken",
             "label": "exchange",
             "type": "t_address",
-            "src": "contracts/UsdPlusToken.sol:43"
+            "src": "contracts/Sion.sol:43"
           }
         ],
         "types": {

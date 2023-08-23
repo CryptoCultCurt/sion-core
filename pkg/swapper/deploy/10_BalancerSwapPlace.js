@@ -1,4 +1,4 @@
-const {deployProxy} = require("@overnight-contracts/common/utils/deployProxy");
+const {deployProxy} = require("@sion-contracts/common/utils/deployProxy");
 const {ethers} = require("hardhat");
 
 module.exports = async ({getNamedAccounts, deployments}) => {

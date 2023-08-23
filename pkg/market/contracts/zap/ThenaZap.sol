@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 import "./OdosZap.sol";
 
-import "@overnight-contracts/connectors/contracts/stuff/Thena.sol";
+import "@sion-contracts/connectors/contracts/stuff/Thena.sol";
 
 contract ThenaZap is OdosZap {
     IRouter public thenaRouter;

@@ -6,7 +6,7 @@ import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol"
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
-import "@overnight-contracts/common/contracts/libraries/OvnMath.sol";
+import "@sion-contracts/common/contracts/libraries/OvnMath.sol";
 import "hardhat/console.sol";
 
 contract OdosZap is Initializable, AccessControlUpgradeable, UUPSUpgradeable {

@@ -1,5 +1,5 @@
 {
-  "name": "@overnight-contracts/recovery",
+  "name": "@sion-contracts/recovery",
   "version": "0.0.1",
   "description": "Pools scripts",
   "main": "hardhat.config",

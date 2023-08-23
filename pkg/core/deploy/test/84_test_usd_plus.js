@@ -1,4 +1,4 @@
-const {deployProxy} = require("@overnight-contracts/common/utils/deployProxy");
+const {deployProxy} = require("@sion-contracts/common/utils/deployProxy");
 
 
 module.exports = async ({deployments}) => {
@@ -6,8 +6,8 @@ module.exports = async ({deployments}) => {
 
     let params = {args: ["test USD+", "test USD+", 6]}
 
-    await deployProxy('TestUsdPlusToken', deployments, save, params);
+    await deployProxy('TestSionToken', deployments, save, params);
 };
 
-module.exports.tags = ['TestUsdPlusToken'];
+module.exports.tags = ['TestSionToken'];
 

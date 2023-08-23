@@ -1,16 +1,16 @@
 const {ethers} = require("hardhat");
 
-let {POLYGON} = require('@overnight-contracts/common/utils/assets');
+let {POLYGON} = require('@sion-contracts/common/utils/assets');
 
 module.exports = async ({getNamedAccounts, deployments}) => {
     const {deploy} = deployments;
     const {deployer} = await getNamedAccounts();
 
-    const mockUsdPlusToken = await ethers.getContract("MockUsdPlusToken");
+    const mockSionToken = await ethers.getContract("MockSionToken");
 
     await deploy('MockExchange', {
         from: deployer,
-        args: [mockUsdPlusToken.address, POLYGON.usdc],
+        args: [mockSionToken.address, POLYGON.usdc],
         log: true,
     });
 

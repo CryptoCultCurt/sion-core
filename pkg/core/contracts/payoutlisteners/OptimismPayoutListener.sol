@@ -2,8 +2,8 @@
 pragma solidity >=0.8.0 <0.9.0;
 
 import "../GlobalPayoutListener.sol";
-import "@overnight-contracts/connectors/contracts/stuff/DefiEdge.sol";
-import "@overnight-contracts/connectors/contracts/stuff/UniswapV3.sol";
+import "@sion-contracts/connectors/contracts/stuff/DefiEdge.sol";
+import "@sion-contracts/connectors/contracts/stuff/UniswapV3.sol";
 
 contract OptimismPayoutListener is GlobalPayoutListener {
 

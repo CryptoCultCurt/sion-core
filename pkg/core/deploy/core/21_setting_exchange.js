@@ -1,14 +1,14 @@
 const {ethers} = require("hardhat");
 
 const hre = require("hardhat");
-let {DEFAULT, BSC, OPTIMISM, COMMON, ARBITRUM, BASE, LINEA} = require('@overnight-contracts/common/utils/assets');
-const {initWallet} = require("@overnight-contracts/common/utils/script-utils");
+let {DEFAULT, BSC, OPTIMISM, COMMON, ARBITRUM, BASE, LINEA} = require('@sion-contracts/common/utils/assets');
+const {initWallet} = require("@sion-contracts/common/utils/script-utils");
 
 module.exports = async () => {
 
     let wallet = await initWallet();
     const exchange = await ethers.getContract("Exchange", wallet);
-    const usdPlus = await ethers.getContract("UsdPlusToken", wallet);
+    const usdPlus = await ethers.getContract("SionToken", wallet);
     const m2m = await ethers.getContract("Mark2Market", wallet);
     const pm = await ethers.getContract("PortfolioManager", wallet);
 

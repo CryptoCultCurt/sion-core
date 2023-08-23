@@ -1525,7 +1525,7 @@
     "name": "usdPlus",
     "outputs": [
       {
-        "internalType": "contract IUsdPlusToken",
+        "internalType": "contract ISionToken",
         "name": "",
         "type": "address"
       }

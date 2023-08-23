@@ -1,6 +1,6 @@
-const {deployProxy} = require("@overnight-contracts/common/utils/deployProxy");
-const {BSC} = require('@overnight-contracts/common/utils/assets');
-const {deploySection, settingSection} = require("@overnight-contracts/common/utils/script-utils");
+const {deployProxy} = require("@sion-contracts/common/utils/deployProxy");
+const {BSC} = require('@sion-contracts/common/utils/assets');
+const {deploySection, settingSection} = require("@sion-contracts/common/utils/script-utils");
 
 let nUsdLPToken = '0xa4b7Bc06EC817785170C2DbC1dD3ff86CDcdcc4C';
 let synToken = '0xa4080f1778e69467E905B8d6F72f6e441f9e9484';

@@ -1,16 +1,16 @@
 const {ethers} = require("hardhat");
-const {getContract} = require("@overnight-contracts/common/utils/script-utils");
-const {createSkim, createSkimTo, createSkimToWithFee, createBribe, createBribeWithFee, createSync} = require("@overnight-contracts/common/utils/payoutListener");
-const {Roles} = require("@overnight-contracts/common/utils/roles");
-const {COMMON} = require("@overnight-contracts/common/utils/assets");
+const {getContract} = require("@sion-contracts/common/utils/script-utils");
+const {createSkim, createSkimTo, createSkimToWithFee, createBribe, createBribeWithFee, createSync} = require("@sion-contracts/common/utils/payoutListener");
+const {Roles} = require("@sion-contracts/common/utils/roles");
+const {COMMON} = require("@sion-contracts/common/utils/assets");
 
 
 module.exports = async () => {
 
     const pl = await ethers.getContract("ArbitrumPayoutListener");
 
-    let usdPlus = await getContract('UsdPlusToken', 'arbitrum');
-    let daiPlus = await getContract('UsdPlusToken', 'arbitrum_dai');
+    let usdPlus = await getContract('SionToken', 'arbitrum');
+    let daiPlus = await getContract('SionToken', 'arbitrum_dai');
     let etsGamma = '0x813fFCC4Af3e810E6b447235cC88A02f00454453';
 
     let items = [];

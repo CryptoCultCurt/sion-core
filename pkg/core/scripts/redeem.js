@@ -1,16 +1,16 @@
-const {toE6, toE18} = require("@overnight-contracts/common/utils/decimals");
-const {getContract, showM2M, getCoreAsset, getWalletAddress} = require("@overnight-contracts/common/utils/script-utils");
+const {toE6, toE18} = require("@sion-contracts/common/utils/decimals");
+const {getContract, showM2M, getCoreAsset, getWalletAddress} = require("@sion-contracts/common/utils/script-utils");
 
 async function main() {
 
     let exchange = await getContract('Exchange');
-    let usdPlusToken = await getContract('UsdPlusToken');
+    let SionToken = await getContract('SionToken');
     let asset = await getCoreAsset();
 
     await showM2M();
 
-    let amount = await usdPlusToken.balanceOf(await getWalletAddress());
-    let decimals = await usdPlusToken.decimals();
+    let amount = await SionToken.balanceOf(await getWalletAddress());
+    let decimals = await SionToken.decimals();
     let toAsset;
     if (decimals === 18) {
         toAsset = toE18;
@@ -18,7 +18,7 @@ async function main() {
         toAsset = toE6;
     }
 
-    await (await usdPlusToken.approve(exchange.address, toAsset(1))).wait();
+    await (await SionToken.approve(exchange.address, toAsset(1))).wait();
     console.log('UsdPlus approve done');
     await (await exchange.redeem(asset.address, toAsset(1))).wait();
     console.log('Exchange.redeem done');

@@ -1,6 +1,6 @@
-const { getContract, execTimelock } = require("@overnight-contracts/common/utils/script-utils");
-const { createProposal, testProposal } = require("@overnight-contracts/common/utils/governance");
-const {Roles} = require("@overnight-contracts/common/utils/roles");
+const { getContract, execTimelock } = require("@sion-contracts/common/utils/script-utils");
+const { createProposal, testProposal } = require("@sion-contracts/common/utils/governance");
+const {Roles} = require("@sion-contracts/common/utils/roles");
 
 async function main() {
 

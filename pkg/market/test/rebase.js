@@ -4,13 +4,13 @@ const {deployments, ethers, getNamedAccounts} = require("hardhat");
 const BN = require("bn.js");
 const {constants} = require('@openzeppelin/test-helpers');
 const {ZERO_ADDRESS} = constants;
-const {logGas} = require("@overnight-contracts/common/utils/gas");
+const {logGas} = require("@sion-contracts/common/utils/gas");
 
 const hre = require("hardhat");
-const expectRevert = require("@overnight-contracts/common/utils/expectRevert");
-const {toE6, fromE6} = require("@overnight-contracts/common/utils/decimals");
+const expectRevert = require("@sion-contracts/common/utils/expectRevert");
+const {toE6, fromE6} = require("@sion-contracts/common/utils/decimals");
 
-const {sharedBeforeEach} = require("@overnight-contracts/common/utils/sharedBeforeEach");
+const {sharedBeforeEach} = require("@sion-contracts/common/utils/sharedBeforeEach");
 
 
 // Copy from USD+ tests

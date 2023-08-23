@@ -1,15 +1,15 @@
 {
-  "name": "overnight",
+  "name": "sion",
   "version": "0.0.1",
-  "description": "overnight superstable coin & dApp",
+  "description": "sion token",
   "scripts": {
     "build": "yarn workspaces run build",
     "test": "yarn workspaces run test"
   },
   "keywords": [],
   "author": {
-    "name": "OVN",
-    "email": "ovnstable@gmail.com"
+    "name": "SION",
+    "email": ""
   },
   "license": "ISC",
   "private": true,

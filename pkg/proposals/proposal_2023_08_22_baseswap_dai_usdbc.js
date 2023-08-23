@@ -1,6 +1,6 @@
-const { getContract, execTimelock, showM2M} = require("@overnight-contracts/common/utils/script-utils");
-const { createProposal, testProposal, testStrategy} = require("@overnight-contracts/common/utils/governance");
-const { strategyBaseSwapDaiUsdbcParams } = require("@overnight-contracts/strategies-base/deploy/dai/02_strategy_baseswap_dai_usdbc");
+const { getContract, execTimelock, showM2M} = require("@sion-contracts/common/utils/script-utils");
+const { createProposal, testProposal, testStrategy} = require("@sion-contracts/common/utils/governance");
+const { strategyBaseSwapDaiUsdbcParams } = require("@sion-contracts/strategies-base/deploy/dai/02_strategy_baseswap_dai_usdbc");
 
 async function main() {
 

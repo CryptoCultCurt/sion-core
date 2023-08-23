@@ -1,16 +1,16 @@
-const {deployProxy} = require("@overnight-contracts/common/utils/deployProxy");
+const {deployProxy} = require("@sion-contracts/common/utils/deployProxy");
 const {ethers} = require("hardhat");
 
 module.exports = async ({getNamedAccounts, deployments}) => {
     const {save} = deployments;
 
-    const mockUsdPlusToken = await ethers.getContract("MockUsdPlusToken");
+    const mockSionToken = await ethers.getContract("MockSionToken");
 
-    let params = { args: [mockUsdPlusToken.address, 'Wrapped MockUSD+', 'wMockUSD+', 6] };
+    let params = { args: [mockSionToken.address, 'Wrapped MockUSD+', 'wMockUSD+', 6] };
 
-    await deployProxy('WrappedUsdPlusToken', deployments, save, params);
+    await deployProxy('WrappedSionToken', deployments, save, params);
 
-    console.log("WrappedUsdPlusTokenForTest created");
+    console.log("WrappedSionTokenForTest created");
 };
 
-module.exports.tags = ['test', 'WrappedUsdPlusTokenForTest'];
+module.exports.tags = ['test', 'WrappedSionTokenForTest'];

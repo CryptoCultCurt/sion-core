@@ -3,7 +3,7 @@ pragma solidity >=0.5.0 <0.9.0;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-interface IUsdPlusToken is IERC20 {
+interface ISionToken is IERC20 {
 
     function liquidityIndex() external view returns (uint256);
 

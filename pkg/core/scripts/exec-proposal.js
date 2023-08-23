@@ -1,4 +1,4 @@
-const {getContract, getPrice, initWallet} = require("@overnight-contracts/common/utils/script-utils");
+const {getContract, getPrice, initWallet} = require("@sion-contracts/common/utils/script-utils");
 
 async function main() {
 

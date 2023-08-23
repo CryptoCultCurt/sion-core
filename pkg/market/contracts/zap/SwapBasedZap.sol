@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "@overnight-contracts/connectors/contracts/stuff/SwapBased.sol";
+import "@sion-contracts/connectors/contracts/stuff/SwapBased.sol";
 import "./OdosZap.sol";
 
 contract SwapBasedZap is OdosZap {

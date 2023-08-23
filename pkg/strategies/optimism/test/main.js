@@ -1,7 +1,7 @@
-const {OPTIMISM} = require('@overnight-contracts/common/utils/assets');
-const {strategyTest} = require('@overnight-contracts/common/utils/strategy-test');
-const {transferETH} = require("@overnight-contracts/common/utils/script-utils");
-const {impersonatingEtsGrantRole} = require("@overnight-contracts/common/utils/tests");
+const {OPTIMISM} = require('@sion-contracts/common/utils/assets');
+const {strategyTest} = require('@sion-contracts/common/utils/strategy-test');
+const {transferETH} = require("@sion-contracts/common/utils/script-utils");
+const {impersonatingEtsGrantRole} = require("@sion-contracts/common/utils/tests");
 
 const ReaperSonneUsdc = require("./abi/reaper/ReaperSonneUsdc.json");
 const ReaperSonneDai = require("./abi/reaper/ReaperSonneDai.json");

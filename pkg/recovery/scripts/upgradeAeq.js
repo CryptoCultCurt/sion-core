@@ -1,6 +1,6 @@
-const {verify } = require("@overnight-contracts/common/utils/verify-utils");
-const {getContract, initWallet, getERC20ByAddress, impersonateAccount} = require("@overnight-contracts/common/utils/script-utils");
-const {Roles} = require("@overnight-contracts/common/utils/roles");
+const {verify } = require("@sion-contracts/common/utils/verify-utils");
+const {getContract, initWallet, getERC20ByAddress, impersonateAccount} = require("@sion-contracts/common/utils/script-utils");
+const {Roles} = require("@sion-contracts/common/utils/roles");
 const hre = require("hardhat");
 const {ethers} = require("hardhat");
 

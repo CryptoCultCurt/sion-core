@@ -1,17 +1,17 @@
 const {ethers} = require("hardhat");
-const {getContract, getPrice} = require("@overnight-contracts/common/utils/script-utils");
-const {createSkim, createBribe, createCustom} = require("@overnight-contracts/common/utils/payoutListener");
-const {Roles} = require("@overnight-contracts/common/utils/roles");
+const {getContract, getPrice} = require("@sion-contracts/common/utils/script-utils");
+const {createSkim, createBribe, createCustom} = require("@sion-contracts/common/utils/payoutListener");
+const {Roles} = require("@sion-contracts/common/utils/roles");
 const BigNumber = require('bignumber.js');
-const {COMMON} = require("@overnight-contracts/common/utils/assets");
+const {COMMON} = require("@sion-contracts/common/utils/assets");
 
 
 module.exports = async () => {
 
     const pl = await getContract("OptimismPayoutListener", 'optimism');
 
-    let usdPlus = await getContract('UsdPlusToken', 'optimism');
-    let daiPlus = await getContract('UsdPlusToken', 'optimism_dai');
+    let usdPlus = await getContract('SionToken', 'optimism');
+    let daiPlus = await getContract('SionToken', 'optimism_dai');
 
     let items = [];
 

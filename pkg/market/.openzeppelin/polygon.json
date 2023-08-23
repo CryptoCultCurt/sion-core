@@ -177,12 +177,12 @@
             "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\UUPSUpgradeable.sol:107"
           },
           {
-            "label": "usdPlusToken",
+            "label": "SionToken",
             "offset": 0,
             "slot": "301",
-            "type": "t_contract(IUsdPlusToken)4609",
-            "contract": "WrappedUsdPlusToken",
-            "src": "contracts\\WrappedUsdPlusToken.sol:18"
+            "type": "t_contract(ISionToken)4609",
+            "contract": "WrappedSionToken",
+            "src": "contracts\\WrappedSion.sol:18"
           }
         ],
         "types": {
@@ -210,8 +210,8 @@
             "label": "bytes32",
             "numberOfBytes": "32"
           },
-          "t_contract(IUsdPlusToken)4609": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)4609": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -342,18 +342,18 @@
             "src": "contracts\\Market.sol:16"
           },
           {
-            "label": "usdPlusToken",
+            "label": "SionToken",
             "offset": 0,
             "slot": "252",
-            "type": "t_contract(IUsdPlusToken)4609",
+            "type": "t_contract(ISionToken)4609",
             "contract": "Market",
             "src": "contracts\\Market.sol:17"
           },
           {
-            "label": "wrappedUsdPlusToken",
+            "label": "wrappedSionToken",
             "offset": 0,
             "slot": "253",
-            "type": "t_contract(IWrappedUsdPlusToken)4632",
+            "type": "t_contract(IWrappedSionToken)4632",
             "contract": "Market",
             "src": "contracts\\Market.sol:18"
           },
@@ -395,12 +395,12 @@
             "label": "contract IExchange",
             "numberOfBytes": "20"
           },
-          "t_contract(IUsdPlusToken)4609": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)4609": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
-          "t_contract(IWrappedUsdPlusToken)4632": {
-            "label": "contract IWrappedUsdPlusToken",
+          "t_contract(IWrappedSionToken)4632": {
+            "label": "contract IWrappedSionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -562,9 +562,9 @@
             "label": "asset",
             "offset": 0,
             "slot": "301",
-            "type": "t_contract(IUsdPlusToken)5979",
-            "contract": "WrappedUsdPlusToken",
-            "src": "contracts\\WrappedUsdPlusToken.sol:18"
+            "type": "t_contract(ISionToken)5979",
+            "contract": "WrappedSionToken",
+            "src": "contracts\\WrappedSion.sol:18"
           }
         ],
         "types": {
@@ -592,8 +592,8 @@
             "label": "bytes32",
             "numberOfBytes": "32"
           },
-          "t_contract(IUsdPlusToken)5979": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)5979": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -724,18 +724,18 @@
             "src": "contracts\\Market.sol:17"
           },
           {
-            "label": "usdPlusToken",
+            "label": "SionToken",
             "offset": 0,
             "slot": "252",
-            "type": "t_contract(IUsdPlusToken)6183",
+            "type": "t_contract(ISionToken)6183",
             "contract": "Market",
             "src": "contracts\\Market.sol:18"
           },
           {
-            "label": "wrappedUsdPlusToken",
+            "label": "wrappedSionToken",
             "offset": 0,
             "slot": "253",
-            "type": "t_contract(IWrappedUsdPlusToken)6198",
+            "type": "t_contract(IWrappedSionToken)6198",
             "contract": "Market",
             "src": "contracts\\Market.sol:19"
           },
@@ -777,12 +777,12 @@
             "label": "contract IExchange",
             "numberOfBytes": "20"
           },
-          "t_contract(IUsdPlusToken)6183": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)6183": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
-          "t_contract(IWrappedUsdPlusToken)6198": {
-            "label": "contract IWrappedUsdPlusToken",
+          "t_contract(IWrappedSionToken)6198": {
+            "label": "contract IWrappedSionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -901,18 +901,18 @@
             "src": "contracts/Market.sol:17"
           },
           {
-            "label": "usdPlusToken",
+            "label": "SionToken",
             "offset": 0,
             "slot": "252",
-            "type": "t_contract(IUsdPlusToken)6183",
+            "type": "t_contract(ISionToken)6183",
             "contract": "Market",
             "src": "contracts/Market.sol:18"
           },
           {
-            "label": "wrappedUsdPlusToken",
+            "label": "wrappedSionToken",
             "offset": 0,
             "slot": "253",
-            "type": "t_contract(IWrappedUsdPlusToken)6198",
+            "type": "t_contract(IWrappedSionToken)6198",
             "contract": "Market",
             "src": "contracts/Market.sol:19"
           },
@@ -954,12 +954,12 @@
             "label": "contract IExchange",
             "numberOfBytes": "20"
           },
-          "t_contract(IUsdPlusToken)6183": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)6183": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
-          "t_contract(IWrappedUsdPlusToken)6198": {
-            "label": "contract IWrappedUsdPlusToken",
+          "t_contract(IWrappedSionToken)6198": {
+            "label": "contract IWrappedSionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -1121,9 +1121,9 @@
             "label": "asset",
             "offset": 0,
             "slot": "301",
-            "type": "t_contract(IUsdPlusToken)3256",
-            "contract": "WrappedUsdPlusToken",
-            "src": "contracts/WrappedUsdPlusToken.sol:18"
+            "type": "t_contract(ISionToken)3256",
+            "contract": "WrappedSionToken",
+            "src": "contracts/WrappedSion.sol:18"
           }
         ],
         "types": {
@@ -1151,8 +1151,8 @@
             "label": "bytes32",
             "numberOfBytes": "32"
           },
-          "t_contract(IUsdPlusToken)3256": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)3256": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -1326,9 +1326,9 @@
             "label": "asset",
             "offset": 0,
             "slot": "301",
-            "type": "t_contract(IUsdPlusToken)6257",
-            "contract": "WrappedUsdPlusToken",
-            "src": "contracts/WrappedUsdPlusToken.sol:18"
+            "type": "t_contract(ISionToken)6257",
+            "contract": "WrappedSionToken",
+            "src": "contracts/WrappedSion.sol:18"
           }
         ],
         "types": {
@@ -1356,8 +1356,8 @@
             "label": "bytes32",
             "numberOfBytes": "32"
           },
-          "t_contract(IUsdPlusToken)6257": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)6257": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -1515,7 +1515,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "303",
-            "type": "t_contract(IUsdPlusToken)8802",
+            "type": "t_contract(ISionToken)8802",
             "contract": "HedgeExchanger",
             "src": "contracts/HedgeExchanger.sol:25"
           },
@@ -1677,8 +1677,8 @@
             "label": "contract IRebaseToken",
             "numberOfBytes": "20"
           },
-          "t_contract(IUsdPlusToken)8802": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)8802": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -2374,7 +2374,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "303",
-            "type": "t_contract(IUsdPlusToken)8803",
+            "type": "t_contract(ISionToken)8803",
             "contract": "HedgeExchanger",
             "src": "contracts/HedgeExchanger.sol:25"
           },
@@ -2536,8 +2536,8 @@
             "label": "contract IRebaseToken",
             "numberOfBytes": "20"
           },
-          "t_contract(IUsdPlusToken)8803": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)8803": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -2683,7 +2683,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "303",
-            "type": "t_contract(IUsdPlusToken)8827",
+            "type": "t_contract(ISionToken)8827",
             "contract": "HedgeExchanger",
             "src": "contracts/HedgeExchanger.sol:25"
           },
@@ -2845,8 +2845,8 @@
             "label": "contract IRebaseToken",
             "numberOfBytes": "20"
           },
-          "t_contract(IUsdPlusToken)8827": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)8827": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -2992,7 +2992,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "303",
-            "type": "t_contract(IUsdPlusToken)8843",
+            "type": "t_contract(ISionToken)8843",
             "contract": "HedgeExchanger",
             "src": "contracts/HedgeExchanger.sol:25"
           },
@@ -3154,8 +3154,8 @@
             "label": "contract IRebaseToken",
             "numberOfBytes": "20"
           },
-          "t_contract(IUsdPlusToken)8843": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)8843": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -3301,7 +3301,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "303",
-            "type": "t_contract(IUsdPlusToken)8799",
+            "type": "t_contract(ISionToken)8799",
             "contract": "HedgeExchanger",
             "src": "contracts/HedgeExchanger.sol:25"
           },
@@ -3463,8 +3463,8 @@
             "label": "contract IRebaseToken",
             "numberOfBytes": "20"
           },
-          "t_contract(IUsdPlusToken)8799": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)8799": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -3610,7 +3610,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "303",
-            "type": "t_contract(IUsdPlusToken)8788",
+            "type": "t_contract(ISionToken)8788",
             "contract": "HedgeExchanger",
             "src": "contracts/HedgeExchanger.sol:25"
           },
@@ -3772,8 +3772,8 @@
             "label": "contract IRebaseToken",
             "numberOfBytes": "20"
           },
-          "t_contract(IUsdPlusToken)8788": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)8788": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -3919,7 +3919,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "303",
-            "type": "t_contract(IUsdPlusToken)8792",
+            "type": "t_contract(ISionToken)8792",
             "contract": "HedgeExchanger",
             "src": "contracts/HedgeExchanger.sol:26"
           },
@@ -4081,8 +4081,8 @@
             "label": "contract IRebaseToken",
             "numberOfBytes": "20"
           },
-          "t_contract(IUsdPlusToken)8792": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)8792": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -4228,7 +4228,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "303",
-            "type": "t_contract(IUsdPlusToken)8788",
+            "type": "t_contract(ISionToken)8788",
             "contract": "HedgeExchanger",
             "src": "contracts/HedgeExchanger.sol:26"
           },
@@ -4390,8 +4390,8 @@
             "label": "contract IRebaseToken",
             "numberOfBytes": "20"
           },
-          "t_contract(IUsdPlusToken)8788": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)8788": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -4537,7 +4537,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "303",
-            "type": "t_contract(IUsdPlusToken)8866",
+            "type": "t_contract(ISionToken)8866",
             "contract": "HedgeExchanger",
             "src": "contracts/HedgeExchanger.sol:27"
           },
@@ -4699,8 +4699,8 @@
             "label": "contract IRebaseToken",
             "numberOfBytes": "20"
           },
-          "t_contract(IUsdPlusToken)8866": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)8866": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -4846,7 +4846,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "303",
-            "type": "t_contract(IUsdPlusToken)9042",
+            "type": "t_contract(ISionToken)9042",
             "contract": "HedgeExchanger",
             "src": "contracts/HedgeExchanger.sol:27"
           },
@@ -5008,8 +5008,8 @@
             "label": "contract IRebaseToken",
             "numberOfBytes": "20"
           },
-          "t_contract(IUsdPlusToken)9042": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)9042": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -5155,7 +5155,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "303",
-            "type": "t_contract(IUsdPlusToken)9092",
+            "type": "t_contract(ISionToken)9092",
             "contract": "HedgeExchanger",
             "src": "contracts/HedgeExchanger.sol:27"
           },
@@ -5325,8 +5325,8 @@
             "label": "contract IRebaseToken",
             "numberOfBytes": "20"
           },
-          "t_contract(IUsdPlusToken)9092": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)9092": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -5472,7 +5472,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "303",
-            "type": "t_contract(IUsdPlusToken)9148",
+            "type": "t_contract(ISionToken)9148",
             "contract": "HedgeExchanger",
             "src": "contracts/HedgeExchanger.sol:27"
           },
@@ -5642,8 +5642,8 @@
             "label": "contract IRebaseToken",
             "numberOfBytes": "20"
           },
-          "t_contract(IUsdPlusToken)9148": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)9148": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -6064,7 +6064,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "303",
-            "type": "t_contract(IUsdPlusToken)9154",
+            "type": "t_contract(ISionToken)9154",
             "contract": "HedgeExchanger",
             "src": "contracts/HedgeExchanger.sol:27"
           },
@@ -6234,8 +6234,8 @@
             "label": "contract IRebaseToken",
             "numberOfBytes": "20"
           },
-          "t_contract(IUsdPlusToken)9154": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)9154": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -6381,7 +6381,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "303",
-            "type": "t_contract(IUsdPlusToken)5096",
+            "type": "t_contract(ISionToken)5096",
             "contract": "HedgeExchanger",
             "src": "contracts/HedgeExchanger.sol:30"
           },
@@ -6551,8 +6551,8 @@
             "label": "contract IRebaseToken",
             "numberOfBytes": "20"
           },
-          "t_contract(IUsdPlusToken)5096": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)5096": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {
@@ -6698,7 +6698,7 @@
             "label": "usdPlus",
             "offset": 0,
             "slot": "303",
-            "type": "t_contract(IUsdPlusToken)5065",
+            "type": "t_contract(ISionToken)5065",
             "contract": "HedgeExchanger",
             "src": "contracts\\HedgeExchanger.sol:30"
           },
@@ -6876,8 +6876,8 @@
             "label": "contract IRebaseToken",
             "numberOfBytes": "20"
           },
-          "t_contract(IUsdPlusToken)5065": {
-            "label": "contract IUsdPlusToken",
+          "t_contract(ISionToken)5065": {
+            "label": "contract ISionToken",
             "numberOfBytes": "20"
           },
           "t_mapping(t_address,t_bool)": {

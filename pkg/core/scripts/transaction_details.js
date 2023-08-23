@@ -1,5 +1,5 @@
-const {getContract, getPrice, showM2M, getERC20} = require("@overnight-contracts/common/utils/script-utils");
-const {createProposal, testProposal} = require("@overnight-contracts/common/utils/governance");
+const {getContract, getPrice, showM2M, getERC20} = require("@sion-contracts/common/utils/script-utils");
+const {createProposal, testProposal} = require("@sion-contracts/common/utils/governance");
 const {ethers} = require("hardhat");
 
 async function main() {

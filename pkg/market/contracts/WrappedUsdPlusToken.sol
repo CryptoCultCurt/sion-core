@@ -5,29 +5,29 @@ import "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 
-import "@overnight-contracts/common/contracts/libraries/WadRayMath.sol";
-import "@overnight-contracts/core/contracts/interfaces/IUsdPlusToken.sol";
+import "@sion-contracts/common/contracts/libraries/WadRayMath.sol";
+import "@sion-contracts/core/contracts/interfaces/ISion.sol";
 
-import "./interfaces/IWrappedUsdPlusToken.sol";
+import "./interfaces/IWrappedSion.sol";
 
-contract WrappedUsdPlusToken is IERC4626, ERC20Upgradeable, AccessControlUpgradeable, UUPSUpgradeable {
+contract WrappedSionToken is IERC4626, ERC20Upgradeable, AccessControlUpgradeable, UUPSUpgradeable {
     using WadRayMath for uint256;
 
 
-    IUsdPlusToken public asset;
+    ISionToken public asset;
     uint8 private _decimals;
 
     /// @custom:oz-upgrades-unsafe-allow constructor
     constructor() initializer {}
 
-    function initialize(address usdPlusTokenAddress, string calldata name, string calldata symbol, uint8 decimals) initializer public {
+    function initialize(address SionTokenAddress, string calldata name, string calldata symbol, uint8 decimals) initializer public {
         __ERC20_init(name, symbol);
         __AccessControl_init();
         __UUPSUpgradeable_init();
 
         _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
 
-        asset = IUsdPlusToken(usdPlusTokenAddress);
+        asset = ISionToken(SionTokenAddress);
 
         _decimals = decimals;
     }

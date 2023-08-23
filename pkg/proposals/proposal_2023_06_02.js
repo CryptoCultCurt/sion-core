@@ -1,8 +1,8 @@
-const { getContract, execTimelock, showM2M} = require("@overnight-contracts/common/utils/script-utils");
-const { createProposal, testProposal, testStrategy} = require("@overnight-contracts/common/utils/governance");
-const { strategyWombexUsdtParams } = require("@overnight-contracts/strategies-bsc/deploy/usdt/04_strategy_wombex_usdt.js");
-const { strategyWombexUsdcParams } = require("@overnight-contracts/strategies-bsc/deploy/20_strategy_wombex_usdc.js");
-const { strategyWombexBusdParams } = require("@overnight-contracts/strategies-bsc/deploy/19_strategy_wombex_busd.js");
+const { getContract, execTimelock, showM2M} = require("@sion-contracts/common/utils/script-utils");
+const { createProposal, testProposal, testStrategy} = require("@sion-contracts/common/utils/governance");
+const { strategyWombexUsdtParams } = require("@sion-contracts/strategies-bsc/deploy/usdt/04_strategy_wombex_usdt.js");
+const { strategyWombexUsdcParams } = require("@sion-contracts/strategies-bsc/deploy/20_strategy_wombex_usdc.js");
+const { strategyWombexBusdParams } = require("@sion-contracts/strategies-bsc/deploy/19_strategy_wombex_busd.js");
 
 
 async function main() {

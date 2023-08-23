@@ -1,7 +1,7 @@
 const { ethers } = require("hardhat");
-const {getERC20, getDevWallet, transferUSDC} = require("@overnight-contracts/common/utils/script-utils");
+const {getERC20, getDevWallet, transferUSDC} = require("@sion-contracts/common/utils/script-utils");
 
-let {DEFAULT} = require('@overnight-contracts/common/utils/assets');
+let {DEFAULT} = require('@sion-contracts/common/utils/assets');
 
 module.exports = async ({getNamedAccounts, deployments}) => {
     const {deploy} = deployments;

@@ -1,14 +1,14 @@
 const { expect } = require("chai");
 const { deployments, ethers, getNamedAccounts } = require("hardhat");
-const { transferAsset, getERC20, transferETH, initWallet, execTimelock, getContract } = require("@overnight-contracts/common/utils/script-utils");
-const { resetHardhat, greatLess } = require("@overnight-contracts/common/utils/tests");
+const { transferAsset, getERC20, transferETH, initWallet, execTimelock, getContract } = require("@sion-contracts/common/utils/script-utils");
+const { resetHardhat, greatLess } = require("@sion-contracts/common/utils/tests");
 const BN = require("bn.js");
 const hre = require("hardhat");
 const readline = require('readline');
 const fs = require('fs');
-let { OPTIMISM, POLYGON } = require('@overnight-contracts/common/utils/assets');
-const { sharedBeforeEach } = require("@overnight-contracts/common/utils/sharedBeforeEach");
-const { fromE6, fromE18, toAsset, toE6, toE18 } = require("@overnight-contracts/common/utils/decimals");
+let { OPTIMISM, POLYGON } = require('@sion-contracts/common/utils/assets');
+const { sharedBeforeEach } = require("@sion-contracts/common/utils/sharedBeforeEach");
+const { fromE6, fromE18, toAsset, toE6, toE18 } = require("@sion-contracts/common/utils/decimals");
 
 
 describe("Airdrop", function () {
@@ -27,7 +27,7 @@ describe("Airdrop", function () {
 
         account = await setUp();
         airdrop = (await ethers.getContract("Airdrop")).connect(account);
-        usdPlus = (await getContract('UsdPlusToken', 'optimism')).connect(account);
+        usdPlus = (await getContract('SionToken', 'optimism')).connect(account);
     });
 
 
@@ -114,8 +114,8 @@ describe("Airdrop", function () {
 
 async function getPlusTokens(amount, to) {
 
-    let usdPlus = await getContract('UsdPlusToken', 'optimism');
-    let daiPlus = await getContract('UsdPlusToken', 'optimism_dai');
+    let usdPlus = await getContract('SionToken', 'optimism');
+    let daiPlus = await getContract('SionToken', 'optimism_dai');
 
     await execTimelock(async (timelock) => {
         let exchangeUsdPlus = await usdPlus.exchange();

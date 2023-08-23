@@ -1,7 +1,7 @@
 const {expect} = require("chai");
 const chai = require("chai");
 const {deployments, ethers, getNamedAccounts} = require('hardhat');
-const expectRevert = require("@overnight-contracts/common/utils/expectRevert");
+const expectRevert = require("@sion-contracts/common/utils/expectRevert");
 
 const hre = require("hardhat");
 chai.use(require('chai-bignumber')());

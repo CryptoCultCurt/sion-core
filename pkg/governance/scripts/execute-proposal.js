@@ -1,6 +1,6 @@
-const {initWallet, getContract, getPrice, getWalletAddress} = require("@overnight-contracts/common/utils/script-utils");
-const {toE18} = require("@overnight-contracts/common/utils/decimals");
-const {createProposal, getProposalState} = require("@overnight-contracts/common/utils/governance");
+const {initWallet, getContract, getPrice, getWalletAddress} = require("@sion-contracts/common/utils/script-utils");
+const {toE18} = require("@sion-contracts/common/utils/decimals");
+const {createProposal, getProposalState} = require("@sion-contracts/common/utils/governance");
 const hre = require("hardhat");
 const ethers= hre.ethers;
 

@@ -1,9 +1,9 @@
-const {toAsset, toE6} = require("@overnight-contracts/common/utils/decimals");
+const {toAsset, toE6} = require("@sion-contracts/common/utils/decimals");
 
 const {
     getContract,
     getCoreAsset,
-} = require("@overnight-contracts/common/utils/script-utils");
+} = require("@sion-contracts/common/utils/script-utils");
 
 
 async function main() {

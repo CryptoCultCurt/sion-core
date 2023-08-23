@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.0 <0.9.0;
 
-import "@overnight-contracts/connectors/contracts/stuff/Chainlink.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Thena.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Wombat.sol";
+import "@sion-contracts/connectors/contracts/stuff/Chainlink.sol";
+import "@sion-contracts/connectors/contracts/stuff/Thena.sol";
+import "@sion-contracts/connectors/contracts/stuff/Wombat.sol";
 
 import "hardhat/console.sol";
 

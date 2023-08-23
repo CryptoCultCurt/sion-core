@@ -1,8 +1,8 @@
 const hre = require("hardhat");
-const {getContract, showM2M, execTimelock, initWallet, convertWeights} = require("@overnight-contracts/common/utils/script-utils");
-const {createProposal, testProposal, testUsdPlus, testStrategy} = require("@overnight-contracts/common/utils/governance");
-let {BSC} = require('@overnight-contracts/common/utils/assets');
-const {Roles} = require("@overnight-contracts/common/utils/roles");
+const {getContract, showM2M, execTimelock, initWallet, convertWeights} = require("@sion-contracts/common/utils/script-utils");
+const {createProposal, testProposal, testUsdPlus, testStrategy} = require("@sion-contracts/common/utils/governance");
+let {BSC} = require('@sion-contracts/common/utils/assets');
+const {Roles} = require("@sion-contracts/common/utils/roles");
 
 async function main() {
 

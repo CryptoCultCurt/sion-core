@@ -2,7 +2,7 @@
 pragma solidity >=0.8.0 <0.9.0;
 
 import "../GlobalPayoutListener.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Sushiswap.sol";
+import "@sion-contracts/connectors/contracts/stuff/Sushiswap.sol";
 
 contract PolygonPayoutListener is GlobalPayoutListener {
 

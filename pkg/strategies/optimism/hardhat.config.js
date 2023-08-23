@@ -2,9 +2,9 @@ require('hardhat-deploy');
 require('@openzeppelin/hardhat-upgrades');
 require("@nomiclabs/hardhat-etherscan");
 require("hardhat-gas-reporter");
-require('@overnight-contracts/common/utils/hardhat-ovn');
+require('@sion-contracts/common/utils/hardhat-ovn');
 require('hardhat-contract-sizer');
-const config = require("@overnight-contracts/common/utils/hardhat-config");
+const config = require("@sion-contracts/common/utils/hardhat-config");
 
 module.exports = {
     namedAccounts: config.namedAccounts,

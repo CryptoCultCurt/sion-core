@@ -1,9 +1,9 @@
 const hre = require("hardhat");
 
-const {getContract, showM2M, execTimelock} = require("@overnight-contracts/common/utils/script-utils");
-const {createProposal} = require("@overnight-contracts/common/utils/governance");
+const {getContract, showM2M, execTimelock} = require("@sion-contracts/common/utils/script-utils");
+const {createProposal} = require("@sion-contracts/common/utils/governance");
 
-let {POLYGON} = require('@overnight-contracts/common/utils/assets');
+let {POLYGON} = require('@sion-contracts/common/utils/assets');
 
 let nUsdLPToken = '0x7479e1Bc2F2473f9e78c89B4210eb6d55d33b645';
 let synToken = '0xf8F9efC0db77d8881500bb06FF5D6ABc3070E695';

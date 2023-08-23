@@ -1,10 +1,10 @@
-const {getContract, getPrice, initWallet, execTimelock} = require("@overnight-contracts/common/utils/script-utils");
-const {fromE6} = require("@overnight-contracts/common/utils/decimals");
+const {getContract, getPrice, initWallet, execTimelock} = require("@sion-contracts/common/utils/script-utils");
+const {fromE6} = require("@sion-contracts/common/utils/decimals");
 
 async function main() {
 
     let exchange = await getContract('Exchange');
-    let usdPlus = await getContract('UsdPlusToken');
+    let usdPlus = await getContract('SionToken');
     let m2m = await getContract('Mark2Market');
 
     console.log('NAV:   ' + fromE6(await m2m.totalNetAssets()));

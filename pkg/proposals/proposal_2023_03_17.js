@@ -1,8 +1,8 @@
 const hre = require("hardhat");
-const {getContract, showM2M, execTimelock, initWallet, convertWeights} = require("@overnight-contracts/common/utils/script-utils");
-const {createProposal, testProposal, testUsdPlus, testStrategy} = require("@overnight-contracts/common/utils/governance");
-let {BSC} = require('@overnight-contracts/common/utils/assets');
-const {Roles} = require("@overnight-contracts/common/utils/roles");
+const {getContract, showM2M, execTimelock, initWallet, convertWeights} = require("@sion-contracts/common/utils/script-utils");
+const {createProposal, testProposal, testUsdPlus, testStrategy} = require("@sion-contracts/common/utils/governance");
+let {BSC} = require('@sion-contracts/common/utils/assets');
+const {Roles} = require("@sion-contracts/common/utils/roles");
 
 let rebaseToken = '0x5B852898CD47d2Be1d77D30377b3642290f5Ec75';
 let hedgeExchanger = '0x65AfD05fbc4413948ffaaD8bCb13f71b6f79332D';
@@ -149,11 +149,11 @@ async function main() {
 
 
     let Exchange = await getContract('Exchange');
-    let UsdPlusToken = await getContract('UsdPlusToken');
+    let SionToken = await getContract('SionToken');
 
     addresses.push(Exchange.address);
     values.push(0);
-    abis.push(Exchange.interface.encodeFunctionData('setTokens', [UsdPlusToken.address, BSC.usdc]));
+    abis.push(Exchange.interface.encodeFunctionData('setTokens', [SionToken.address, BSC.usdc]));
 
 
     // await showM2M();

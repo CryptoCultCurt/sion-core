@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 import "./OdosZap.sol";
 
-import "@overnight-contracts/connectors/contracts/stuff/BaseSwap.sol";
+import "@sion-contracts/connectors/contracts/stuff/BaseSwap.sol";
 
 contract BaseSwapZap is OdosZap {
     IBaseSwapRouter01 public baseSwapRouter;

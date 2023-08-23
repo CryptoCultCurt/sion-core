@@ -1,35 +1,35 @@
-const {deployProxy} = require("@overnight-contracts/common/utils/deployProxy");
-const {getContract} = require("@overnight-contracts/common/utils/script-utils");
+const {deployProxy} = require("@sion-contracts/common/utils/deployProxy");
+const {getContract} = require("@sion-contracts/common/utils/script-utils");
 const hre = require("hardhat");
 const {ethers} = require("hardhat");
 
 module.exports = async ({deployments}) => {
     const {save} = deployments;
 
-    const usdPlusToken = await getContract("UsdPlusToken");
+    const SionToken = await getContract("SionToken");
 
     let params;
 
     if (hre.network.name === "optimism_dai") {
-        params = {args: [usdPlusToken.address, "Wrapped DAI+", "wDAI+", 18]};
+        params = {args: [SionToken.address, "Wrapped DAI+", "wDAI+", 18]};
     } else if (hre.network.name === "arbitrum_dai") {
-        params = {args: [usdPlusToken.address, "Wrapped DAI+", "wDAI+", 18]};
+        params = {args: [SionToken.address, "Wrapped DAI+", "wDAI+", 18]};
     } else if (hre.network.name === "bsc_usdt") {
-        params = {args: [usdPlusToken.address, "Wrapped USDT+", "wUSDT+", 18]};
+        params = {args: [SionToken.address, "Wrapped USDT+", "wUSDT+", 18]};
     } else {
-        params = {args: [usdPlusToken.address, "Wrapped USD+", "wUSD+", 6]};
+        params = {args: [SionToken.address, "Wrapped USD+", "wUSD+", 6]};
     }
 
-    await deployProxy('WrappedUsdPlusToken', deployments, save, params);
+    await deployProxy('WrappedSionToken', deployments, save, params);
 
-    console.log("WrappedUsdPlusToken created");
+    console.log("WrappedSionToken created");
 
-    let wrappedUsdPlusToken = await ethers.getContract('WrappedUsdPlusToken');
+    let wrappedSionToken = await ethers.getContract('WrappedSionToken');
 
-    console.log('WrappedUsdPlusToken deploy done()');
-    console.log('Symbol:   ' + await wrappedUsdPlusToken.symbol());
-    console.log('Name:     ' + await wrappedUsdPlusToken.name());
-    console.log('Decimals: ' + await wrappedUsdPlusToken.decimals());
+    console.log('WrappedSionToken deploy done()');
+    console.log('Symbol:   ' + await wrappedSionToken.symbol());
+    console.log('Name:     ' + await wrappedSionToken.name());
+    console.log('Decimals: ' + await wrappedSionToken.decimals());
 };
 
-module.exports.tags = ['base', 'WrappedUsdPlusToken'];
+module.exports.tags = ['base', 'WrappedSionToken'];

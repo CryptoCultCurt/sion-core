@@ -2,8 +2,8 @@
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "@overnight-contracts/common/contracts/libraries/SafeMath.sol";
-import "@overnight-contracts/common/contracts/libraries/DecimalMath.sol";
+import "@sion-contracts/common/contracts/libraries/SafeMath.sol";
+import "@sion-contracts/common/contracts/libraries/DecimalMath.sol";
 
 interface IDODOMine {
 

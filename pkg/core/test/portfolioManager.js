@@ -1,21 +1,21 @@
 const {expect} = require("chai");
 const chai = require("chai");
 const {deployments, ethers, getNamedAccounts, upgrades} = require("hardhat");
-const {resetHardhat} = require("@overnight-contracts/common/utils/tests");
+const {resetHardhat} = require("@sion-contracts/common/utils/tests");
 const hre = require("hardhat");
-let {DEFAULT} = require('@overnight-contracts/common/utils/assets');
+let {DEFAULT} = require('@sion-contracts/common/utils/assets');
 const {constants} = require("@openzeppelin/test-helpers");
 const {ZERO_ADDRESS} = constants;
-const expectRevert = require("@overnight-contracts/common/utils/expectRevert");
+const expectRevert = require("@sion-contracts/common/utils/expectRevert");
 const sampleModule = require("@openzeppelin/hardhat-upgrades/dist/utils/deploy-impl");
-const {sharedBeforeEach} = require("@overnight-contracts/common/utils/sharedBeforeEach")
+const {sharedBeforeEach} = require("@sion-contracts/common/utils/sharedBeforeEach")
 
 chai.use(require('chai-bignumber')());
 const { solidity } =  require("ethereum-waffle");
 chai.use(solidity);
 
 const {waffle} = require("hardhat");
-const {transferETH} = require("@overnight-contracts/common/utils/script-utils");
+const {transferETH} = require("@sion-contracts/common/utils/script-utils");
 const {provider} = waffle;
 
 let assetAddress = DEFAULT.usdc;

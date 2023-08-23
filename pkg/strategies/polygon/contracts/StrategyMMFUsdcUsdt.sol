@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.0 <0.9.0;
 
-import "@overnight-contracts/core/contracts/Strategy.sol";
-import "@overnight-contracts/connectors/contracts/stuff/UniswapV2.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Synapse.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Chainlink.sol";
-import "@overnight-contracts/connectors/contracts/stuff/MMF.sol";
+import "@sion-contracts/core/contracts/Strategy.sol";
+import "@sion-contracts/connectors/contracts/stuff/UniswapV2.sol";
+import "@sion-contracts/connectors/contracts/stuff/Synapse.sol";
+import "@sion-contracts/connectors/contracts/stuff/Chainlink.sol";
+import "@sion-contracts/connectors/contracts/stuff/MMF.sol";
 
 contract StrategyMMFUsdcUsdt is Strategy {
 

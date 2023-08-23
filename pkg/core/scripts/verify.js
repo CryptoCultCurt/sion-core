@@ -1,8 +1,8 @@
-const {verify } = require("@overnight-contracts/common/utils/verify-utils");
+const {verify } = require("@sion-contracts/common/utils/verify-utils");
 
 async function main() {
 
-    let items = ["Exchange", "PortfolioManager","UsdPlusToken", "Mark2Market"];
+    let items = ["Exchange", "PortfolioManager","SionToken", "Mark2Market"];
     await verify(items);
 }
 

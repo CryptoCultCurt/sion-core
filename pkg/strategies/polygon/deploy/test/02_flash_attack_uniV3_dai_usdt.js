@@ -1,4 +1,4 @@
-const {POLYGON} = require('@overnight-contracts/common/utils/assets');
+const {POLYGON} = require('@sion-contracts/common/utils/assets');
 const { ethers } = require("hardhat");
 
 

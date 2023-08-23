@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 pragma solidity ^0.8.0;
-import "@overnight-contracts/common/contracts/libraries/OvnMath.sol";
+import "@sion-contracts/common/contracts/libraries/OvnMath.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 interface IUniswapV2Pair {

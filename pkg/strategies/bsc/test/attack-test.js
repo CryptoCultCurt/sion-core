@@ -1,9 +1,9 @@
 const hre = require("hardhat");
 const {deployments, getNamedAccounts, ethers} = require("hardhat");
-const {resetHardhat, greatLess} = require("@overnight-contracts/common/utils/tests");
-const {toE6, toE18, fromAsset, fromE18, fromE6} = require("@overnight-contracts/common/utils/decimals");
-const {sharedBeforeEach} = require("@overnight-contracts/common/utils/sharedBeforeEach");
-const {transferDAI, getERC20, transferETH, initWallet} = require("@overnight-contracts/common/utils/script-utils");
+const {resetHardhat, greatLess} = require("@sion-contracts/common/utils/tests");
+const {toE6, toE18, fromAsset, fromE18, fromE6} = require("@sion-contracts/common/utils/decimals");
+const {sharedBeforeEach} = require("@sion-contracts/common/utils/sharedBeforeEach");
+const {transferDAI, getERC20, transferETH, initWallet} = require("@sion-contracts/common/utils/script-utils");
 const {expect} = require("chai");
 const chai = require("chai");
 const BigNumber = require('bignumber.js');

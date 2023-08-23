@@ -1,6 +1,6 @@
-const {deployProxy} = require("@overnight-contracts/common/utils/deployProxy");
-const {deploySection, settingSection} = require("@overnight-contracts/common/utils/script-utils");
-const {BSC} = require("@overnight-contracts/common/utils/assets");
+const {deployProxy} = require("@sion-contracts/common/utils/deployProxy");
+const {deploySection, settingSection} = require("@sion-contracts/common/utils/script-utils");
+const {BSC} = require("@sion-contracts/common/utils/assets");
 
 let the = '0xF4C8E32EaDEC4BFe97E0F595AdD0f4450a863a11';
 let pair = '0x6321B57b6fdc14924be480c54e93294617E672aB';

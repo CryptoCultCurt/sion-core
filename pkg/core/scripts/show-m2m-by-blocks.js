@@ -1,10 +1,10 @@
-const {getContract} = require("@overnight-contracts/common/utils/script-utils");
-const {fromAsset} = require("@overnight-contracts/common/utils/decimals");
+const {getContract} = require("@sion-contracts/common/utils/script-utils");
+const {fromAsset} = require("@sion-contracts/common/utils/decimals");
 
 async function main() {
 
     let m2m = await getContract('Mark2Market');
-    let usdPlus = await getContract('UsdPlusToken');
+    let usdPlus = await getContract('SionToken');
 
 
 

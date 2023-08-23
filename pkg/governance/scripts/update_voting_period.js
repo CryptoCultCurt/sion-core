@@ -1,6 +1,6 @@
-const {initWallet, getContract, getPrice} = require("@overnight-contracts/common/utils/script-utils");
-const {toE18} = require("@overnight-contracts/common/utils/decimals");
-const {createProposal} = require("@overnight-contracts/common/utils/governance");
+const {initWallet, getContract, getPrice} = require("@sion-contracts/common/utils/script-utils");
+const {toE18} = require("@sion-contracts/common/utils/decimals");
+const {createProposal} = require("@sion-contracts/common/utils/governance");
 
 
 async function main() {

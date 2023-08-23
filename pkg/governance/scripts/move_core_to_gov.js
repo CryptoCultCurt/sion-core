@@ -1,4 +1,4 @@
-const {initWallet, getContract, getPrice} = require("@overnight-contracts/common/utils/script-utils");
+const {initWallet, getContract, getPrice} = require("@sion-contracts/common/utils/script-utils");
 
 /**
  * Что делает скрипт?
@@ -29,11 +29,11 @@ async function main() {
 
     let names = [
         'Exchange',
-        'UsdPlusToken',
+        'SionToken',
         'PortfolioManager',
         'Mark2Market',
         'Market',
-        'WrappedUsdPlusToken'
+        'WrappedSionToken'
     ];
 
 

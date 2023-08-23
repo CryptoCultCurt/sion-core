@@ -1,6 +1,6 @@
-const {deployProxy} = require("@overnight-contracts/common/utils/deployProxy");
-const {deploySection, settingSection} = require("@overnight-contracts/common/utils/script-utils");
-const {AVALANCHE} = require("@overnight-contracts/common/utils/assets");
+const {deployProxy} = require("@sion-contracts/common/utils/deployProxy");
+const {deploySection, settingSection} = require("@sion-contracts/common/utils/script-utils");
+const {AVALANCHE} = require("@sion-contracts/common/utils/assets");
 
 let ptpToken = "0x22d4002028f537599bE9f666d1c4Fa138522f9c8";
 let platypusLPUsdc = "0xAEf735B1E7EcfAf8209ea46610585817Dc0a2E16";

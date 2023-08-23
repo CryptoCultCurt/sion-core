@@ -1,5 +1,5 @@
-const {getContract} = require("@overnight-contracts/common/utils/script-utils");
-const {createProposal} = require("@overnight-contracts/common/utils/governance");
+const {getContract} = require("@sion-contracts/common/utils/script-utils");
+const {createProposal} = require("@sion-contracts/common/utils/governance");
 
 let getRoleAdderss = '0x3ca0de91db124db3b435e4944f90c964c503af3f';
 let takeRoleAdderss = '0x6B5aCa17Dfc8fD86EF7f0ed9050f29fF448B8B22';

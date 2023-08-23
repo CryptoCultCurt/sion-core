@@ -1,4 +1,4 @@
-const {isZkSync} = require('@overnight-contracts/common/utils/network');
+const {isZkSync} = require('@sion-contracts/common/utils/network');
 
 /**
  * Got from balancer: https://github.com/balancer-labs/balancer-v2-monorepo/blob/master/pvt/common/sharedBeforeEach.ts

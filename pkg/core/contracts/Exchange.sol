@@ -12,7 +12,7 @@ import "./interfaces/IMark2Market.sol";
 import "./interfaces/IPortfolioManager.sol";
 import "./interfaces/IBlockGetter.sol";
 import "./interfaces/IGlobalPayoutListener.sol";
-import "./UsdPlusToken.sol";
+import "./Sion.sol";
 import "./libraries/WadRayMath.sol";
 
 import "hardhat/console.sol";
@@ -29,7 +29,7 @@ contract Exchange is Initializable, AccessControlUpgradeable, UUPSUpgradeable, P
 
     // ---  fields
 
-    UsdPlusToken public usdPlus;
+    SionToken public usdPlus;
     IERC20 public usdc; // asset name
 
     IPortfolioManager public portfolioManager; //portfolio manager contract
@@ -178,7 +178,7 @@ contract Exchange is Initializable, AccessControlUpgradeable, UUPSUpgradeable, P
     function setTokens(address _usdPlus, address _asset) external onlyAdmin {
         require(_usdPlus != address(0), "Zero address not allowed");
         require(_asset != address(0), "Zero address not allowed");
-        usdPlus = UsdPlusToken(_usdPlus);
+        usdPlus = SionToken(_usdPlus);
         usdc = IERC20(_asset);
         emit TokensUpdated(_usdPlus, _asset);
     }

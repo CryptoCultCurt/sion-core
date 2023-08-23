@@ -1,6 +1,6 @@
-const {deployProxy} = require("@overnight-contracts/common/utils/deployProxy");
-const {deploySection, settingSection} = require("@overnight-contracts/common/utils/script-utils");
-const {BSC, COMMON} = require("@overnight-contracts/common/utils/assets");
+const {deployProxy} = require("@sion-contracts/common/utils/deployProxy");
+const {deploySection, settingSection} = require("@sion-contracts/common/utils/script-utils");
+const {BSC, COMMON} = require("@sion-contracts/common/utils/assets");
 
 let coneToken = '0xA60205802E1B5C6EC1CAFA3cAcd49dFeECe05AC9';
 let unkwnToken = '0xD7FbBf5CB43b4A902A8c994D94e821f3149441c7';

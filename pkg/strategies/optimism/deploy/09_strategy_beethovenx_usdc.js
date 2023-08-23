@@ -1,6 +1,6 @@
-const {deployProxy} = require("@overnight-contracts/common/utils/deployProxy");
-const {OPTIMISM} = require('@overnight-contracts/common/utils/assets');
-const {deploySection, settingSection} = require("@overnight-contracts/common/utils/script-utils");
+const {deployProxy} = require("@sion-contracts/common/utils/deployProxy");
+const {OPTIMISM} = require('@sion-contracts/common/utils/assets');
+const {deploySection, settingSection} = require("@sion-contracts/common/utils/script-utils");
 
 let bbaUsdc = "0xba7834bb3cd2DB888E6A06Fb45E82b4225Cd0C71";
 let bbaUsdt = "0x9253d7e1B42fa01eDE2c53f3A21b3B4d13239cD4";

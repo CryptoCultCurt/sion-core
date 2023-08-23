@@ -1,5 +1,5 @@
 {
-  "name": "@overnight-contracts/strategies-zksync",
+  "name": "@sion-contracts/strategies-zksync",
   "version": "0.0.1",
   "description": "Strategies ZKSYNC contracts",
   "main": "hardhat.config",

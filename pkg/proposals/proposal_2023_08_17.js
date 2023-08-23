@@ -1,6 +1,6 @@
-const { getContract, execTimelock, showM2M} = require("@overnight-contracts/common/utils/script-utils");
-const { createProposal, testProposal, testStrategy} = require("@overnight-contracts/common/utils/governance");
-const { strategyPikaV4Params } = require("@overnight-contracts/strategies-optimism/deploy/47_strategy_pika_v4");
+const { getContract, execTimelock, showM2M} = require("@sion-contracts/common/utils/script-utils");
+const { createProposal, testProposal, testStrategy} = require("@sion-contracts/common/utils/governance");
+const { strategyPikaV4Params } = require("@sion-contracts/strategies-optimism/deploy/47_strategy_pika_v4");
 
 async function main() {
 

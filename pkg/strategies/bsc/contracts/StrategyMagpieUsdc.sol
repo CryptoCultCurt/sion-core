@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.0 <0.9.0;
 
-import "@overnight-contracts/core/contracts/Strategy.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Wombat.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Magpie.sol";
-import "@overnight-contracts/connectors/contracts/stuff/PancakeV2.sol";
-import "@overnight-contracts/connectors/contracts/stuff/PancakeV3.sol";
+import "@sion-contracts/core/contracts/Strategy.sol";
+import "@sion-contracts/connectors/contracts/stuff/Wombat.sol";
+import "@sion-contracts/connectors/contracts/stuff/Magpie.sol";
+import "@sion-contracts/connectors/contracts/stuff/PancakeV2.sol";
+import "@sion-contracts/connectors/contracts/stuff/PancakeV3.sol";
 
 
 contract StrategyMagpieUsdc is Strategy {

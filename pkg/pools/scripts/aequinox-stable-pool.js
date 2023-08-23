@@ -1,10 +1,10 @@
 const hre = require("hardhat");
 const ethers = hre.ethers;
 
-let Vault = require('@overnight-contracts/pools/abi/VaultBalancer.json');
-let StablePhantomPoolFactory = require('@overnight-contracts/pools/abi/StablePhantomPoolFactory.json');
-let StablePhantomPool = require('@overnight-contracts/pools/abi/StablePhantomPool.json');
-const {initWallet} = require("@overnight-contracts/common/utils/script-utils");
+let Vault = require('@sion-contracts/pools/abi/VaultBalancer.json');
+let StablePhantomPoolFactory = require('@sion-contracts/pools/abi/StablePhantomPoolFactory.json');
+let StablePhantomPool = require('@sion-contracts/pools/abi/StablePhantomPool.json');
+const {initWallet} = require("@sion-contracts/common/utils/script-utils");
 
 
 let StableFactory = "0xe2983b13b8f6631523a6177Cc7D926f49cEf3490";

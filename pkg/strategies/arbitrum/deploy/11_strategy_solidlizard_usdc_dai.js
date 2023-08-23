@@ -1,6 +1,6 @@
-const {deployProxy} = require("@overnight-contracts/common/utils/deployProxy");
-const {ARBITRUM} = require('@overnight-contracts/common/utils/assets');
-const {deploySection, settingSection, getContract} = require("@overnight-contracts/common/utils/script-utils");
+const {deployProxy} = require("@sion-contracts/common/utils/deployProxy");
+const {ARBITRUM} = require('@sion-contracts/common/utils/assets');
+const {deploySection, settingSection, getContract} = require("@sion-contracts/common/utils/script-utils");
 
 
 module.exports = async ({deployments}) => {

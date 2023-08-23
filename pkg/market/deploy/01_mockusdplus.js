@@ -1,13 +1,13 @@
-const {deployProxy} = require("@overnight-contracts/common/utils/deployProxy");
+const {deployProxy} = require("@sion-contracts/common/utils/deployProxy");
 
 module.exports = async ({deployments}) => {
     const {save} = deployments;
 
     let params = {args: ["USD+", "USD+"]}
 
-    await deployProxy('MockUsdPlusToken', deployments, save, params);
+    await deployProxy('MockSionToken', deployments, save, params);
 
-    console.log("MockUsdPlusToken created");
+    console.log("MockSionToken created");
 };
 
-module.exports.tags = ['test', 'MockUsdPlusToken'];
+module.exports.tags = ['test', 'MockSionToken'];

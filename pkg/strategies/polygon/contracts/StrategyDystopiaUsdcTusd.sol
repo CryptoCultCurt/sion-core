@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.0 <0.9.0;
 
-import "@overnight-contracts/core/contracts/Strategy.sol";
-import "@overnight-contracts/swapper/contracts/ISwapper.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Dystopia.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Penrose.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Curve.sol";
-import "@overnight-contracts/common/contracts/libraries/OvnMath.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Chainlink.sol";
+import "@sion-contracts/core/contracts/Strategy.sol";
+import "@sion-contracts/swapper/contracts/ISwapper.sol";
+import "@sion-contracts/connectors/contracts/stuff/Dystopia.sol";
+import "@sion-contracts/connectors/contracts/stuff/Penrose.sol";
+import "@sion-contracts/connectors/contracts/stuff/Curve.sol";
+import "@sion-contracts/common/contracts/libraries/OvnMath.sol";
+import "@sion-contracts/connectors/contracts/stuff/Chainlink.sol";
 
 contract StrategyDystopiaUsdcTusd is Strategy, DystopiaExchange {
 

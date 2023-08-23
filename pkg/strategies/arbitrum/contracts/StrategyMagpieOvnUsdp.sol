@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.0 <0.9.0;
 
-import "@overnight-contracts/core/contracts/Strategy.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Wombat.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Magpie.sol";
-import "@overnight-contracts/connectors/contracts/stuff/UniswapV3.sol";
-import "@overnight-contracts/connectors/contracts/stuff/TraderJoe.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Camelot.sol";
+import "@sion-contracts/core/contracts/Strategy.sol";
+import "@sion-contracts/connectors/contracts/stuff/Wombat.sol";
+import "@sion-contracts/connectors/contracts/stuff/Magpie.sol";
+import "@sion-contracts/connectors/contracts/stuff/UniswapV3.sol";
+import "@sion-contracts/connectors/contracts/stuff/TraderJoe.sol";
+import "@sion-contracts/connectors/contracts/stuff/Camelot.sol";
 
 /**
  * @dev Self-investment strategy

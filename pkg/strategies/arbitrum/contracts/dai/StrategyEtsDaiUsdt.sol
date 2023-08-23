@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.0 <0.9.0;
 
-import "@overnight-contracts/core/contracts/Strategy.sol";
-import "@overnight-contracts/core/contracts/interfaces/IHedgeExchanger.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Chainlink.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Gmx.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Wombat.sol";
+import "@sion-contracts/core/contracts/Strategy.sol";
+import "@sion-contracts/core/contracts/interfaces/IHedgeExchanger.sol";
+import "@sion-contracts/connectors/contracts/stuff/Chainlink.sol";
+import "@sion-contracts/connectors/contracts/stuff/Gmx.sol";
+import "@sion-contracts/connectors/contracts/stuff/Wombat.sol";
 
 
 contract StrategyEtsDaiUsdt is Strategy {

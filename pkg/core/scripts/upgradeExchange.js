@@ -1,8 +1,8 @@
-const {getContract, execTimelock} = require("@overnight-contracts/common/utils/script-utils");
-const {createProposal, execProposal, testProposal} = require("@overnight-contracts/common/utils/governance");
-const {Roles} = require("@overnight-contracts/common/utils/roles");
-const {fromAsset} = require("@overnight-contracts/common/utils/decimals");
-const {showPoolOperations} = require("@overnight-contracts/common/utils/payoutListener");
+const {getContract, execTimelock} = require("@sion-contracts/common/utils/script-utils");
+const {createProposal, execProposal, testProposal} = require("@sion-contracts/common/utils/governance");
+const {Roles} = require("@sion-contracts/common/utils/roles");
+const {fromAsset} = require("@sion-contracts/common/utils/decimals");
+const {showPoolOperations} = require("@sion-contracts/common/utils/payoutListener");
 
 async function main() {
 

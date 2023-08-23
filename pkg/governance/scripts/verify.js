@@ -1,5 +1,5 @@
-const {verify } = require("@overnight-contracts/common/utils/verify-utils");
-const {getContract} = require("@overnight-contracts/common/utils/script-utils");
+const {verify } = require("@sion-contracts/common/utils/verify-utils");
+const {getContract} = require("@sion-contracts/common/utils/script-utils");
 const hre = require("hardhat");
 
 async function main() {

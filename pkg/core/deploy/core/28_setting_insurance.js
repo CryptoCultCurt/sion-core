@@ -1,7 +1,7 @@
 const {ethers} = require("hardhat");
-const {BSC, OPTIMISM, DEFAULT} = require("@overnight-contracts/common/utils/assets");
+const {BSC, OPTIMISM, DEFAULT} = require("@sion-contracts/common/utils/assets");
 const hre = require("hardhat");
-const {getCoreAsset} = require("@overnight-contracts/common/utils/script-utils");
+const {getCoreAsset} = require("@sion-contracts/common/utils/script-utils");
 
 module.exports = async ({getNamedAccounts}) => {
     const {deployer} = await getNamedAccounts();

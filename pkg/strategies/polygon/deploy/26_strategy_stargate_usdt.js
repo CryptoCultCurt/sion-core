@@ -1,6 +1,6 @@
-const {deployProxy} = require("@overnight-contracts/common/utils/deployProxy");
-const {POLYGON} = require('@overnight-contracts/common/utils/assets');
-const {deploySection, settingSection} = require("@overnight-contracts/common/utils/script-utils");
+const {deployProxy} = require("@sion-contracts/common/utils/deployProxy");
+const {POLYGON} = require('@sion-contracts/common/utils/assets');
+const {deploySection, settingSection} = require("@sion-contracts/common/utils/script-utils");
 
 let stgToken = '0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590';
 let stargateRouter = '0x45A01E4e04F14f7A4a6702c74187c5F6222033cd';

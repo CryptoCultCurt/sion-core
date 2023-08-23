@@ -1,5 +1,5 @@
 {
-  "name": "@overnight-contracts/pools",
+  "name": "@sion-contracts/pools",
   "version": "0.0.1",
   "description": "Pools scripts",
   "main": "hardhat.config",

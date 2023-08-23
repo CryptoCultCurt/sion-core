@@ -1,5 +1,5 @@
 {
-  "name": "@overnight-contracts/core",
+  "name": "@sion-contracts/core",
   "version": "0.0.7",
   "description": "Core contracts",
   "main": "hardhat.config",
@@ -9,5 +9,8 @@
   "scripts": {
     "build": "hardhat compile",
     "test": "hardhat test"
+  },
+  "dependencies": {
+    "@axelar-network/interchain-token-service": "^0.3.0"
   }
 }

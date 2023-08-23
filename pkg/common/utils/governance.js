@@ -2,7 +2,7 @@ const {fromE18, toE18, fromAsset, fromE6, toAsset} = require("./decimals");
 const {expect} = require("chai");
 const {getContract, initWallet, getPrice, impersonateAccount, getWalletAddress, getCoreAsset, convertWeights} = require("./script-utils");
 const hre = require('hardhat');
-const {execTimelock, showM2M} = require("@overnight-contracts/common/utils/script-utils");
+const {execTimelock, showM2M} = require("@sion-contracts/common/utils/script-utils");
 const {createRandomWallet, getTestAssets} = require("./tests");
 const {Roles} = require("./roles");
 
@@ -36,12 +36,12 @@ async function testUsdPlus(){
 
     let exchange = await getContract('Exchange');
     let asset = await getCoreAsset();
-    let usdPlusToken = await getContract('UsdPlusToken');
+    let SionToken = await getContract('SionToken');
     let m2m = await getContract('Mark2Market');
 
     let walletAddress = await getWalletAddress();
     let amountAsset = await asset.balanceOf(walletAddress);
-    let amountUsdPlus = await usdPlusToken.balanceOf(walletAddress);
+    let amountUsdPlus = await SionToken.balanceOf(walletAddress);
 
     let fromUsdPlus = fromE6;
 
@@ -57,7 +57,7 @@ async function testUsdPlus(){
     console.log('Exchange.buy done');
 
     amountAsset = await asset.balanceOf(walletAddress);
-    amountUsdPlus = await usdPlusToken.balanceOf(walletAddress);
+    amountUsdPlus = await SionToken.balanceOf(walletAddress);
 
     tables.push({
         name: 'after: mint',
@@ -71,13 +71,13 @@ async function testUsdPlus(){
         usdPlus: fromUsdPlus(amountUsdPlus)
     })
 
-    await (await usdPlusToken.approve(exchange.address, amountUsdPlus)).wait();
+    await (await SionToken.approve(exchange.address, amountUsdPlus)).wait();
     console.log('UsdPlus approve done');
     await (await exchange.redeem(asset.address, amountUsdPlus)).wait();
     console.log('Exchange.redeem done');
 
     amountAsset = await asset.balanceOf(walletAddress);
-    amountUsdPlus = await usdPlusToken.balanceOf(walletAddress);
+    amountUsdPlus = await SionToken.balanceOf(walletAddress);
 
     tables.push({
         name: 'after: redeem',

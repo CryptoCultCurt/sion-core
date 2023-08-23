@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.0 <0.9.0;
 
-import "@overnight-contracts/core/contracts/Strategy.sol";
-import "@overnight-contracts/connectors/contracts/stuff/Idle.sol";
-import "@overnight-contracts/connectors/contracts/stuff/UniswapV2.sol";
+import "@sion-contracts/core/contracts/Strategy.sol";
+import "@sion-contracts/connectors/contracts/stuff/Idle.sol";
+import "@sion-contracts/connectors/contracts/stuff/UniswapV2.sol";
 
 contract StrategyIdle is Strategy, UniswapV2Exchange {
 

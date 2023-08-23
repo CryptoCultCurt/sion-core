@@ -1,4 +1,4 @@
-const {getContract, getPrice} = require("@overnight-contracts/common/utils/script-utils");
+const {getContract, getPrice} = require("@sion-contracts/common/utils/script-utils");
 
 async function main() {
     let opts = await getPrice();
