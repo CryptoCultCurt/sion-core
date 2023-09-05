@@ -11,8 +11,15 @@ const config = require("../common/utils/hardhat-config");
 
 module.exports = {
 
-    namedAccounts: config.namedAccounts,
+    namedAccounts: {
+        deployer: {
+            default: 0
+        }
+    },
     networks: config.getNetwork(process.env.ETH_NETWORK),
+    accounts: {mnemonic: process.env.MNEMONIC},
+   // namedAccounts: config.namedAccounts,
+   // networks: config.getNetwork(process.env.ETH_NETWORK),
     solidity: config.solidity,
     zksolc: config.zksolc,
     etherscan: config.etherscan(),

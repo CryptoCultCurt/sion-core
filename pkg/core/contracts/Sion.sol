@@ -18,7 +18,7 @@ contract SionToken is ERC20, AccessControl {
 
     ITokenManager public tokenManager;
     IInterchainTokenService public service =
-        IInterchainTokenService(0xF786e21509A9D50a9aFD033B5940A2b7D872C208);
+        IInterchainTokenService(_serviceAddress);
 
 
     uint256 public constant MAX_UINT_VALUE = type(uint256).max;
@@ -52,6 +52,8 @@ contract SionToken is ERC20, AccessControl {
 
     address public exchange;
     uint8 private _decimals;
+
+    address private  _serviceAddress;
 
     // ---  events
 
@@ -99,7 +101,7 @@ constructor() ERC20("Sion", "SION") {
 
         // Register this token (could also be done 1-time smart contract invocation)
         // Not a good practice beacuse it can't go to non-EVM chains
-        deployTokenManager("");
+       // deployTokenManager("");
 
 
     }
@@ -118,6 +120,10 @@ constructor() ERC20("Sion", "SION") {
 
 
     // ---  logic
+
+    function setServiceAddress(address serviceAddress) external onlyAdmin {
+        _serviceAddress = serviceAddress;
+    }
 
     // cross-chain
     function deployTokenManager(bytes32 salt) internal {
@@ -602,7 +608,7 @@ constructor() ERC20("Sion", "SION") {
      * {IERC20-balanceOf} and {IERC20-transfer}.
      */
     function decimals() public view override returns (uint8) {
-        return _decimals == 0 ? 6 : _decimals;
+        return _decimals == 0 ? 18 : _decimals;
     }
 
 

@@ -1,4 +1,5 @@
 const {ethers, upgrades} = require("hardhat");
+
 const hre = require("hardhat");
 const {getImplementationAddress} = require('@openzeppelin/upgrades-core');
 const sampleModule = require('@openzeppelin/hardhat-upgrades/dist/utils/deploy-impl');
@@ -7,7 +8,7 @@ const {Deployer} = require("@matterlabs/hardhat-zksync-deploy");
 const {isZkSync} = require("./network");
 
 
-async function deploy(contractName, deployments, save, params) {
+async function deployContract(contractName, deployments, save, params) {
 
     if (hre.ovn === undefined)
         hre.ovn = {};
@@ -18,101 +19,15 @@ async function deploy(contractName, deployments, save, params) {
     if (params) {
         factoryOptions = params.factoryOptions;
         unsafeAllow = params.unsafeAllow;
-        args = params.args;
+        args = params;
     }
+
+    hre.deploy(contractName, {
+        from: hre.network.config.deployer,
+        args: params,
+        log: true,});
 
     const contractFactory = await ethers.getContractFactory(factoryName, factoryOptions);
-
-
-  
-
-
-    let impl;
-    let implAddress;
-    if (hre.ovn && !hre.ovn.impl) {
-        // Deploy a new implementation and upgradeProxy to new;
-        // You need have permission for role UPGRADER_ROLE;
-
-        try {
-            impl = await upgrades.upgradeProxy(proxy, contractFactory, {unsafeAllow: unsafeAllow});
-        } catch (e) {
-            impl = await upgrades.upgradeProxy(proxy, contractFactory, {unsafeAllow: unsafeAllow});
-        }
-        implAddress = await getImplementationAddress(ethers.provider, proxy.address);
-        console.log(`Deploy ${contractName} Impl  done -> proxy [` + proxy.address + "] impl [" + implAddress + "]");
-    } else {
-
-        //Deploy only a new implementation without call upgradeTo
-        //For system with Governance
-        impl = await sampleModule.deployProxyImpl(hre, contractFactory, {
-            kind: 'uups',
-            unsafeAllow: unsafeAllow
-        }, proxy.address);
-
-        implAddress = impl.impl;
-        console.log('Deploy impl done without upgradeTo -> impl [' + implAddress + "]");
-    }
-
-
-    if (impl && impl.deployTransaction)
-        await impl.deployTransaction.wait();
-
-    const artifact = await deployments.getExtendedArtifact(factoryName);
-    artifact.implementation = implAddress;
-    let proxyDeployments = {
-        address: proxy.address,
-        ...artifact
-    }
-
-    await save(contractName, proxyDeployments);
-
-
-    // Enable verification contract after deploy
-    if (hre.ovn.verify){
-
-        console.log(`Verify proxy [${proxy.address}] ....`);
-
-        try {
-            await hre.run("verify:verify", {
-                address: proxy.address,
-                constructorArguments: args,
-            });
-        } catch (e) {
-            console.log(e);
-        }
-
-
-        console.log(`Verify impl [${implAddress}] ....`);
-
-        await hre.run("verify:verify", {
-            address: implAddress,
-            constructorArguments: [],
-        });
-    }
-
-    if (hre.ovn.gov){
-
-
-        let timelock = await getContract('OvnTimelockController');
-
-        hre.ethers.provider = new hre.ethers.providers.JsonRpcProvider('http://localhost:8545')
-        await hre.network.provider.request({
-            method: "hardhat_impersonateAccount",
-            params: [timelock.address],
-        });
-
-        const timelockAccount = await hre.ethers.getSigner(timelock.address);
-
-        await checkTimeLockBalance();
-
-        let contract = await getContract(contractName);
-        await contract.connect(timelockAccount).upgradeTo(impl.impl);
-
-        console.log(`[Gov] upgradeTo completed `)
-    }
-
-
-    return proxyDeployments;
 }
    
 
@@ -361,5 +276,5 @@ async function deployProxyEth(contractName, factoryName, deployments, save, para
 module.exports = {
     deployProxy: deployProxy,
     deployProxyMulti: deployProxyMulti,
-    deploy: deploy
+    deployContract: deployContract
 };

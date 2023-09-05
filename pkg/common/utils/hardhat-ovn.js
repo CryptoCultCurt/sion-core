@@ -18,6 +18,7 @@ task('deploy', 'deploy')
     .addFlag('impl', 'Deploy only implementation without upgradeTo')
     .addFlag('verify', 'Enable verify contracts')
     .addFlag('gov', 'Deploy to local by impression account')
+    .addFlag('token', 'Deploy token')
     .setAction(async (args, hre) => {
 
         hre.ovn = {
@@ -27,7 +28,8 @@ task('deploy', 'deploy')
             impl: args.impl,
             verify: args.verify,
             tags: args.tags,
-            gov: args.gov
+            gov: args.gov,
+            token: args.token
         }
 
         updateFeedData(hre);
@@ -43,38 +45,38 @@ task(TASK_NODE, 'Starts a JSON-RPC server on top of Hardhat EVM')
     .setAction(async (args, hre, runSuper) => {
 
 
-        const srcDir = `deployments/` + process.env.STAND;
+    //     const srcDir = `deployments/` + process.env.STAND;
 
-        let chainId = fs.readFileSync(srcDir + "/.chainId", { flag:'r'});
-        chainId = (chainId+"").trim();
-        let fileName;
-        if (Number.parseInt(chainId) === 137){
-            fileName = 'polygon.json';
-        }else if (Number.parseInt(chainId) === 10) {
-            fileName = 'optimism.json';
-        }else if (Number.parseInt(chainId) === 56){
-            fileName = 'bsc.json';
-        } else {
-            fileName = `unknown-${chainId}.json`;
-        }
+    //     let chainId = fs.readFileSync(srcDir + "/.chainId", { flag:'r'});
+    //     chainId = (chainId+"").trim();
+    //     let fileName;
+    //     if (Number.parseInt(chainId) === 137){
+    //         fileName = 'polygon.json';
+    //     }else if (Number.parseInt(chainId) === 10) {
+    //         fileName = 'optimism.json';
+    //     }else if (Number.parseInt(chainId) === 56){
+    //         fileName = 'bsc.json';
+    //     } else {
+    //         fileName = `unknown-${chainId}.json`;
+    //     }
 
-        await fs.copyFile(`.openzeppelin/${fileName}`, '.openzeppelin/unknown-31337.json', (e) => {
-            if (e)
-                console.error(e)
-        });
+    //     await fs.copyFile(`.openzeppelin/${fileName}`, '.openzeppelin/unknown-31337.json', (e) => {
+    //         if (e)
+    //             console.error(e)
+    //     });
 
-        const destDir = `deployments/localhost`;
+    //     const destDir = `deployments/localhost`;
 
-        await fse.removeSync(destDir);
+    //     await fse.removeSync(destDir);
 
-        await fse.copySync(srcDir, destDir, {overwrite: true}, function (err) {
-            if (err)
-                console.error(err);
-        });
+    //     await fse.copySync(srcDir, destDir, {overwrite: true}, function (err) {
+    //         if (err)
+    //             console.error(err);
+    //     });
 
-        await fs.writeFile('deployments/localhost/.chainId', '31337', function (err) {
-            if (err) return console.log(err);
-        });
+    //     await fs.writeFile('deployments/localhost/.chainId', '31337', function (err) {
+    //         if (err) return console.log(err);
+    //     });
 
 
         let nodeUrl = getNodeUrl();
@@ -154,6 +156,7 @@ task(TASK_RUN, 'Run task')
             await evmCheckpoint('task', hre.network.provider);
 
         await runSuper(args);
+       // await hre.ethers.deployContract("SionToken", ["Sion", "SION", 18]);
 
         updateFeedData(hre);
 

@@ -168,7 +168,7 @@ function getNetwork(network) {
 
 let namedAccounts = {
     deployer: {
-        default: 0,
+        default: 1,
         polygon: "0x5CB01385d3097b6a189d1ac8BA3364D900666445",
         ganache: "0xa0df350d2637096571F7A701CBc1C5fdE30dF76A"
     },

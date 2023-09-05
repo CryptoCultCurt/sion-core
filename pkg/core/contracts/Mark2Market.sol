@@ -10,6 +10,7 @@ import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 import "./interfaces/IMark2Market.sol";
 import "./interfaces/IStrategy.sol";
 import "./interfaces/IPortfolioManager.sol";
+import "hardhat/console.sol";
 
 contract Mark2Market is IMark2Market, Initializable, AccessControlUpgradeable, UUPSUpgradeable {
 
@@ -67,7 +68,8 @@ contract Mark2Market is IMark2Market, Initializable, AccessControlUpgradeable, U
         for (uint8 i = 0; i < count; i++) {
             IPortfolioManager.StrategyWeight memory weight = weights[i];
             IStrategy strategy = IStrategy(weight.strategy);
-
+            console.log("strategy: %s", weight.strategy);
+            console.log("netAssetValue: %s", strategy.netAssetValue());
             assets[i] = StrategyAsset(
                 weight.strategy,
                 strategy.netAssetValue(),

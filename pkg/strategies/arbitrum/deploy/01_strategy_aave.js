@@ -7,9 +7,11 @@ module.exports = async ({deployments}) => {
 
     await deploySection(async (name) => {
         await deployProxy(name, deployments, save);
+        console.log('deploy done');
     });
 
     await settingSection(async (strategy) => {
+        console.log('setting params')
         await (await strategy.setParams(
             {
                 usdc: ARBITRUM.usdc,
@@ -17,6 +19,7 @@ module.exports = async ({deployments}) => {
                 aaveProvider: ARBITRUM.aaveProvider,
             }
         )).wait();
+        console.log('settings done');
     });
 };
 

@@ -11,11 +11,11 @@ async function main() {
 
     addresses.push(pm.address);
     values.push(0);
-    abis.push(pm.interface.encodeFunctionData('addStrategy', ['0x48d49a208BA0239198083E274836Ba1B9Bef8722']));
+    abis.push(pm.interface.encodeFunctionData('addStrategy', ['0xAB4F5f1Ee46Af26A9201c2C28af9C570727c582d']));
 
-    addresses.push(pm.address);
-    values.push(0);
-    abis.push(pm.interface.encodeFunctionData('addStrategy', ['0x48d49a208BA0239198083E274836Ba1B9Bef8722']));
+    // addresses.push(pm.address);
+    // values.push(0);
+    // abis.push(pm.interface.encodeFunctionData('addStrategy', ['0xAB4F5f1Ee46Af26A9201c2C28af9C570727c582d']));
 
     // await showM2M();
     // await testProposal(addresses, values, abis);

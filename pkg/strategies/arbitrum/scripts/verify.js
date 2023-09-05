@@ -1,7 +1,7 @@
 const {verify} = require("@sion-contracts/common/utils/verify-utils");
 
 async function main() {
-    let items = ["StrategyAuraDaiUsdcUsdt"];
+    let items = ["StrategyMagpieUsdc"];
     await verify(items);
 }
 

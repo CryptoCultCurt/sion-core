@@ -8,7 +8,7 @@ module.exports = async ({getNamedAccounts, deployments}) => {
     const {deployer} = await getNamedAccounts();
 
     const wallet = await initWallet();
-
+    console.log('wallet.address: ' + wallet.address);
     const usdPlus = await ethers.getContract("SionToken", wallet);
     const exchange = await ethers.getContract("Exchange", wallet);
 

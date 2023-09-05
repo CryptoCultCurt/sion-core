@@ -10,10 +10,12 @@ async function main() {
 
     await showM2M();
 
-    await (await asset.approve(exchange.address, toAsset(2))).wait();
+    await (await asset.approve(exchange.address, toAsset(2000))).wait();
     console.log('Asset approve done');
-    await (await exchange.buy(asset.address, toAsset(2))).wait();
-    console.log('Exchange.buy done');
+    console.log('asset.address: ' + asset.address);
+
+    // await (await exchange.buy(asset.address, toAsset(2))).wait();
+    // console.log('Exchange.buy done');
 
     await showM2M();
 }

@@ -1,29 +1,35 @@
-//const {deployProxy} = require("@sion-contracts/common/utils/deploy");
+//const {deployContrac} = require("@sion-contracts/common/utils/deployProxy");
 const hre = require("hardhat");
-const {ethers} = require("hardhat"); 
-
 
 module.exports = async ({getNamedAccounts, deployments}) => {
-    console.log(getNamedAccounts);
-    const {save} = deployments;
+    const {deploy} = deployments;
+  const {deployer} = await getNamedAccounts();
 
-    let params;
-    const deployer = await getNamedAccounts();
-    params = {args: ["SION", "SION", 18]}
-0
-    await deploy('SionToken', {
+    console.log(hre.network.config.deployer);
+    await deploy('SionToken', 
+    {
         from: deployer,
-        args: ["SION", "SION", 18],
+        args: [],
         log: true,
     });
-
-    let sion = await ethers.getContract('SionToken');
-
-    console.log('SionToken deploy done()');
-    console.log('Symbol:   ' + await sion.symbol());
-    console.log('Name:     ' + await sion.name());
-    console.log('Decimals: ' + await sion.decimals());
-
 };
 
 module.exports.tags = ['base', 'SionToken'];
+
+// const hre = require("hardhat");
+
+// async function main() {
+
+//   const lock = await hre.ethers.deploy("Sion", ["Sion", "SION", 18]);
+//   await lock.waitForDeployment();
+
+//   module.exports.tags = ['base','Token'];
+   
+// }
+
+// // We recommend this pattern to be able to use async/await everywhere
+// // and properly handle errors.
+// main().catch((error) => {
+//   console.error(error);
+//   process.exitCode = 1;
+// });

@@ -5,7 +5,7 @@ async function main() {
     let wallet = await initWallet();
     let price = await getPrice();
     let governor = await getContract('OvnGovernor');
-    await (await governor.connect(wallet).executeExec('14492553784002505925514334695647669692763329380932899759405808384903001089874', price)).wait();
+    await (await governor.connect(wallet).executeExec('16481554708669359147268889393130771783602343817327249388582849888469329638517', price)).wait();
 }
 
 
