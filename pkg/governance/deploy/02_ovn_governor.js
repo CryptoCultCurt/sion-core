@@ -5,9 +5,12 @@ const {Deployer} = require("@matterlabs/hardhat-zksync-deploy");
 const hre = require("hardhat");
 const {initWallet} = require("@sion-contracts/common/utils/script-utils");
 
+
 module.exports = async ({getNamedAccounts, deployments}) => {
     const {deploy, save} = deployments;
     const {deployer} = await getNamedAccounts();
+
+    
 
     await deployProxy('OvnTimelockController', deployments, save);
     console.log("Deploy OvnTimelockController done");
@@ -30,11 +33,16 @@ module.exports = async ({getNamedAccounts, deployments}) => {
         console.log("Deploy OvnGovernor done");
 
     }else {
+        console.log('deploying governer');
+        console.log('token: ' + token.address);
+        console.log('controller: ' + controller.address);
         await deploy('OvnGovernor', {
             from: deployer,
             args: [token.address, controller.address ],
             log: true,
         });
+
+      
         console.log("Deploy OvnGovernor done");
     }
 
