@@ -20,8 +20,16 @@ async function main() {
 
 
     const signer = await ethers.getSigner(fromAddr);
-  
+    const Exchange = await getContract("Exchange");
+    console.log('exchange address: ' + Exchange.address);
+    console.log('signer address: ' + signer.address);
     let busd = await getERC20("usdc",signer);
+    let usdc = await getERC20("usdc",await ethers.getSigner(toAddr));
+    await usdc.approve(
+        Exchange.address,
+        '10000000000000000000000000000'
+    )
+        console.log('approval done');
     let busdBalance = (await busd.balanceOf(fromAddr)).toString();
     console.log(`Sending funds to ${toAddr}`);
     console.log(`${fromAddr} has ${ethers.utils.formatEther(await signer.getBalance())} ETH`);
@@ -29,7 +37,7 @@ async function main() {
     let amount = ethers.utils.parseEther("5.0");
     const tx = {
         to: toAddr,
-        value: ethers.utils.parseEther("5")
+        value: ethers.utils.parseEther("500000")
     }
     await signer.sendTransaction(tx);
     await busd.transfer(
@@ -37,6 +45,7 @@ async function main() {
         busdBalance
     )
 
+    
 
 
 

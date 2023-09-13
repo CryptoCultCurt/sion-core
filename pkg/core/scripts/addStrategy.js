@@ -11,7 +11,7 @@ async function main() {
 
     addresses.push(pm.address);
     values.push(0);
-    abis.push(pm.interface.encodeFunctionData('addStrategy', ['0xAB4F5f1Ee46Af26A9201c2C28af9C570727c582d']));
+    abis.push(pm.interface.encodeFunctionData('addStrategy', ['0x204d2E5c581506e939295DaF99079b590ace906e']));
 
     // addresses.push(pm.address);
     // values.push(0);

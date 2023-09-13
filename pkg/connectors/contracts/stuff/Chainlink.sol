@@ -44,6 +44,8 @@ interface IPriceFeed {
         uint80 answeredInRound
     );
 
+    function getRate() external view returns (uint256); // specific for wusdr/not chainlink
+
 }
 
 
@@ -93,6 +95,11 @@ library ChainlinkLibrary {
         require(timeStamp > 0, "Round not complete");
         return uint256(price);
 
+    }
+
+    function getRate(IPriceFeed oracle) internal view returns (uint256){
+        (uint256 price) = oracle.getRate();
+        return uint256(price);
     }
 
     function convertTokenToUsd(

@@ -13,17 +13,30 @@ const constants = require('./sion/constants')
 async function main() {
 //0xAB4F5f1Ee46Af26A9201c2C28af9C570727c582d aave
 //0xA57d494e6162ca32610Ab5CCdf0AF3D149e4B43a magpie
+//0x6aCE712D412e99727aDf2272BE24f8e45aF76270 chronos usdr
     let weights = [
     {
         "strategy": "0x2c5A882f780ee2b9D4deD20163940E54FFD2FC89",
         "name": "Magpie USDC",
         "minWeight": 0,
-        "targetWeight": 100000,
+        "targetWeight": 50000,
+        "riskFactor": 0,
+        "maxWeight": 100000,
+        "enabled": true,
+        "enabledReward": true
+    },
+    {
+        "strategy": "0x6aCE712D412e99727aDf2272BE24f8e45aF76270",
+        "name": "Chronos USDC/wUSDR",
+        "minWeight": 0,
+        "targetWeight": 50000,
         "riskFactor": 0,
         "maxWeight": 100000,
         "enabled": true,
         "enabledReward": true
     }]
+
+
     // let weights = [{
     //     "strategy": "0x6389D1F4B50f06c19a63A8F80BC67804F5D77E5d",
     //     "name": "Aave",
@@ -219,14 +232,15 @@ async function main() {
 
      //   weights = await convertWeights(weights);
        // console.log(weights);
-
+        await pm.connect(timelock).grantRole(await pm.PORTFOLIO_AGENT_ROLE(), '0xf334cc3649c999aa6e0ca85001db97c0aac4a0f4');
+        console.log('role granted');
         await pm.connect(timelock).grantRole(await pm.PORTFOLIO_AGENT_ROLE(), timelock.address);
-    await pm.connect(timelock).addStrategy("0x2c5A882f780ee2b9D4deD20163940E54FFD2FC89");
-        console.log('strategy added');
+    // await pm.connect(timelock).addStrategy("0x6aCE712D412e99727aDf2272BE24f8e45aF76270");
+    //     console.log('strategy added');
         await pm.connect(timelock).setStrategyWeights(weights);
         console.log('weights set');
       //  await pm.connect(timelock).setCashStrategy('0xAB4F5f1Ee46Af26A9201c2C28af9C570727c582d').wait();
-        await (await pm.setCashStrategy('0x2c5A882f780ee2b9D4deD20163940E54FFD2FC89')).wait();
+      //  await (await pm.setCashStrategy('0x2c5A882f780ee2b9D4deD20163940E54FFD2FC89')).wait();
         console.log('cash strategy set');
       //  await pm.connect(timelock).balance();
         console.log('balance done');
